@@ -80,1072 +80,1005 @@ summary{cursor:pointer;color:var(--acc)}
     <div class="hr"></div>
     <div>Snapshot: 20250906_0350</div>
     <div class="row"><div class="card">
-<div class="title">L2RW+: A Comprehensive Benchmark Towards Privacy-Preserved   Visible-Infrared Person Re-Identification</div>
-<div class="meta-line">Authors: Yan Jiang, Hao Yu, Mengting Wei, Zhaodong Sun, Haoyu Chen, Xu Cheng, Guoying Zhao</div>
-<div class="meta-line">First: 2025-03-15T18:56:29+00:00 · Latest: 2025-08-28T14:32:17+00:00</div>
-<div class="meta-line">Comments: Extended Version of L2RW. We extend it from image to video data</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2503.12232v2">Abs</a> · <a href="http://arxiv.org/pdf/2503.12232v2">PDF</a> · <a href="https://github.com/Joey623/L2RW">Code1</a></div>
+<div class="title">TRUST-VL: An Explainable News Assistant for General Multimodal   Misinformation Detection</div>
+<div class="meta-line">Authors: Zehong Yan, Peng Qi, Wynne Hsu, Mong Li Lee</div>
+<div class="meta-line">Venue: EMNLP 2025</div>
+<div class="meta-line">First: 2025-09-04T17:59:43+00:00 · Latest: 2025-09-04T17:59:43+00:00</div>
+<div class="meta-line">Comments: EMNLP 2025; Project Homepage: https://yanzehong.github.io/trust-vl/</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04448v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04448v1">PDF</a> · <a href="https://yanzehong.github.io/trust-vl/">Project1</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) is a challenging task
-that aims to match pedestrian images captured under varying lighting
-conditions, which has drawn intensive research attention and achieved promising
-results. However, existing methods adopt the centralized training, ignoring the
-potential privacy concerns as the data is distributed across multiple devices
-or entities in reality. In this paper, we propose L2RW+, a benchmark that
-brings VI-ReID closer to real-world applications. The core rationale behind
-L2RW+ is that incorporating decentralized training into VI-ReID can address
-privacy concerns in scenarios with limited data-sharing constrains.
-Specifically, we design protocols and corresponding algorithms for different
-privacy sensitivity levels. In our new benchmark, we simulate the training
-under real-world data conditions that: 1) data from each camera is completely
-isolated, or 2) different data entities (e.g., data controllers of a certain
-region) can selectively share the data. In this way, we simulate scenarios with
-strict privacy restrictions, which is closer to real-world conditions.
-Comprehensive experiments show the feasibility and potential of decentralized
-VI-ReID training at both image and video levels. In particular, with increasing
-data scales, the performance gap between decentralized and centralized training
-decreases, especially in video-level VI-ReID. In unseen domains, decentralized
-training even achieves performance comparable to SOTA centralized methods. This
-work offers a novel research entry for deploying VI-ReID into real-world
-scenarios and can benefit the community. Code is available at:
-https://github.com/Joey623/L2RW.</div></details>
+<div class="mono">Multimodal misinformation, encompassing textual, visual, and cross-modal
+distortions, poses an increasing societal threat that is amplified by
+generative AI. Existing methods typically focus on a single type of distortion
+and struggle to generalize to unseen scenarios. In this work, we observe that
+different distortion types share common reasoning capabilities while also
+requiring task-specific skills. We hypothesize that joint training across
+distortion types facilitates knowledge sharing and enhances the model&#x27;s ability
+to generalize. To this end, we introduce TRUST-VL, a unified and explainable
+vision-language model for general multimodal misinformation detection. TRUST-VL
+incorporates a novel Question-Aware Visual Amplifier module, designed to
+extract task-specific visual features. To support training, we also construct
+TRUST-Instruct, a large-scale instruction dataset containing 198K samples
+featuring structured reasoning chains aligned with human fact-checking
+workflows. Extensive experiments on both in-domain and zero-shot benchmarks
+demonstrate that TRUST-VL achieves state-of-the-art performance, while also
+offering strong generalization and interpretability.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>L2RW+: 针对隐私保护的全面可见-红外行人重识别基准</div>
-<div class="mono" style="margin-top:8px">可见-红外行人重识别（VI-ReID）是一项具有挑战性的任务，旨在匹配在不同光照条件下拍摄的行人图像，已引起广泛关注并取得了显著成果。然而，现有方法采用集中式训练，忽略了实际中数据分布在多个设备或实体之间可能带来的隐私问题。本文提出L2RW+基准，旨在将VI-ReID推向实际应用。L2RW+的核心理念是，在数据共享受限的场景中，将去中心化训练纳入VI-ReID可以解决隐私问题。具体而言，我们为不同隐私敏感度级别设计了协议和相应的算法。在我们的新基准中，我们模拟了在实际数据条件下进行训练的情况：1）每个摄像头的数据完全隔离，或2）不同的数据实体（例如，某一地区的数据控制者）可以选择性地共享数据。这样，我们模拟了具有严格隐私限制的场景，更接近实际条件。全面的实验表明，去中心化VI-ReID训练在图像和视频级别上都是可行的，并且具有潜力。特别是在数据规模增加时，去中心化和集中化训练之间的性能差距减小，特别是在视频级别的VI-ReID中。在未见领域，去中心化训练甚至达到了与最新集中化方法相当的性能。这项工作为将VI-ReID部署到实际场景提供了新的研究切入点，并可惠及社区。代码可在：https://github.com/Joey623/L2RW 获取。</div>
+<div class="mono"><b>标题：</b>TRUST-VL：一种可解释的通用多模态虚假信息助手</div>
+<div class="mono" style="margin-top:8px">多模态虚假信息，包括文本、视觉和跨模态的扭曲，构成了日益严重的社会威胁，这种威胁被生成式AI放大了。现有方法通常专注于一种类型的扭曲，并且难以泛化到未见过的场景。在这项工作中，我们观察到不同类型的扭曲共享一些共同的推理能力，同时也需要特定的任务技能。我们假设跨类型联合训练促进了知识共享并增强了模型的泛化能力。为此，我们引入了TRUST-VL，这是一种统一且可解释的视觉语言模型，用于通用多模态虚假信息检测。TRUST-VL 包含一个新颖的问答感知视觉增强模块，旨在提取特定任务的视觉特征。为了支持训练，我们还构建了TRUST-Instruct，这是一个包含198K样本的大规模指令数据集，样本中包含与人类事实核查工作流程对齐的结构化推理链。在领域内和零样本基准上的广泛实验表明，TRUST-VL 达到了最先进的性能，同时提供了强大的泛化能力和可解释性。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) is a challenging task that aims to match pedestrian images captured under varying lighting conditions, which has drawn intensive research attention and achieved promising results.</div>
-<div class="mono" style="margin-top:8px">论文提出了L2RW+基准，用于可见-红外行人重识别（VI-ReID），并引入了去中心化训练以解决隐私问题。研究设计了不同隐私敏感级别的协议，并模拟了真实世界的数据条件，其中每个摄像头的数据完全隔离或选择性共享。实验表明，去中心化训练是可行的，并且在视频级别的VI-ReID中可以达到与中心化方法相当的性能，甚至在未见过的领域也是如此。这项工作为将VI-ReID部署到真实世界场景提供了新的研究方向。</div>
+<div class="mono">The research aims to address the challenge of detecting multimodal misinformation, which includes textual, visual, and cross-modal distortions. The method involves developing TRUST-VL, a unified vision-language model that incorporates a Question-Aware Visual Amplifier module to extract task-specific visual features. The model is trained on TRUST-Instruct, a large instruction dataset with 198K samples. Experimental results show that TRUST-VL outperforms existing methods on both in-domain and zero-shot benchmarks, demonstrating strong generalization and interpretability capabilities.</div>
+<div class="mono" style="margin-top:8px">研究旨在应对文本、视觉和跨模态失实信息的挑战。方法是开发了TRUST-VL统一的视觉语言模型，该模型包含一个任务感知的视觉放大模块，用于提取特定任务的视觉特征。该模型在包含198K样本的TRUST-Instruct大型指令数据集上进行训练。实验结果表明，TRUST-VL在领域内和零样本基准测试中均表现出色，具有强大的泛化能力和可解释性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Cross-Spectral Body Recognition with Side Information Embedding:   Benchmarks on LLCM and Analyzing Range-Induced Occlusions on IJB-MDF</div>
-<div class="meta-line">Authors: Anirudh Nanduri, Siyuan Huang, Rama Chellappa</div>
-<div class="meta-line">First: 2025-06-10T16:20:52+00:00 · Latest: 2025-06-10T16:20:52+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2506.08953v1">Abs</a> · <a href="http://arxiv.org/pdf/2506.08953v1">PDF</a></div>
+<div class="title">AnomalyLMM: Bridging Generative Knowledge and Discriminative Retrieval   for Text-Based Person Anomaly Search</div>
+<div class="meta-line">Authors: Hao Ju, Hu Zhang, Zhedong Zheng</div>
+<div class="meta-line">First: 2025-09-04T16:34:46+00:00 · Latest: 2025-09-04T16:34:46+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04376v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04376v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Vision Transformers (ViTs) have demonstrated impressive performance across a
-wide range of biometric tasks, including face and body recognition. In this
-work, we adapt a ViT model pretrained on visible (VIS) imagery to the
-challenging problem of cross-spectral body recognition, which involves matching
-images captured in the visible and infrared (IR) domains. Recent ViT
-architectures have explored incorporating additional embeddings beyond
-traditional positional embeddings. Building on this idea, we integrate Side
-Information Embedding (SIE) and examine the impact of encoding domain and
-camera information to enhance cross-spectral matching. Surprisingly, our
-results show that encoding only camera information - without explicitly
-incorporating domain information - achieves state-of-the-art performance on the
-LLCM dataset. While occlusion handling has been extensively studied in
-visible-spectrum person re-identification (Re-ID), occlusions in
-visible-infrared (VI) Re-ID remain largely underexplored - primarily because
-existing VI-ReID datasets, such as LLCM, SYSU-MM01, and RegDB, predominantly
-feature full-body, unoccluded images. To address this gap, we analyze the
-impact of range-induced occlusions using the IARPA Janus Benchmark Multi-Domain
-Face (IJB-MDF) dataset, which provides a diverse set of visible and infrared
-images captured at various distances, enabling cross-range, cross-spectral
-evaluations.</div></details>
+<div class="mono">With growing public safety demands, text-based person anomaly search has
+emerged as a critical task, aiming to retrieve individuals with abnormal
+behaviors via natural language descriptions. Unlike conventional person search,
+this task presents two unique challenges: (1) fine-grained cross-modal
+alignment between textual anomalies and visual behaviors, and (2) anomaly
+recognition under sparse real-world samples. While Large Multi-modal Models
+(LMMs) excel in multi-modal understanding, their potential for fine-grained
+anomaly retrieval remains underexplored, hindered by: (1) a domain gap between
+generative knowledge and discriminative retrieval, and (2) the absence of
+efficient adaptation strategies for deployment. In this work, we propose
+AnomalyLMM, the first framework that harnesses LMMs for text-based person
+anomaly search. Our key contributions are: (1) A novel coarse-to-fine pipeline
+integrating LMMs to bridge generative world knowledge with retrieval-centric
+anomaly detection; (2) A training-free adaptation cookbook featuring masked
+cross-modal prompting, behavioral saliency prediction, and knowledge-aware
+re-ranking, enabling zero-shot focus on subtle anomaly cues. As the first study
+to explore LMMs for this task, we conduct a rigorous evaluation on the PAB
+dataset, the only publicly available benchmark for text-based person anomaly
+search, with its curated real-world anomalies covering diverse scenarios (e.g.,
+falling, collision, and being hit). Experiments show the effectiveness of the
+proposed method, surpassing the competitive baseline by +0.96% Recall@1
+accuracy. Notably, our method reveals interpretable alignment between textual
+anomalies and visual behaviors, validated via qualitative analysis. Our code
+and models will be released for future research.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>跨光谱人体识别中的侧信息嵌入：LLCM基准及IJB-MDF上的范围诱导遮挡分析</div>
-<div class="mono" style="margin-top:8px">视觉变换器（ViTs）在生物特征识别任务中表现出色，包括面部和人体识别。在本工作中，我们将预训练在可见光（VIS）图像上的ViT模型应用于具有挑战性的跨光谱人体识别问题，该问题涉及可见光和红外（IR）域中图像的匹配。最近的ViT架构探索了引入传统位置嵌入之外的其他嵌入。在此基础上，我们整合了侧信息嵌入（SIE），并研究了编码域和相机信息以增强跨光谱匹配的影响。令人惊讶的是，我们的结果表明，仅编码相机信息而不显式地引入域信息，在LLCM数据集上实现了最先进的性能。虽然在可见光谱的人再识别（Re-ID）中已经广泛研究了遮挡处理，但在可见光-红外（VI）Re-ID中，遮挡处理仍然很大程度上未被探索——主要是因为现有的VI-ReID数据集，如LLCM、SYSU-MM01和RegDB，主要包含全身影像且未被遮挡。为了解决这一差距，我们使用IARPA Janus基准多域面部（IJB-MDF）数据集分析了范围诱导遮挡的影响，该数据集提供了在不同距离拍摄的多样化的可见光和红外图像，使我们能够进行跨范围、跨光谱评估。</div>
+<div class="mono"><b>标题：</b>AnomalyLMM：连接生成性知识与辨别性检索的文本基础人员异常搜索</div>
+<div class="mono" style="margin-top:8px">随着公共安全需求的增长，基于文本的人员异常搜索已成为一项关键任务，旨在通过自然语言描述检索具有异常行为的个体。与传统的人员搜索不同，这项任务面临两个独特的挑战：（1）文本异常与视觉行为之间的细粒度跨模态对齐，以及（2）在稀疏的现实世界样本下异常识别。虽然大型多模态模型（LMMs）在多模态理解方面表现出色，但它们在细粒度异常检索方面的潜力尚未得到充分探索，受到以下因素的阻碍：（1）生成性知识与辨别性检索之间的领域差距，以及（2）缺乏有效的部署适应策略。在本文中，我们提出了AnomalyLMM，这是第一个利用LMMs进行基于文本的人员异常搜索的框架。我们的主要贡献是：（1）一种新颖的从粗到细的流水线，将LMMs集成以连接生成性世界的知识与检索为中心的异常检测；（2）一种无需训练的适应食谱，包括掩码跨模态提示、行为显著性预测和知识感知再排序，使模型能够零样本聚焦于细微的异常线索。作为首次探索LMMs用于此任务的研究，我们在PAB数据集上进行了严格的评估，这是唯一公开的基于文本的人员异常搜索基准数据集，其精心策划的现实世界异常涵盖了多种场景（例如，跌倒、碰撞和被击中）。实验表明，所提出的方法的有效性，超越了竞争基线+0.96%的召回率。值得注意的是，我们的方法揭示了文本异常与视觉行为之间的可解释对齐，通过定性分析进行了验证。我们的代码和模型将为未来的研究发布。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Semantic-Aligned Learning with Collaborative Refinement for Unsupervised   VI-ReID</div>
-<div class="meta-line">Authors: De Cheng, Lingfeng He, Nannan Wang, Dingwen Zhang, Xinbo Gao</div>
-<div class="meta-line">First: 2025-04-27T13:58:12+00:00 · Latest: 2025-05-06T03:12:50+00:00</div>
-<div class="meta-line">Comments: Accepted by IJCV 2025</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2504.19244v2">Abs</a> · <a href="http://arxiv.org/pdf/2504.19244v2">PDF</a> · <a href="https://github.com/FranklinLingfeng/code-for-SALCR">Code1</a></div>
+<div class="title">GeoArena: An Open Platform for Benchmarking Large Vision-language Models   on WorldWide Image Geolocalization</div>
+<div class="meta-line">Authors: Pengyue Jia, Yingyi Zhang, Xiangyu Zhao, Yixuan Li</div>
+<div class="meta-line">First: 2025-09-04T15:52:04+00:00 · Latest: 2025-09-04T15:52:04+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04334v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04334v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) seeks to
-match pedestrian images of the same individual across different modalities
-without human annotations for model learning. Previous methods unify
-pseudo-labels of cross-modality images through label association algorithms and
-then design contrastive learning framework for global feature learning.
-However, these methods overlook the cross-modality variations in feature
-representation and pseudo-label distributions brought by fine-grained patterns.
-This insight results in insufficient modality-shared learning when only global
-features are optimized. To address this issue, we propose a Semantic-Aligned
-Learning with Collaborative Refinement (SALCR) framework, which builds up
-optimization objective for specific fine-grained patterns emphasized by each
-modality, thereby achieving complementary alignment between the label
-distributions of different modalities. Specifically, we first introduce a Dual
-Association with Global Learning (DAGI) module to unify the pseudo-labels of
-cross-modality instances in a bi-directional manner. Afterward, a Fine-Grained
-Semantic-Aligned Learning (FGSAL) module is carried out to explore part-level
-semantic-aligned patterns emphasized by each modality from cross-modality
-instances. Optimization objective is then formulated based on the
-semantic-aligned features and their corresponding label space. To alleviate the
-side-effects arising from noisy pseudo-labels, we propose a Global-Part
-Collaborative Refinement (GPCR) module to mine reliable positive sample sets
-for the global and part features dynamically and optimize the inter-instance
-relationships. Extensive experiments demonstrate the effectiveness of the
-proposed method, which achieves superior performances to state-of-the-art
-methods. Our code is available at
-\href{https://github.com/FranklinLingfeng/code-for-SALCR}.</div></details>
+<div class="mono">Image geolocalization aims to predict the geographic location of images
+captured anywhere on Earth, but its global nature presents significant
+challenges. Current evaluation methodologies suffer from two major limitations.
+First, data leakage: advanced approaches often rely on large vision-language
+models (LVLMs) to predict image locations, yet these models are frequently
+pretrained on the test datasets, compromising the accuracy of evaluating a
+model&#x27;s actual geolocalization capability. Second, existing metrics primarily
+rely on exact geographic coordinates to assess predictions, which not only
+neglects the reasoning process but also raises privacy concerns when user-level
+location data is required. To address these issues, we propose GeoArena, a
+first open platform for evaluating LVLMs on worldwide image geolocalization
+tasks, offering true in-the-wild and human-centered benchmarking. GeoArena
+enables users to upload in-the-wild images for a more diverse evaluation
+corpus, and it leverages pairwise human judgments to determine which model
+output better aligns with human expectations. Our platform has been deployed
+online for two months, during which we collected over thousands voting records.
+Based on this data, we conduct a detailed analysis and establish a leaderboard
+of different LVLMs on the image geolocalization task.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>语义对齐学习与协作精炼的无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需人工注释的情况下，匹配不同模态下同一个体的行人图像。先前的方法通过标签关联算法统一跨模态图像的伪标签，然后设计对比学习框架进行全局特征学习。然而，这些方法忽略了由细粒度模式带来的特征表示和伪标签分布的跨模态变化。这种洞察导致仅优化全局特征时，模态共享学习不足。为解决这一问题，我们提出了一种语义对齐学习与协作精炼（SALCR）框架，该框架为每个模态强调的特定细粒度模式建立优化目标，从而实现不同模态标签分布的互补对齐。具体而言，我们首先引入了一种双向统一跨模态实例伪标签的双关联与全局学习（DAGI）模块。随后，执行了一种细粒度语义对齐学习（FGSAL）模块，从跨模态实例中探索每个模态强调的部分级语义对齐模式。基于语义对齐特征及其相应的标签空间，构建了优化目标。为缓解来自噪声伪标签的副作用，我们提出了一种全局-部分协作精炼（GPCR）模块，动态挖掘全局和部分特征的可靠正样本集，并优化实例间关系。大量实验表明，所提出的方法具有优越的性能，优于现有方法。我们的代码可在https://github.com/FranklinLingfeng/code-for-SALCR 获取。</div>
+<div class="mono"><b>标题：</b>GeoArena：一个用于评估全球图像地理定位的大规模视觉语言模型的开源平台</div>
+<div class="mono" style="margin-top:8px">图像地理定位旨在预测地球上任何地方拍摄的图像的地理位置，但其全球性质带来了重大挑战。当前的评估方法存在两个主要局限性。首先，数据泄露：先进的方法通常依赖大规模视觉语言模型（LVLMs）来预测图像位置，但这些模型经常在测试数据集上进行预训练，这会损害评估模型实际地理定位能力的准确性。其次，现有的评估指标主要依赖于精确的地理坐标来评估预测结果，这不仅忽视了推理过程，还当需要用户级别的位置数据时引发了隐私问题。为了解决这些问题，我们提出了GeoArena，这是一个首个用于评估大规模视觉语言模型在世界范围内图像地理定位任务上的开源平台，提供真正的野外和以人为本的基准测试。GeoArena 允许用户上传野外图像以获得更多样化的评估语料，并利用成对的人类判断来确定哪个模型输出更符合人类期望。我们的平台已在线部署两个月，期间我们收集了数千条投票记录。基于这些数据，我们进行了详细分析并建立了不同大规模视觉语言模型在图像地理定位任务上的排行榜。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) seeks to match pedestrian images of the same individual across different modalities without human annotations for model learning.</div>
+<div class="mono">GeoArena is an open platform designed to benchmark large vision-language models on global image geolocalization tasks. It addresses the limitations of existing methodologies by avoiding data leakage and using human judgments to evaluate model outputs. The platform has collected thousands of voting records over two months, revealing detailed performance differences among various models.</div>
+<div class="mono" style="margin-top:8px">GeoArena 是一个开放平台，用于评估大型视觉语言模型在环球图像地理定位任务中的表现。它通过允许用户上传野外图像并使用两两人类判断来评估模型输出，解决了数据泄露和依赖精确地理坐标的问题。该平台收集了数千条投票记录，进行了详细分析并建立了不同模型的排行榜。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Diverse Semantics-Guided Feature Alignment and Decoupling for   Visible-Infrared Person Re-Identification</div>
-<div class="meta-line">Authors: Neng Dong, Shuanglin Yan, Liyan Zhang, Jinhui Tang</div>
-<div class="meta-line">First: 2025-05-01T15:55:38+00:00 · Latest: 2025-05-01T15:55:38+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2505.00619v1">Abs</a> · <a href="http://arxiv.org/pdf/2505.00619v1">PDF</a></div>
+<div class="title">OVGrasp: Open-Vocabulary Grasping Assistance via Multimodal Intent   Detection</div>
+<div class="meta-line">Authors: Chen Hu, Shan Luo, Letizia Gionfrida</div>
+<div class="meta-line">First: 2025-09-04T15:42:36+00:00 · Latest: 2025-09-04T15:42:36+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04324v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04324v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-Infrared Person Re-Identification (VI-ReID) is a challenging task due
-to the large modality discrepancy between visible and infrared images, which
-complicates the alignment of their features into a suitable common space.
-Moreover, style noise, such as illumination and color contrast, reduces the
-identity discriminability and modality invariance of features. To address these
-challenges, we propose a novel Diverse Semantics-guided Feature Alignment and
-Decoupling (DSFAD) network to align identity-relevant features from different
-modalities into a textual embedding space and disentangle identity-irrelevant
-features within each modality. Specifically, we develop a Diverse
-Semantics-guided Feature Alignment (DSFA) module, which generates pedestrian
-descriptions with diverse sentence structures to guide the cross-modality
-alignment of visual features. Furthermore, to filter out style information, we
-propose a Semantic Margin-guided Feature Decoupling (SMFD) module, which
-decomposes visual features into pedestrian-related and style-related
-components, and then constrains the similarity between the former and the
-textual embeddings to be at least a margin higher than that between the latter
-and the textual embeddings. Additionally, to prevent the loss of pedestrian
-semantics during feature decoupling, we design a Semantic Consistency-guided
-Feature Restitution (SCFR) module, which further excavates useful information
-for identification from the style-related features and restores it back into
-the pedestrian-related features, and then constrains the similarity between the
-features after restitution and the textual embeddings to be consistent with
-that between the features before decoupling and the textual embeddings.
-Extensive experiments on three VI-ReID datasets demonstrate the superiority of
-our DSFAD.</div></details>
+<div class="mono">Grasping assistance is essential for restoring autonomy in individuals with
+motor impairments, particularly in unstructured environments where object
+categories and user intentions are diverse and unpredictable. We present
+OVGrasp, a hierarchical control framework for soft exoskeleton-based grasp
+assistance that integrates RGB-D vision, open-vocabulary prompts, and voice
+commands to enable robust multimodal interaction. To enhance generalization in
+open environments, OVGrasp incorporates a vision-language foundation model with
+an open-vocabulary mechanism, allowing zero-shot detection of previously unseen
+objects without retraining. A multimodal decision-maker further fuses spatial
+and linguistic cues to infer user intent, such as grasp or release, in
+multi-object scenarios. We deploy the complete framework on a custom
+egocentric-view wearable exoskeleton and conduct systematic evaluations on 15
+objects across three grasp types. Experimental results with ten participants
+demonstrate that OVGrasp achieves a grasping ability score (GAS) of 87.00%,
+outperforming state-of-the-art baselines and achieving improved kinematic
+alignment with natural hand motion.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>多语义引导的可见光-红外人再识别特征对齐与解耦</div>
-<div class="mono" style="margin-top:8px">可见光-红外人再识别（VI-ReID）由于可见光和红外图像之间存在较大的模态差异，使得特征对齐到一个合适的公共空间变得复杂。此外，诸如光照和色彩对比度等风格噪声降低了特征的身份可区分性和模态不变性。为了解决这些挑战，我们提出了一种新颖的多语义引导的特征对齐与解耦（DSFAD）网络，将不同模态的身份相关特征对齐到文本嵌入空间，并在每个模态内解耦身份无关特征。具体而言，我们开发了一种多语义引导的特征对齐（DSFA）模块，该模块生成具有多种句法结构的行人描述，以引导跨模态视觉特征的对齐。此外，为了过滤掉风格信息，我们提出了一种语义边界引导的特征解耦（SMFD）模块，该模块将视觉特征分解为行人相关和风格相关的成分，然后约束前者与文本嵌入之间的相似度至少比后者与文本嵌入之间的相似度高一个边界。此外，为了防止特征解耦过程中行人语义的丢失，我们设计了一种语义一致性引导的特征恢复（SCFR）模块，该模块进一步从风格相关特征中挖掘有用的识别信息，并将其恢复到行人相关特征中，然后约束恢复后的特征与文本嵌入之间的相似度与解耦前的特征与文本嵌入之间的相似度保持一致。在三个VI-ReID数据集上的广泛实验表明了我们DSFAD的优越性。</div>
+<div class="mono"><b>标题：</b>OVGrasp: 开放词汇抓取辅助通过多模态意图检测</div>
+<div class="mono" style="margin-top:8px">抓取辅助对于恢复运动受损个体的自主性至关重要，特别是在物体类别和用户意图多样且不可预测的非结构化环境中。我们提出了OVGrasp，一种基于软外骨骼的抓取辅助的分层控制框架，该框架结合了RGB-D视觉、开放词汇提示和语音命令，以实现稳健的多模态交互。为了在开放环境中增强泛化能力，OVGrasp整合了一种视觉语言基础模型和开放词汇机制，允许在无需重新训练的情况下进行零样本检测未见过的对象。多模态决策者进一步融合空间和语言线索，以推断用户意图，如抓取或释放，在多物体场景中。我们在一个定制的主观视角可穿戴外骨骼上部署了完整的框架，并在15个物体上进行了三种抓取类型的系统评估。十名参与者的实验结果表明，OVGrasp的抓取能力得分（GAS）为87.00%，优于最先进的基线，并实现了与自然手部运动更好的运动学对齐。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-Identification by proposing a DSFAD network. This network includes a DSFA module for cross-modality feature alignment and an SMFD module for feature decoupling to filter out style noise. Additionally, a SCFR module ensures that pedestrian semantics are preserved during decoupling. Experiments on three datasets show the effectiveness of the proposed method in improving identity discriminability and modality invariance.</div>
-<div class="mono" style="margin-top:8px">论文提出DSFAD网络以解决可见光-红外人像重识别（VI-ReID）的挑战。该网络包括DSFA模块进行跨模态特征对齐到文本嵌入空间，SMFD模块进行身份相关和样式相关特征的解耦，以及SCFR模块恢复有用的行人语义并将其恢复到行人相关特征中。实验表明，所提出的方法在提高VI-ReID性能方面具有有效性。</div>
+<div class="mono">OVGrasp is a hierarchical control framework for grasping assistance in unstructured environments, integrating RGB-D vision, open-vocabulary prompts, and voice commands. It uses a vision-language foundation model to detect unseen objects and a multimodal decision-maker to infer user intent. Evaluations on 15 objects with ten participants showed OVGrasp achieved a grasping ability score of 87.00%, outperforming existing methods and improving kinematic alignment with natural hand motion.</div>
+<div class="mono" style="margin-top:8px">OVGrasp 是一种用于不规则环境中的抓取辅助框架，结合了 RGB-D 视觉、开放词汇提示和语音命令。它使用视觉-语言基础模型来检测未见过的对象，并使用多模态决策器来推断用户意图。实验结果显示，OVGrasp 的抓取能力得分为 87.00%，优于现有方法，并在十名参与者的研究中实现了自然手部运动的更好运动学对齐。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Shape-centered Representation Learning for Visible-Infrared Person   Re-identification</div>
-<div class="meta-line">Authors: Shuang Li, Jiaxu Leng, Ji Gan, Mengjingcheng Mo, Xinbo Gao</div>
-<div class="meta-line">First: 2023-10-27T07:57:24+00:00 · Latest: 2025-04-28T03:40:54+00:00</div>
-<div class="meta-line">Comments: Accepted for Pattern Recognition. Code:
-  https://github.com/Visuang/ScRL</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2310.17952v3">Abs</a> · <a href="http://arxiv.org/pdf/2310.17952v3">PDF</a> · <a href="https://github.com/Visuang/ScRL">Code1</a></div>
+<div class="title">Image Embedding Sampling Method for Diverse Captioning</div>
+<div class="meta-line">Authors: Sania Waheed, Na Min An</div>
+<div class="meta-line">First: 2025-02-14T12:33:19+00:00 · Latest: 2025-09-04T15:00:25+00:00</div>
+<div class="meta-line">Comments: 17 pages, 5 figures, 9 tables</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2502.10118v2">Abs</a> · <a href="http://arxiv.org/pdf/2502.10118v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-Infrared Person Re-Identification (VI-ReID) plays a critical role in
-all-day surveillance systems. However, existing methods primarily focus on
-learning appearance features while overlooking body shape features, which not
-only complement appearance features but also exhibit inherent robustness to
-modality variations. Despite their potential, effectively integrating shape and
-appearance features remains challenging. Appearance features are highly
-susceptible to modality variations and background noise, while shape features
-often suffer from inaccurate infrared shape estimation due to the limitations
-of auxiliary models. To address these challenges, we propose the Shape-centered
-Representation Learning (ScRL) framework, which enhances VI-ReID performance by
-innovatively integrating shape and appearance features. Specifically, we
-introduce Infrared Shape Restoration (ISR) to restore inaccuracies in infrared
-body shape representations at the feature level by leveraging infrared
-appearance features. In addition, we propose Shape Feature Propagation (SFP),
-which enables the direct extraction of shape features from original images
-during inference with minimal computational complexity. Furthermore, we design
-Appearance Feature Enhancement (AFE), which utilizes shape features to
-emphasize shape-related appearance features while effectively suppressing
-identity-unrelated noise. Benefiting from the effective integration of shape
-and appearance features, ScRL demonstrates superior performance through
-extensive experiments. On the SYSU-MM01, HITSZ-VCM, and RegDB datasets, it
-achieves Rank-1 (mAP) accuracies of 76.1% (72.6%), 71.2% (52.9%), and 92.4%
-(86.7%), respectively, surpassing existing state-of-the-art methods.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-Identification (VI-ReID) by proposing the Shape-centered Representation Learning (ScRL) framework. This framework integrates shape and appearance features to enhance VI-ReID performance. Key components include Infrared Shape Restoration (ISR) for feature-level shape restoration, Shape Feature Propagation (SFP) for direct shape feature extraction, and Appearance Feature Enhancement (AFE) for emphasizing shape-related appearance features. Extensive experiments on SYSU-MM01, HITSZ-VCM, and RegDB datasets show that ScRL outperforms existing methods, achieving superior Rank-1 (mAP) accuracies of 76.1% (72.6%), 71.2% (52.9%), and 92.4% (86.7%).</div>
-<div class="mono" style="margin-top:8px">论文提出了一种名为Shape-centered Representation Learning (ScRL)的框架，以解决可见光-红外人再识别（VI-ReID）中的挑战。该框架通过整合形状和外观特征来提升VI-ReID性能。关键组件包括Infrared Shape Restoration (ISR)用于特征级形状恢复、Shape Feature Propagation (SFP)用于直接从原始图像中提取形状特征，以及Appearance Feature Enhancement (AFE)用于强调与形状相关的外观特征。在SYSU-MM01、HITSZ-VCM和RegDB数据集上的广泛实验表明，ScRL优于现有方法，分别实现了76.1% (72.6%)、71.2% (52.9%)和92.4% (86.7%)的Rank-1 (mAP)准确率。</div>
-</details>
-</div>
-<div class="card">
-<div class="title">MSCMNet: Multi-scale Semantic Correlation Mining for Visible-Infrared   Person Re-Identification</div>
-<div class="meta-line">Authors: Xuecheng Hua, Ke Cheng, Hu Lu, Juanjuan Tu, Yuanquan Wang, Shitong Wang</div>
-<div class="meta-line">Venue: Pattern Recognition 159, 111090 (2025), ISSN: 0031-3203</div>
-<div class="meta-line">First: 2023-11-24T10:23:57+00:00 · Latest: 2025-04-01T13:34:48+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2311.14395v2">Abs</a> · <a href="http://arxiv.org/pdf/2311.14395v2">PDF</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">The main challenge in the Visible-Infrared Person Re-Identification (VI-ReID)
-task lies in how to extract discriminative features from different modalities
-for matching purposes. While the existing well works primarily focus on
-minimizing the modal discrepancies, the modality information can not thoroughly
-be leveraged. To solve this problem, a Multi-scale Semantic Correlation Mining
-network (MSCMNet) is proposed to comprehensively exploit semantic features at
-multiple scales and simultaneously reduce modality information loss as small as
-possible in feature extraction. The proposed network contains three novel
-components. Firstly, after taking into account the effective utilization of
-modality information, the Multi-scale Information Correlation Mining Block
-(MIMB) is designed to explore semantic correlations across multiple scales.
-Secondly, in order to enrich the semantic information that MIMB can utilize, a
-quadruple-stream feature extractor (QFE) with non-shared parameters is
-specifically designed to extract information from different dimensions of the
-dataset. Finally, the Quadruple Center Triplet Loss (QCT) is further proposed
-to address the information discrepancy in the comprehensive features. Extensive
-experiments on the SYSU-MM01, RegDB, and LLCM datasets demonstrate that the
-proposed MSCMNet achieves the greatest accuracy.</div></details>
+<div class="mono">Image Captioning for state-of-the-art VLMs has significantly improved over
+time; however, this comes at the cost of increased computational complexity,
+making them less accessible for resource-constrained applications such as
+mobile devices and assistive technologies. Alternatively, comparably smaller
+VLMs prioritize high-level scene descriptions, overlooking finer details that
+contribute to a richer understanding of an image. In this paper, we introduce a
+training-free framework that enhances caption diversity and informativeness by
+explicitly attending to distinct image regions using a comparably small VLM,
+BLIP, as the backbone. Our approach leverages structured segmentation to
+produce hierarchical representations that capture both global and localized
+semantics. Without requiring additional model training, we demonstrate that our
+method allows smaller VLMs to achieve performance comparable to larger models
+in terms of image-caption alignment, semantic integrity, and diversity. We
+evaluate our framework on MSCOCO, Flickr30k, and Nocaps test datasets,
+achieving a Div-2 score of 0.735, 0.750, and 0.748 for each dataset,
+respectively, while maintaining strong image-caption relevancy and semantic
+integrity with the human-annotated captions.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>MSCMNet：多尺度语义相关性挖掘用于可见光-红外人体重识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外人体重识别（VI-ReID）任务的主要挑战在于如何从不同模态中提取具有区分性的特征以供匹配使用。现有研究主要集中在减少模态差异上，但模态信息并未充分利用。为了解决这一问题，提出了一种多尺度语义相关性挖掘网络（MSCMNet），以全面利用多尺度语义特征，并尽可能减少特征提取中的模态信息损失。该网络包含三个新颖组件。首先，在考虑模态信息有效利用的基础上，设计了多尺度信息相关性挖掘块（MIMB），以探索多尺度的语义相关性。其次，为了丰富MIMB可以利用的语义信息，专门设计了一个具有非共享参数的四流特征提取器（QFE），以从数据的不同维度中提取信息。最后，进一步提出了四中心三重损失（QCT），以解决综合特征中的信息差异。在SYSU-MM01、RegDB和LLCM数据集上的广泛实验表明，提出的MSCMNet达到了最高的准确性。</div>
+<div class="mono"><b>标题：</b>图像嵌入采样方法用于多样化的图像字幕</div>
+<div class="mono" style="margin-top:8px">对于最先进的VLM，图像字幕的性能有了显著提高，但这也带来了计算复杂度的增加，使得它们在资源受限的应用中（如移动设备和辅助技术）不太容易使用。相反，较小的VLM更侧重于高层次的场景描述，而忽略了有助于更深入理解图像的细节。在本文中，我们介绍了一种无需训练的框架，通过使用较小的VLM（BLIP）作为骨干，明确关注不同的图像区域，从而增强字幕的多样性和信息量。我们的方法利用结构化分割生成层次表示，捕捉全局和局部语义。无需额外的模型训练，我们证明了我们的方法使较小的VLM在图像-字幕对齐、语义完整性和多样性方面达到了与较大模型相当的性能。我们在MSCOCO、Flickr30k和Nocaps测试数据集上评估了我们的框架，分别获得了Div-2得分为0.735、0.750和0.748，同时保持了与人工标注字幕的强烈相关性和语义完整性。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research aims to improve the accuracy of Visible-Infrared Person Re-Identification by addressing the challenge of extracting discriminative features from different modalities. The proposed MSCMNet uses a Multi-scale Information Correlation Mining Block, a quadruple-stream feature extractor, and a Quadruple Center Triplet Loss to exploit semantic features across multiple scales and minimize modality information loss. Experiments show that MSCMNet outperforms existing methods on SYSU-MM01, RegDB, and LLCM datasets, achieving the highest accuracy.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过解决从不同模态提取具有区分性的特征的挑战，提高可见光-红外人像再识别的准确性。提出的MSCMNet引入了多尺度信息相关性挖掘模块、四流特征提取器和四中心三重损失，以全面利用多尺度的语义特征并最小化模态信息损失。在SYSU-MM01、RegDB和LLCM数据集上的实验结果表明，MSCMNet在现有方法中实现了最高的准确率。</div>
+<div class="mono">This paper addresses the challenge of enhancing the diversity and informativeness of image captions using a small Vision-Language Model (VLM) called BLIP, without additional training. By leveraging structured segmentation, the method captures both global and localized semantics, allowing smaller VLMs to achieve performance comparable to larger models on MSCOCO, Flickr30k, and Nocaps datasets with Div-2 scores of 0.735, 0.750, and 0.748 respectively, while maintaining strong relevance and semantic integrity with human-annotated captions.</div>
+<div class="mono" style="margin-top:8px">本文提出了一种利用小型视觉-语言模型BLIP增强图像描述多样性和信息性的方法。通过利用结构化分割，该方法在不进行额外训练的情况下捕获全局和局部语义。该方法在MSCOCO、Flickr30k和Nocaps数据集上的Div-2分数分别为0.735、0.750和0.748，实现了与大型模型相当的图像-描述对齐、语义完整性和多样性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Diffusion-based Synthetic Data Generation for Visible-Infrared Person   Re-Identification</div>
-<div class="meta-line">Authors: Wenbo Dai, Lijing Lu, Zhihang Li</div>
-<div class="meta-line">Venue: AAAI 2025</div>
-<div class="meta-line">First: 2025-03-16T11:54:37+00:00 · Latest: 2025-03-16T11:54:37+00:00</div>
-<div class="meta-line">Comments: AAAI 2025</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2503.12472v1">Abs</a> · <a href="http://arxiv.org/pdf/2503.12472v1">PDF</a> · <a href="https://github.com/BorgDiven/DiVE">Code1</a></div>
+<div class="title">Straighter Flow Matching via a Diffusion-Based Coupling Prior</div>
+<div class="meta-line">Authors: Siyu Xing, Jie Cao, Huaibo Huang, Haichao Shi, Xiao-Yu Zhang</div>
+<div class="meta-line">First: 2023-11-28T06:19:30+00:00 · Latest: 2025-09-04T14:24:04+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2311.16507v2">Abs</a> · <a href="http://arxiv.org/pdf/2311.16507v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">The performance of models is intricately linked to the abundance of training
-data. In Visible-Infrared person Re-IDentification (VI-ReID) tasks, collecting
-and annotating large-scale images of each individual under various cameras and
-modalities is tedious, time-expensive, costly and must comply with data
-protection laws, posing a severe challenge in meeting dataset requirements.
-Current research investigates the generation of synthetic data as an efficient
-and privacy-ensuring alternative to collecting real data in the field. However,
-a specific data synthesis technique tailored for VI-ReID models has yet to be
-explored. In this paper, we present a novel data generation framework, dubbed
-Diffusion-based VI-ReID data Expansion (DiVE), that automatically obtain
-massive RGB-IR paired images with identity preserving by decoupling identity
-and modality to improve the performance of VI-ReID models. Specifically,
-identity representation is acquired from a set of samples sharing the same ID,
-whereas the modality of images is learned by fine-tuning the Stable Diffusion
-(SD) on modality-specific data. DiVE extend the text-driven image synthesis to
-identity-preserving RGB-IR multimodal image synthesis. This approach
-significantly reduces data collection and annotation costs by directly
-incorporating synthetic data into ReID model training. Experiments have
-demonstrated that VI-ReID models trained on synthetic data produced by DiVE
-consistently exhibit notable enhancements. In particular, the state-of-the-art
-method, CAJ, trained with synthetic images, achieves an improvement of about
-$9\%$ in mAP over the baseline on the LLCM dataset. Code:
-https://github.com/BorgDiven/DiVE</div></details>
+<div class="mono">Flow matching as a paradigm of generative model achieves notable success
+across various domains. However, existing methods use either multi-round
+training or knowledge within minibatches, posing challenges in finding a
+favorable coupling strategy for straightening trajectories to few-step
+generation. To address this issue, we propose a novel approach, Straighter
+trajectories of Flow Matching (StraightFM). It straightens trajectories with
+the coupling strategy from the entire distribution level. More specifically,
+during training, StraightFM creates couplings of images and noise via one
+diffusion model as a coupling prior to straighten trajectories for few-step
+generation. Our coupling strategy can also integrate with the existing coupling
+direction from real data to noise, improving image quality in few-step
+generation. Experimental results on pixel space and latent space show that
+StraightFM yields attractive samples within 5 steps. Moreover, our
+unconditional StraightFM is seamlessly compatible with training-free multimodal
+conditional generation, maintaining high-quality image generation in few steps.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>基于扩散的可见-红外行人再识别合成数据生成</div>
-<div class="mono" style="margin-top:8px">模型的性能与训练数据的丰富程度密切相关。在可见-红外行人再识别（VI-ReID）任务中，收集和标注不同摄像头和模态下每个个体的大规模图像既繁琐又耗时且成本高昂，且必须遵守数据保护法律，这给数据集需求带来了严峻挑战。当前研究探索了生成合成数据作为收集真实数据的高效且保护隐私的替代方案。然而，针对VI-ReID模型的特定数据合成技术尚未被研究。本文提出了一种名为基于扩散的VI-ReID数据扩展（DiVE）的新数据生成框架，通过解耦身份和模态，自动获取大量保留身份的RGB-IR配对图像，以提高VI-ReID模型的性能。具体而言，身份表示是从具有相同ID的一组样本中获得的，而图像的模态则是通过在模态特定数据上微调稳定扩散（SD）来学习的。DiVE将文本驱动的图像合成扩展到保留身份的RGB-IR多模态图像合成。这种方法通过直接将合成数据纳入再识别模型训练中，显著降低了数据收集和标注的成本。实验表明，使用DiVE生成的合成数据训练的VI-ReID模型表现出显著的提升。特别是，最先进的方法CAJ使用合成图像在LLCM数据集上的mAP提高了约9%。代码：https://github.com/BorgDiven/DiVE</div>
-</details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of collecting sufficient training data for Visible-Infrared person Re-Identification (VI-ReID) tasks by proposing a novel data generation framework called DiVE. DiVE decouples identity and modality to generate massive RGB-IR paired images with preserved identity, using a fine-tuned Stable Diffusion model. Experiments show that VI-ReID models trained with synthetic data from DiVE outperform those trained with real data, achieving a 9% improvement in mAP over the baseline method on the LLCM dataset.</div>
-<div class="mono" style="margin-top:8px">本文提出了一种名为Diffusion-based VI-ReID数据扩展（DiVE）的新数据生成框架，以解决可见-红外人再识别任务中收集足够训练数据的挑战。DiVE通过解耦身份和模态来生成具有保留身份的大量RGB-IR配对图像，从而提高VI-ReID模型的性能。实验表明，使用DiVE生成的合成数据训练的模型优于使用真实数据训练的模型，CAJ方法在LLCM数据集上的mAP提高了约9%，超过了基线。</div>
+<div class="mono"><b>标题：</b>基于扩散耦合先验的更直流水流动匹配</div>
+<div class="mono" style="margin-top:8px">水流动匹配作为一种生成模型的范式，在各个领域取得了显著的成功。然而，现有方法要么采用多轮训练，要么利用小批量内的知识，这在寻找适合直流水流动策略以实现几步生成方面提出了挑战。为解决这一问题，我们提出了一种新的方法，即直流水流动匹配（StraightFM）。该方法在整体分布层面采用耦合策略来直流水流动。具体而言，在训练过程中，StraightFM通过一个扩散模型将图像和噪声耦合起来作为耦合先验，以直流水流动进行几步生成。我们的耦合策略还可以与真实数据到噪声的现有耦合方向结合，从而在几步生成中提高图像质量。在像素空间和潜在空间的实验结果表明，StraightFM在5步内生成了具有吸引力的样本。此外，我们的无条件StraightFM与无需训练的多模态条件生成无缝兼容，在几步内保持高质量的图像生成。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Multi-Domain Biometric Recognition using Body Embeddings</div>
-<div class="meta-line">Authors: Anirudh Nanduri, Siyuan Huang, Rama Chellappa</div>
-<div class="meta-line">First: 2025-03-13T22:38:18+00:00 · Latest: 2025-03-13T22:38:18+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2503.10931v1">Abs</a> · <a href="http://arxiv.org/pdf/2503.10931v1">PDF</a></div>
+<div class="title">Learning Active Perception via Self-Evolving Preference Optimization for   GUI Grounding</div>
+<div class="meta-line">Authors: Wanfu Wang, Qipeng Huang, Guangquan Xue, Xiaobo Liang, Juntao Li</div>
+<div class="meta-line">First: 2025-09-04T14:17:01+00:00 · Latest: 2025-09-04T14:17:01+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04243v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04243v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Biometric recognition becomes increasingly challenging as we move away from
-the visible spectrum to infrared imagery, where domain discrepancies
-significantly impact identification performance. In this paper, we show that
-body embeddings perform better than face embeddings for cross-spectral person
-identification in medium-wave infrared (MWIR) and long-wave infrared (LWIR)
-domains. Due to the lack of multi-domain datasets, previous research on
-cross-spectral body identification - also known as Visible-Infrared Person
-Re-Identification (VI-ReID) - has primarily focused on individual infrared
-bands, such as near-infrared (NIR) or LWIR, separately. We address the
-multi-domain body recognition problem using the IARPA Janus Benchmark
-Multi-Domain Face (IJB-MDF) dataset, which enables matching of short-wave
-infrared (SWIR), MWIR, and LWIR images against RGB (VIS) images. We leverage a
-vision transformer architecture to establish benchmark results on the IJB-MDF
-dataset and, through extensive experiments, provide valuable insights into the
-interrelation of infrared domains, the adaptability of VIS-pretrained models,
-the role of local semantic features in body-embeddings, and effective training
-strategies for small datasets. Additionally, we show that finetuning a body
-model, pretrained exclusively on VIS data, with a simple combination of
-cross-entropy and triplet losses achieves state-of-the-art mAP scores on the
-LLCM dataset.</div></details>
+<div class="mono">Vision Language Models (VLMs) have recently achieved significant progress in
+bridging visual perception and linguistic reasoning. Recently, OpenAI o3 model
+introduced a zoom-in search strategy that effectively elicits active perception
+capabilities in VLMs, improving downstream task performance. However, enabling
+VLMs to reason effectively over appropriate image regions remains a core
+challenge in GUI grounding, particularly under high-resolution inputs and
+complex multi-element visual interactions. In this work, we propose LASER, a
+self-evolving framework that progressively endows VLMs with multi-step
+perception capabilities, enabling precise coordinate prediction. Specifically,
+our approach integrate Monte Carlo quality estimation with
+Intersection-over-Union (IoU)-based region quality evaluation to jointly
+encourage both accuracy and diversity in constructing high-quality preference
+data. This combination explicitly guides the model to focus on
+instruction-relevant key regions while adaptively allocating reasoning steps
+based on task complexity. Comprehensive experiments on the ScreenSpot Pro and
+ScreenSpot-v2 benchmarks demonstrate consistent performance gains, validating
+the effectiveness of our method. Furthermore, when fine-tuned on GTA1-7B, LASER
+achieves a score of 55.7 on the ScreenSpot-Pro benchmark, establishing a new
+state-of-the-art (SoTA) among 7B-scale models.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>使用身体嵌入进行多域生物识别</div>
-<div class="mono" style="margin-top:8px">随着我们从可见光谱转向红外成像，生物识别变得越来越具有挑战性，其中域差异显著影响识别性能。在本文中，我们展示了在中波红外（MWIR）和长波红外（LWIR）域中，身体嵌入比面部嵌入更适合跨谱段的人体识别。由于缺乏多域数据集，之前关于跨谱段身体识别的研究——也称为可见-红外人体重识别（VI-ReID）——主要集中在单独的红外波段，如近红外（NIR）或LWIR。我们使用IARPA Janus基准多域面部（IJB-MDF）数据集来解决多域身体识别问题，该数据集允许将短波红外（SWIR）、MWIR和LWIR图像与RGB（VIS）图像进行匹配。我们利用视觉变换器架构在IJB-MDF数据集上建立基准结果，并通过大量实验提供了有关红外域之间的相互关系、VIS预训练模型的适应性、身体嵌入中局部语义特征的作用以及小数据集的有效训练策略的宝贵见解。此外，我们展示了仅使用可见光数据预训练的身体模型，通过简单的交叉熵和三元组损失的组合进行微调，可以在LLCM数据集上达到最先进的mAP分数。</div>
+<div class="mono"><b>标题：</b>通过自我进化的偏好优化学习主动感知   对GUI定位</div>
+<div class="mono" style="margin-top:8px">视觉语言模型（VLMs）最近在视觉感知和语言推理的结合方面取得了显著进展。最近，OpenAI的o3模型引入了一种缩放搜索策略，有效地激发了VLMs的主动感知能力，提高了下游任务的性能。然而，在GUI定位中，特别是在高分辨率输入和复杂多元素视觉交互下，使VLMs能够有效地在适当图像区域进行推理仍然是一个核心挑战。在本文中，我们提出了一种自我进化的框架LASER，逐步赋予VLMs多步感知能力，使其能够进行精确的坐标预测。具体而言，我们的方法将蒙特卡洛质量估计与基于交并比（IoU）的区域质量评估相结合，共同促进构建高质量偏好数据的准确性和多样性。这种结合明确地引导模型关注与指令相关的关键区域，并根据任务复杂性自适应地分配推理步骤。在ScreenSpot Pro和ScreenSpot-v2基准上的全面实验表明，该方法具有一致的性能提升，验证了其有效性。此外，当在GTA1-7B上微调时，LASER在ScreenSpot-Pro基准上的得分为55.7，成为7B规模模型中的新最佳水平（SoTA）。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of biometric recognition in the infrared spectrum by leveraging body embeddings, which outperform face embeddings in cross-spectral person identification in MWIR and LWIR domains. Using the IJB-MDF dataset, the authors employ a vision transformer to achieve benchmark results and explore the interrelation of infrared domains, the adaptability of VIS-pretrained models, and effective training strategies. Key findings include the superior performance of body embeddings and the state-of-the-art mAP scores achieved through finetuning a VIS-pretrained model with cross-entropy and triplet losses on the LLCM dataset.</div>
-<div class="mono" style="margin-top:8px">本文通过利用身体嵌入进行跨光谱人体识别，解决了红外成像中的生物识别难题，特别是在MWIR和LWIR域。作者使用IARPA Janus基准多域面部数据集来评估其方法，并发现身体嵌入优于面部嵌入。他们采用视觉变换器架构，并证明仅通过交叉熵和三重损失的简单组合对仅在可见光数据上预训练的模型进行微调，可以在LLCM数据集上实现最先进的mAP分数，同时提供了红外域间关系和小数据集有效训练策略的见解。</div>
+<div class="mono">This paper addresses the challenge of enabling Vision Language Models to effectively reason over appropriate image regions in GUI grounding tasks. It proposes LASER, a self-evolving framework that uses Monte Carlo quality estimation and Intersection-over-Union-based region quality evaluation to improve multi-step perception capabilities. Experiments on ScreenSpot Pro and ScreenSpot-v2 benchmarks show consistent performance gains, and LASER achieves a score of 55.7 on the ScreenSpot-Pro benchmark, setting a new state-of-the-art among 7B-scale models.</div>
+<div class="mono" style="margin-top:8px">本文旨在解决使视觉语言模型在GUI定位任务中有效推理适当图像区域的挑战。它提出了LASER，一种自我进化的框架，结合了蒙特卡洛质量估计和交并比基于的区域质量评估，以提高多步感知能力。在ScreenSpot Pro和ScreenSpot-v2基准上的实验显示了一致的性能提升，且LASER在ScreenSpot-Pro基准上的得分为55.7，成为7B规模模型中的新最佳水平。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Adaptive Illumination-Invariant Synergistic Feature Integration in a   Stratified Granular Framework for Visible-Infrared Re-Identification</div>
-<div class="meta-line">Authors: Yuheng Jia, Wesley Armour</div>
-<div class="meta-line">First: 2025-02-28T15:42:58+00:00 · Latest: 2025-02-28T15:42:58+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2502.21163v1">Abs</a> · <a href="http://arxiv.org/pdf/2502.21163v1">PDF</a></div>
+<div class="title">Exposing Synthetic Speech: Model Attribution and Detection of   AI-generated Speech via Audio Fingerprints</div>
+<div class="meta-line">Authors: Matías Pizarro, Mike Laszkiewicz, Shawkat Hesso, Dorothea Kolossa, Asja Fischer</div>
+<div class="meta-line">First: 2024-11-21T10:55:49+00:00 · Latest: 2025-09-04T12:43:52+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2411.14013v3">Abs</a> · <a href="http://arxiv.org/pdf/2411.14013v3">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-Infrared Person Re-Identification (VI-ReID) plays a crucial role in
-applications such as search and rescue, infrastructure protection, and
-nighttime surveillance. However, it faces significant challenges due to
-modality discrepancies, varying illumination, and frequent occlusions. To
-overcome these obstacles, we propose \textbf{AMINet}, an Adaptive Modality
-Interaction Network. AMINet employs multi-granularity feature extraction to
-capture comprehensive identity attributes from both full-body and upper-body
-images, improving robustness against occlusions and background clutter. The
-model integrates an interactive feature fusion strategy for deep intra-modal
-and cross-modal alignment, enhancing generalization and effectively bridging
-the RGB-IR modality gap. Furthermore, AMINet utilizes phase congruency for
-robust, illumination-invariant feature extraction and incorporates an adaptive
-multi-scale kernel MMD to align feature distributions across varying scales.
-Extensive experiments on benchmark datasets demonstrate the effectiveness of
-our approach, achieving a Rank-1 accuracy of $74.75\%$ on SYSU-MM01, surpassing
-the baseline by $7.93\%$ and outperforming the current state-of-the-art by
-$3.95\%$.</div></details>
+<div class="mono">As speech generation technologies continue to advance in quality and
+accessibility, the risk of malicious use cases, including impersonation,
+misinformation, and spoofing, increases rapidly. This work addresses this
+threat by introducing a simple, training-free, yet effective approach for
+detecting AI-generated speech and attributing it to its source model.
+Specifically, we tackle three key tasks: (1) single-model attribution in an
+open-world setting, where the goal is to determine whether a given audio sample
+was generated by a specific target neural speech synthesis system (with access
+only to data from that system); (2) multi-model attribution in a closed-world
+setting, where the objective is to identify the generating system from a known
+pool of candidates; and last but not least (3) detection of synthetic versus
+real speech. Our approach leverages standardized average residuals-the
+difference between an input audio signal and its filtered version using either
+a low-pass filter or the EnCodec audio autoencoder. We demonstrate that these
+residuals consistently capture artifacts introduced by diverse speech synthesis
+systems, serving as distinctive, model-agnostic fingerprints for attribution.
+Across extensive experiments, our approach achieves AUROC scores exceeding 99%
+in most scenarios, evaluated on augmented benchmark datasets that pair real
+speech with synthetic audio generated by multiple synthesis systems. In
+addition, our robustness analysis underscores the method&#x27;s ability to maintain
+high performance even in the presence of moderate additive noise. Due to its
+simplicity, efficiency, and strong generalization across speech synthesis
+systems and languages, this technique offers a practical tool for digital
+forensics and security applications.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">This work introduces a training-free approach for detecting and attributing AI-generated speech using standardized average residuals. The method effectively addresses single-model and multi-model attribution in open-world and closed-world settings, and synthetic speech detection. Experiments show AUROC scores exceeding 99% on benchmark datasets, and the technique remains robust under moderate noise conditions. This approach provides a practical tool for digital forensics and security applications.</div>
+<div class="mono" style="margin-top:8px">该研究旨在通过开发一种无需训练的方法来检测和归因AI生成的语音，以应对语音生成技术滥用的风险。该方法使用标准化平均残差来识别来自各种语音合成系统的特征，作为独特的指纹。实验结果显示，在不同场景下的AUROC分数超过99%，并且该方法在中等噪声下仍能保持高性能。</div>
+</details>
+</div>
+<div class="card">
+<div class="title">TAGAL: Tabular Data Generation using Agentic LLM Methods</div>
+<div class="meta-line">Authors: Benoît Ronval, Pierre Dupont, Siegfried Nijssen</div>
+<div class="meta-line">First: 2025-09-04T12:25:14+00:00 · Latest: 2025-09-04T12:25:14+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04152v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04152v1">PDF</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">The generation of data is a common approach to improve the performance of
+machine learning tasks, among which is the training of models for
+classification. In this paper, we present TAGAL, a collection of methods able
+to generate synthetic tabular data using an agentic workflow. The methods
+leverage Large Language Models (LLMs) for an automatic and iterative process
+that uses feedback to improve the generated data without any further LLM
+training. The use of LLMs also allows for the addition of external knowledge in
+the generation process. We evaluate TAGAL across diverse datasets and different
+aspects of quality for the generated data. We look at the utility of downstream
+ML models, both by training classifiers on synthetic data only and by combining
+real and synthetic data. Moreover, we compare the similarities between the real
+and the generated data. We show that TAGAL is able to perform on par with
+state-of-the-art approaches that require LLM training and generally outperforms
+other training-free approaches. These findings highlight the potential of
+agentic workflow and open new directions for LLM-based data generation methods.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>分层粒度框架中的自适应照明不变协同特征整合：可见光-红外重识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外人员重识别（VI-ReID）在搜索和救援、基础设施保护和夜间监控等应用中起着重要作用。然而，由于模态差异、光照变化和频繁遮挡，它面临着重大挑战。为克服这些障碍，我们提出了一种自适应模态交互网络AMINet。AMINet采用多粒度特征提取，从全身和上半身图像中捕获全面的身份属性，提高对遮挡和背景杂乱的鲁棒性。该模型结合了交互特征融合策略，进行深层次的模内和跨模态对齐，增强泛化能力并有效弥合RGB-IR模态差距。此外，AMINet利用相位一致性的鲁棒、光照不变特征提取，并结合自适应多尺度核MMD对齐不同尺度下的特征分布。在基准数据集上的广泛实验表明，我们的方法有效，SYSU-MM01上的Rank-1准确率为74.75%，比基线高出7.93%，比当前最先进的方法高出3.95%。</div>
+<div class="mono"><b>标题：</b>TAGAL：使用代理型LLM方法生成表格数据</div>
+<div class="mono" style="margin-top:8px">数据生成是提高机器学习任务性能的常见方法，其中涉及模型训练，尤其是分类任务。本文介绍了TAGAL，一种能够使用代理型工作流生成合成表格数据的方法。该方法利用大型语言模型（LLMs）进行自动且迭代的过程，通过反馈不断改进生成的数据，而无需进一步训练LLMs。使用LLMs还允许在生成过程中添加外部知识。我们通过多种数据集和生成数据的不同质量方面评估了TAGAL。我们不仅通过仅使用合成数据训练分类器，还通过结合真实和合成数据来评估下游机器学习模型的实用性。此外，我们还比较了真实数据和生成数据之间的相似性。结果显示，TAGAL能够与需要LLM训练的最新方法相媲美，并且通常优于其他无需训练的方法。这些发现突显了代理型工作流的潜力，并为基于LLM的数据生成方法开辟了新的方向。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenges of Visible-Infrared Person Re-Identification (VI-ReID) by proposing AMINet, an Adaptive Modality Interaction Network. AMINet uses multi-granularity feature extraction to handle occlusions and background clutter, and integrates an interactive feature fusion strategy to align RGB and IR modalities. The model also employs phase congruency for illumination-invariant feature extraction and an adaptive multi-scale kernel MMD for scale alignment. Experiments show AMINet achieves a Rank-1 accuracy of 74.75% on SYSU-MM01, surpassing the baseline and the current state-of-the-art by significant margins.</div>
-<div class="mono" style="margin-top:8px">论文通过提出AMINet，使用多粒度特征提取和自适应多尺度核MMD进行鲁棒特征对齐，以应对可见光-红外人再识别（VI-ReID）的挑战。该模型在SYSU-MM01上的Rank-1准确率达到74.75%，分别比基线高出7.93%和当前最先进的方法高出3.95%。</div>
+<div class="mono">The paper introduces TAGAL, a method for generating synthetic tabular data using an agentic workflow with Large Language Models (LLMs). The approach iteratively generates data and improves it based on feedback without additional LLM training. The evaluation across various datasets shows that TAGAL performs comparably to state-of-the-art approaches requiring LLM training and outperforms other training-free methods, demonstrating the potential of agentic workflows in LLM-based data generation.</div>
+<div class="mono" style="margin-top:8px">TAGAL 是一种使用大型语言模型（LLMs）的自动工作流生成合成表格数据的方法。它利用LLMs进行一个自动迭代的过程，通过反馈改进生成的数据，而无需进一步的LLM训练。实验表明，TAGAL在下游机器学习模型的实用性以及数据相似性方面与需要LLM训练的先进方法相当，并且优于其他无需训练的方法。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">From Cross-Modal to Mixed-Modal Visible-Infrared Re-Identification</div>
-<div class="meta-line">Authors: Mahdi Alehdaghi, Rajarshi Bhattacharya, Pourya Shamsolmoali, Rafael M. O. Cruz, Eric Granger</div>
-<div class="meta-line">First: 2025-01-23T01:28:05+00:00 · Latest: 2025-01-23T01:28:05+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2501.13307v1">Abs</a> · <a href="http://arxiv.org/pdf/2501.13307v1">PDF</a></div>
+<div class="title">MUNBa: Machine Unlearning via Nash Bargaining</div>
+<div class="meta-line">Authors: Jing Wu, Mehrtash Harandi</div>
+<div class="meta-line">First: 2024-11-23T12:18:28+00:00 · Latest: 2025-09-04T11:00:46+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2411.15537v4">Abs</a> · <a href="http://arxiv.org/pdf/2411.15537v4">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) aims to match individuals
-across different camera modalities, a critical task in modern surveillance
-systems. While current VI-ReID methods focus on cross-modality matching,
-real-world applications often involve mixed galleries containing both V and I
-images, where state-of-the-art methods show significant performance limitations
-due to large domain shifts and low discrimination across mixed modalities. This
-is because gallery images from the same modality may have lower domain gaps but
-correspond to different identities. This paper introduces a novel mixed-modal
-ReID setting, where galleries contain data from both modalities. To address the
-domain shift among inter-modal and low discrimination capacity in intra-modal
-matching, we propose the Mixed Modality-Erased and -Related (MixER) method. The
-MixER learning approach disentangles modality-specific and modality-shared
-identity information through orthogonal decomposition, modality-confusion, and
-ID-modality-related objectives. MixER enhances feature robustness across
-modalities, improving cross-modal and mixed-modal settings performance. Our
-extensive experiments on the SYSU-MM01, RegDB and LLMC datasets indicate that
-our approach can provide state-of-the-art results using a single backbone, and
-showcase the flexibility of our approach in mixed gallery applications.</div></details>
+<div class="mono">Machine Unlearning (MU) aims to selectively erase harmful behaviors from
+models while retaining the overall utility of the model. As a multi-task
+learning problem, MU involves balancing objectives related to forgetting
+specific concepts/data and preserving general performance. A naive integration
+of these forgetting and preserving objectives can lead to gradient conflicts
+and dominance, impeding MU algorithms from reaching optimal solutions. To
+address the gradient conflict and dominance issue, we reformulate MU as a
+two-player cooperative game, where the two players, namely, the forgetting
+player and the preservation player, contribute via their gradient proposals to
+maximize their overall gain and balance their contributions. To this end,
+inspired by the Nash bargaining theory, we derive a closed-form solution to
+guide the model toward the Pareto stationary point. Our formulation of MU
+guarantees an equilibrium solution, where any deviation from the final state
+would lead to a reduction in the overall objectives for both players, ensuring
+optimality in each objective. We evaluate our algorithm&#x27;s effectiveness on a
+diverse set of tasks across image classification and image generation.
+Extensive experiments with ResNet, vision-language model CLIP, and
+text-to-image diffusion models demonstrate that our method outperforms
+state-of-the-art MU algorithms, achieving a better trade-off between forgetting
+and preserving. Our results also highlight improvements in forgetting
+precision, preservation of generalization, and robustness against adversarial
+attacks.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>从跨模态到混合模态可见-红外重识别</div>
-<div class="mono" style="margin-top:8px">可见-红外人员重识别（VI-ReID）旨在跨不同摄像模态匹配个体，是现代监控系统中的关键任务。当前的VI-ReID方法主要关注跨模态匹配，但在实际应用中，混合画廊中通常包含可见光和红外图像，最先进的方法在混合模态下由于领域偏移大和低区分度表现出显著的性能限制。这是因为同一模态的画廊图像可能具有较小的领域差距，但对应不同的身份。本文引入了一种新的混合模态重识别设置，其中画廊包含两种模态的数据。为了解决跨模态领域偏移和同模态匹配低区分度的问题，我们提出了混合模态擦除和相关（MixER）方法。MixER学习方法通过正交分解、模态混淆和ID-模态相关目标来分离模态特有和模态共享的身份信息。MixER增强了跨模态和混合模态设置下的特征鲁棒性。我们在SYSU-MM01、RegDB和LLMC数据集上的广泛实验表明，我们的方法可以使用单一骨干网络提供最先进的结果，并展示了我们的方法在混合画廊应用中的灵活性。</div>
+<div class="mono"><b>标题：</b>MUNBa: 机器去学习通过纳什讨价还价</div>
+<div class="mono" style="margin-top:8px">机器去学习（MU）旨在从模型中选择性地消除有害行为，同时保留模型的整体效用。作为多任务学习问题，MU涉及平衡忘记特定概念/数据和保持一般性能的目标。简单地整合这些忘记和保留目标可能导致梯度冲突和支配，阻碍MU算法达到最优解。为了解决梯度冲突和支配问题，我们将MU重新表述为一个两玩家合作博弈，其中两个玩家，即忘记玩家和保留玩家，通过他们的梯度提案来最大化他们的整体收益并平衡他们的贡献。为此，借鉴纳什讨价还价理论，我们推导出一个闭式解来引导模型向帕累托稳定点发展。我们对MU的表述保证了一个均衡解，在此解中，任何偏离最终状态都会导致两个玩家的整体目标减少，确保每个目标的最优性。我们在图像分类和图像生成的一系列任务上评估了我们算法的有效性。广泛的实验使用ResNet、视觉-语言模型CLIP和文本到图像扩散模型表明，我们的方法优于最先进的MU算法，实现了更好的忘记与保留之间的权衡。我们的结果还突显了忘记精度的提高、保持泛化以及对抗攻击的鲁棒性改进。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of visible-infrared person re-identification (VI-ReID) in mixed-modal galleries, where images from both visible and infrared modalities coexist. The authors propose the MixER method, which disentangles modality-specific and shared identity information to enhance feature robustness. Experimental results on SYSU-MM01, RegDB, and LLMC datasets demonstrate that MixER achieves state-of-the-art performance with a single backbone and improves performance in cross-modal and mixed-modal settings.</div>
-<div class="mono" style="margin-top:8px">该论文针对当前可见-红外人员重识别方法在处理包含可见光和红外图像的混合画廊时的局限性，引入了MixER方法，该方法通过解耦模态特定和共享的身份信息来增强特征的鲁棒性。在SYSU-MM01、RegDB和LLMC数据集上的实验表明，MixER使用单一骨干网络即可达到最先进的效果，并且在跨模态和混合模态设置中表现出色。</div>
+<div class="mono">The paper addresses the challenge of Machine Unlearning (MU) by formulating it as a two-player cooperative game using Nash Bargaining theory. This approach helps in balancing the trade-off between forgetting specific concepts and preserving overall model performance, avoiding gradient conflicts. Experiments on various tasks show that the proposed MUNBa method outperforms existing MU algorithms, achieving a better balance between forgetting and preservation, and demonstrating improved robustness against adversarial attacks.</div>
+<div class="mono" style="margin-top:8px">MUNBa将机器遗忘重新表述为两个玩家的合作博弈，利用纳什讨价还价理论来解决梯度冲突问题，导出了一个闭合形式的解，引导模型向帕累托稳定点移动，确保在遗忘特定概念和保持整体性能之间的最优平衡。实验表明，MUNBa在各种任务上优于现有方法，实现了更好的遗忘与保留之间的权衡，并提高了遗忘精度和对抗攻击的鲁棒性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Spectral Enhancement and Pseudo-Anchor Guidance for Infrared-Visible   Person Re-Identification</div>
-<div class="meta-line">Authors: Yiyuan Ge, Zhihao Chen, Ziyang Wang, Jiaju Kang, Mingya Zhang</div>
-<div class="meta-line">First: 2024-12-26T08:03:53+00:00 · Latest: 2025-01-02T11:22:43+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2412.19111v2">Abs</a> · <a href="http://arxiv.org/pdf/2412.19111v2">PDF</a> · <a href="https://github.com/1024AILab/ReID-SEPG">Code1</a></div>
+<div class="title">SMooGPT: Stylized Motion Generation using Large Language Models</div>
+<div class="meta-line">Authors: Lei Zhong, Yi Yang, Changjian Li</div>
+<div class="meta-line">First: 2025-09-04T09:41:18+00:00 · Latest: 2025-09-04T09:41:18+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.04058v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.04058v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">The development of deep learning has facilitated the application of person
-re-identification (ReID) technology in intelligent security. Visible-infrared
-person re-identification (VI-ReID) aims to match pedestrians across infrared
-and visible modality images enabling 24-hour surveillance. Current studies
-relying on unsupervised modality transformations as well as inefficient
-embedding constraints to bridge the spectral differences between infrared and
-visible images, however, limit their potential performance. To tackle the
-limitations of the above approaches, this paper introduces a simple yet
-effective Spectral Enhancement and Pseudo-anchor Guidance Network, named
-SEPG-Net. Specifically, we propose a more homogeneous spectral enhancement
-scheme based on frequency domain information and greyscale space, which avoids
-the information loss typically caused by inefficient modality transformations.
-Further, a Pseudo Anchor-guided Bidirectional Aggregation (PABA) loss is
-introduced to bridge local modality discrepancies while better preserving
-discriminative identity embeddings. Experimental results on two public
-benchmark datasets demonstrate the superior performance of SEPG-Net against
-other state-of-the-art methods. The code is available at
-https://github.com/1024AILab/ReID-SEPG.</div></details>
+<div class="mono">Stylized motion generation is actively studied in computer graphics,
+especially benefiting from the rapid advances in diffusion models. The goal of
+this task is to produce a novel motion respecting both the motion content and
+the desired motion style, e.g., ``walking in a loop like a Monkey&#x27;&#x27;. Existing
+research attempts to address this problem via motion style transfer or
+conditional motion generation. They typically embed the motion style into a
+latent space and guide the motion implicitly in a latent space as well. Despite
+the progress, their methods suffer from low interpretability and control,
+limited generalization to new styles, and fail to produce motions other than
+``walking&#x27;&#x27; due to the strong bias in the public stylization dataset. In this
+paper, we propose to solve the stylized motion generation problem from a new
+perspective of reasoning-composition-generation, based on our observations: i)
+human motion can often be effectively described using natural language in a
+body-part centric manner, ii) LLMs exhibit a strong ability to understand and
+reason about human motion, and iii) human motion has an inherently
+compositional nature, facilitating the new motion content or style generation
+via effective recomposing. We thus propose utilizing body-part text space as an
+intermediate representation, and present SMooGPT, a fine-tuned LLM, acting as a
+reasoner, composer, and generator when generating the desired stylized motion.
+Our method executes in the body-part text space with much higher
+interpretability, enabling fine-grained motion control, effectively resolving
+potential conflicts between motion content and style, and generalizes well to
+new styles thanks to the open-vocabulary ability of LLMs. Comprehensive
+experiments and evaluations, and a user perceptual study, demonstrate the
+effectiveness of our approach, especially under the pure text-driven stylized
+motion generation.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>红外可见光行人重识别的光谱增强和伪锚点引导</div>
-<div class="mono" style="margin-top:8px">深度学习的发展促进了行人重识别（ReID）技术在智能安全中的应用。可见光-红外行人重识别（VI-ReID）旨在跨红外和可见光模态图像匹配行人，实现24小时监控。当前研究依赖于无监督的模态变换以及低效的嵌入约束来弥合红外和可见光图像之间的光谱差异，这限制了其潜在性能。为了解决上述方法的局限性，本文引入了一种简单而有效的光谱增强和伪锚点引导网络，命名为SEPG-Net。具体而言，我们提出了一种基于频域信息和灰度空间的更均匀的光谱增强方案，避免了低效模态变换通常引起的信息损失。此外，引入了一种伪锚点引导双向聚合（PABA）损失，以弥合局部模态差异，同时更好地保留区分性身份嵌入。在两个公开基准数据集上的实验结果表明，SEPG-Net 的性能优于其他最先进的方法。代码可在 https://github.com/1024AILab/ReID-SEPG 获取。</div>
+<div class="mono"><b>标题：</b>SMooGPT：使用大型语言模型的风格化运动生成</div>
+<div class="mono" style="margin-top:8px">风格化运动生成在计算机图形学中得到了积极的研究，特别得益于扩散模型的快速发展。该任务的目标是生成既尊重运动内容又符合期望运动风格的新运动，例如“像猴子一样环形行走”。现有研究试图通过运动风格转换或条件运动生成来解决这一问题。它们通常将运动风格嵌入到潜在空间中，并在潜在空间中隐式地引导运动。尽管取得了进展，但它们的方法在可解释性和控制性方面较低，难以泛化到新的风格，并且由于公共风格化数据集中的强烈偏见，无法生成除“行走”之外的运动。在本文中，我们从推理-合成-生成的新视角出发，解决风格化运动生成问题，基于我们的观察：i) 人体运动往往可以用自然语言在身体部分中心的方式有效描述，ii) 大型语言模型在理解和推理人体运动方面表现出很强的能力，iii) 人体运动具有固有的组合性质，有助于通过有效的重组生成新的运动内容或风格。因此，我们提出使用身体部分文本空间作为中间表示，并提出SMooGPT，这是一种微调后的大型语言模型，在生成期望的风格化运动时充当推理者、合成者和生成者。我们的方法在身体部分文本空间中执行，具有更高的可解释性，能够实现精细的运动控制，有效解决运动内容和风格之间的潜在冲突，并由于大型语言模型的开放式词汇能力，能够很好地泛化到新的风格。全面的实验和评估以及用户感知研究证明了我们方法的有效性，特别是在纯文本驱动的风格化运动生成方面。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the limitations of current unsupervised methods in visible-infrared person re-identification by proposing SEPG-Net, which includes a spectral enhancement scheme and a Pseudo Anchor-guided Bidirectional Aggregation loss. The method enhances spectral consistency and preserves discriminative identity embeddings, leading to superior performance compared to other state-of-the-art methods on two public datasets.</div>
-<div class="mono" style="margin-top:8px">本文通过提出SEPG-Net，即包含光谱增强方案和伪锚点引导双向聚合损失的方法，解决了当前无监督方法在可见光-红外行人再识别中的局限性。该方法增强了光谱一致性并保留了区分性身份嵌入，从而在两个公开基准数据集上的性能优于其他最先进的方法。</div>
+<div class="mono">This paper addresses the challenge of generating stylized motion by proposing SMooGPT, which leverages large language models (LLMs) for reasoning, composition, and generation. The method uses a body-part text space as an intermediate representation, offering higher interpretability and better control over motion. Experimental results show that SMooGPT effectively generates stylized motions with improved generalization to new styles and better conflict resolution between motion content and style compared to existing methods.</div>
+<div class="mono" style="margin-top:8px">本文提出SMooGPT，通过大型语言模型（LLMs）实现推理、合成和生成，解决生成风格化运动的挑战。方法使用身体部位文本空间作为中间表示，提供更高的可解释性和更好的运动控制。实验结果表明，SMooGPT能够有效生成风格化的运动，具有更好的新风格泛化能力和更好的内容与风格之间的冲突解决能力，优于现有方法。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Extended Cross-Modality United Learning for Unsupervised   Visible-Infrared Person Re-identification</div>
-<div class="meta-line">Authors: Ruixing Wu, Yiming Yang, Jiakai He, Haifeng Hu</div>
-<div class="meta-line">First: 2024-12-26T09:30:26+00:00 · Latest: 2024-12-26T09:30:26+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2412.19134v1">Abs</a> · <a href="http://arxiv.org/pdf/2412.19134v1">PDF</a></div>
+<div class="title">DianJin-OCR-R1: Enhancing OCR Capabilities via a Reasoning-and-Tool   Interleaved Vision-Language Model</div>
+<div class="meta-line">Authors: Qian Chen, Xianyin Zhang, Lifan Guo, Feng Chen, Chi Zhang</div>
+<div class="meta-line">First: 2025-08-18T03:28:57+00:00 · Latest: 2025-09-04T08:05:29+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2508.13238v2">Abs</a> · <a href="http://arxiv.org/pdf/2508.13238v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised learning visible-infrared person re-identification (USL-VI-ReID)
-aims to learn modality-invariant features from unlabeled cross-modality
-datasets and reduce the inter-modality gap. However, the existing methods lack
-cross-modality clustering or excessively pursue cluster-level association,
-which makes it difficult to perform reliable modality-invariant features
-learning. To deal with this issue, we propose a Extended Cross-Modality United
-Learning (ECUL) framework, incorporating Extended Modality-Camera Clustering
-(EMCC) and Two-Step Memory Updating Strategy (TSMem) modules. Specifically, we
-design ECUL to naturally integrates intra-modality clustering, inter-modality
-clustering and inter-modality instance selection, establishing compact and
-accurate cross-modality associations while reducing the introduction of noisy
-labels. Moreover, EMCC captures and filters the neighborhood relationships by
-extending the encoding vector, which further promotes the learning of
-modality-invariant and camera-invariant knowledge in terms of clustering
-algorithm. Finally, TSMem provides accurate and generalized proxy points for
-contrastive learning by updating the memory in stages. Extensive experiments
-results on SYSU-MM01 and RegDB datasets demonstrate that the proposed ECUL
-shows promising performance and even outperforms certain supervised methods.</div></details>
+<div class="mono">Recent advances in large vision-language models (LVLMs) have enabled a new
+paradigm of end-to-end document image parsing, excelling in Optical Character
+Recognition (OCR) tasks such as text, table, and formula recognition. However,
+generative LVLMs, similarly to large language models (LLMs), are prone to
+hallucinations--generating words that do not exist in input images.
+Furthermore, LVLMs are designed for general purposes and tend to be less
+effective on OCR tasks compared to expert models that are trained on
+domain-specific datasets. In this paper, we propose DianJin-OCR-R1, a
+reasoning-enhanced framework designed to address these limitations through
+training reasoning-and-tool interleaved VLMs. Given a recognition instruction,
+our DianJin-OCR-R1 model first recognizes the content in the input image by its
+own OCR capabilities, and then calls other tools (i.e., other expert models) to
+obtain their results as references, finally &quot;looks again&quot; the image and
+rethinks about the reasoning process to provide the final recognized content.
+Since architectures of expert models are tailored for specific OCR tasks, which
+makes them less prone to hallucinations, their results can help VLMs mitigate
+hallucinations. We evaluate our model on ReST and OmniDocBench, and
+experimental results show that our DianJin-OCR-R1 models consistently
+outperform their non-reasoning counterparts and expert OCR models, which proves
+the effectiveness of our method. Additionally, the results indicate that
+enhancing expert models, which are typically small and easy to iterate, enable
+performance improvements for VLMs.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>扩展跨模态联合学习在无监督可见-红外行人再识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督学习可见-红外行人再识别（USL-VI-ReID）旨在从未标记的跨模态数据集中学习模态不变特征并减少模态间差距。然而，现有方法缺乏跨模态聚类或过度追求聚类级别的关联，这使得难以进行可靠的模态不变特征学习。为解决这一问题，我们提出了一种扩展跨模态联合学习（ECUL）框架，结合了扩展模态-相机聚类（EMCC）和两步记忆更新策略（TSMem）模块。具体而言，我们设计ECUL以自然地整合模态内聚类、模态间聚类和模态间实例选择，建立紧凑且准确的跨模态关联，同时减少引入噪声标签。此外，EMCC通过扩展编码向量来捕获和过滤邻域关系，进一步促进聚类算法中模态不变和相机不变知识的学习。最后，TSMem通过分阶段更新记忆为对比学习提供准确且通用的代理点。在SYSU-MM01和RegDB数据集上的广泛实验结果表明，提出的ECUL表现出有希望的性能，并且甚至优于某些监督方法。</div>
-</details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of unsupervised learning for visible-infrared person re-identification by proposing an Extended Cross-Modality United Learning (ECUL) framework. This framework includes Extended Modality-Camera Clustering (EMCC) and Two-Step Memory Updating Strategy (TSMem) to integrate intra-modality and inter-modality clustering, and to reduce the inter-modality gap. The experiments on SYSU-MM01 and RegDB datasets show that ECUL performs well and even surpasses some supervised methods.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种扩展跨模态联合学习（ECUL）框架，以解决可见红外行人再识别的无监督学习问题。该框架结合了扩展模态-相机聚类（EMCC）和两步记忆更新策略（TSMem），以集成模态内和模态间聚类，并减少模态间差异。实验结果表明，ECUL在SYSU-MM01和RegDB数据集上表现出色，甚至超过了某些监督方法。</div>
+<div class="mono"><b>标题：</b>电金-OCR-R1：通过推理与工具交替的视觉语言模型增强OCR能力</div>
+<div class="mono" style="margin-top:8px">大型视觉语言模型（LVLM）的最新进展使端到端的文档图像解析成为可能，这在光学字符识别（OCR）任务如文本、表格和公式识别方面表现出色。然而，生成型LVLM与大型语言模型（LLMs）一样，容易产生幻觉——生成输入图像中不存在的词语。此外，LVLMs设计用于通用目的，与专门针对特定领域数据集训练的专家模型相比，在OCR任务上效果较差。在本文中，我们提出了电金-OCR-R1，这是一种通过训练推理与工具交替的VLM来解决这些限制的推理增强框架。给定一个识别指令，我们的电金-OCR-R1模型首先利用自身的OCR能力识别输入图像的内容，然后调用其他工具（即其他专家模型）获取其结果作为参考，最后再次审视图像并重新思考推理过程以提供最终识别内容。由于专家模型的架构针对特定的OCR任务进行了定制，这使得它们不太容易产生幻觉，其结果可以帮助LVLMs减轻幻觉。我们在ReST和OmniDocBench上评估了我们的模型，实验结果表明，我们的电金-OCR-R1模型始终优于其非推理版本和专家OCR模型，这证明了我们方法的有效性。此外，结果表明，增强通常较小且易于迭代的专家模型，可以提高LVLMs的性能。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Relieving Universal Label Noise for Unsupervised Visible-Infrared Person   Re-Identification by Inferring from Neighbors</div>
-<div class="meta-line">Authors: Xiao Teng, Long Lan, Dingyao Chen, Kele Xu, Nan Yin</div>
-<div class="meta-line">First: 2024-12-16T04:04:41+00:00 · Latest: 2024-12-16T04:04:41+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2412.12220v1">Abs</a> · <a href="http://arxiv.org/pdf/2412.12220v1">PDF</a> · <a href="https://github.com/tengxiao14/Neighbor-guided-USL-VI-ReID">Code1</a></div>
+<div class="title">Multimodal Feature Fusion Network with Text Difference Enhancement for   Remote Sensing Change Detection</div>
+<div class="meta-line">Authors: Yijun Zhou, Yikui Zhai, Zilu Ying, Tingfeng Xian, Wenlve Zhou, Zhiheng Zhou, Xiaolin Tian, Xudong Jia, Hongsheng Zhang, C. L. Philip Chen</div>
+<div class="meta-line">First: 2025-09-04T07:39:18+00:00 · Latest: 2025-09-04T07:39:18+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03961v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03961v1">PDF</a> · <a href="https://github.com/yikuizhai/MMChange">Code1</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) is of
-great research and practical significance yet remains challenging due to the
-absence of annotations. Existing approaches aim to learn modality-invariant
-representations in an unsupervised setting. However, these methods often
-encounter label noise within and across modalities due to suboptimal clustering
-results and considerable modality discrepancies, which impedes effective
-training. To address these challenges, we propose a straightforward yet
-effective solution for USL-VI-ReID by mitigating universal label noise using
-neighbor information. Specifically, we introduce the Neighbor-guided Universal
-Label Calibration (N-ULC) module, which replaces explicit hard pseudo labels in
-both homogeneous and heterogeneous spaces with soft labels derived from
-neighboring samples to reduce label noise. Additionally, we present the
-Neighbor-guided Dynamic Weighting (N-DW) module to enhance training stability
-by minimizing the influence of unreliable samples. Extensive experiments on the
-RegDB and SYSU-MM01 datasets demonstrate that our method outperforms existing
-USL-VI-ReID approaches, despite its simplicity. The source code is available
-at: https://github.com/tengxiao14/Neighbor-guided-USL-VI-ReID.</div></details>
+<div class="mono">Although deep learning has advanced remote sensing change detection (RSCD),
+most methods rely solely on image modality, limiting feature representation,
+change pattern modeling, and generalization especially under illumination and
+noise disturbances. To address this, we propose MMChange, a multimodal RSCD
+method that combines image and text modalities to enhance accuracy and
+robustness. An Image Feature Refinement (IFR) module is introduced to highlight
+key regions and suppress environmental noise. To overcome the semantic
+limitations of image features, we employ a vision language model (VLM) to
+generate semantic descriptions of bitemporal images. A Textual Difference
+Enhancement (TDE) module then captures fine grained semantic shifts, guiding
+the model toward meaningful changes. To bridge the heterogeneity between
+modalities, we design an Image Text Feature Fusion (ITFF) module that enables
+deep cross modal integration. Extensive experiments on LEVIRCD, WHUCD, and
+SYSUCD demonstrate that MMChange consistently surpasses state of the art
+methods across multiple metrics, validating its effectiveness for multimodal
+RSCD. Code is available at: https://github.com/yikuizhai/MMChange.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>通过从邻居推断缓解通用标签噪声以实现无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）具有重要的研究和实际意义，但由于缺乏标注而仍然具有挑战性。现有方法旨在在无监督设置中学习跨模态不变的表示。然而，这些方法常常由于聚类结果不佳和模态差异较大而遇到跨模态的标签噪声问题，这阻碍了有效的训练。为了解决这些挑战，我们提出了一种通过利用邻居信息缓解通用标签噪声的简单而有效的USL-VI-ReID解决方案。具体而言，我们引入了邻居引导的通用标签校准（N-ULC）模块，该模块用来自邻居样本的软标签替换同质和异质空间中的显式硬伪标签，以减少标签噪声。此外，我们提出了邻居引导的动态加权（N-DW）模块，通过最小化不可靠样本的影响来增强训练稳定性。在RegDB和SYSU-MM01数据集上的广泛实验表明，尽管方法简单，但我们的方法仍优于现有USL-VI-ReID方法。源代码可在：https://github.com/tengxiao14/Neighbor-guided-USL-VI-ReID 获取。</div>
+<div class="mono"><b>标题：</b>基于文本差异增强的多模态特征融合网络在遥感变化检测中的应用</div>
+<div class="mono" style="margin-top:8px">尽管深度学习已推动遥感变化检测（RSCD）的进步，但大多数方法仅依赖图像模态，限制了特征表示、变化模式建模和泛化能力，尤其是在光照和噪声干扰下。为解决这一问题，我们提出了一种名为MMChange的多模态RSCD方法，结合图像和文本模态以提高准确性和鲁棒性。引入了图像特征精炼（IFR）模块以突出关键区域并抑制环境噪声。为克服图像特征的语义限制，我们采用视觉语言模型（VLM）生成双时相图像的语义描述。随后，文本差异增强（TDE）模块捕捉细微的语义变化，引导模型关注有意义的变化。为弥合模态之间的异质性，我们设计了图像文本特征融合（ITFF）模块，实现深层次的跨模态整合。在LEVIRCD、WHUCD和SYSUCD上的广泛实验表明，MMChange在多个指标上均超越了现有方法，验证了其在多模态RSCD中的有效性。代码可在：https://github.com/yikuizhai/MMChange 获取。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research addresses the challenge of unsupervised visible-infrared person re-identification (USL-VI-ReID) by proposing a method to mitigate universal label noise using neighbor information. The approach introduces the Neighbor-guided Universal Label Calibration (N-ULC) module, which uses soft labels from neighboring samples instead of hard pseudo labels, and the Neighbor-guided Dynamic Weighting (N-DW) module to reduce the impact of unreliable samples. Experiments on RegDB and SYSU-MM01 datasets show that this method outperforms existing approaches despite its simplicity.</div>
-<div class="mono" style="margin-top:8px">论文通过提出一种缓解通用标签噪声的方法来解决无监督可见红外行人重识别（USL-VI-ReID）的挑战。它引入了邻域导向通用标签校准（N-ULC）模块，使用邻近样本的软标签来替代硬伪标签，并引入了邻域导向动态加权（N-DW）模块以减少不可靠样本的影响。实验结果表明，该方法在RegDB和SYSU-MM01数据集上的表现优于现有方法，尽管其结构简单。</div>
+<div class="mono">The paper proposes MMChange, a multimodal RSCD method combining image and text modalities to enhance accuracy and robustness. It introduces an Image Feature Refinement (IFR) module to highlight key regions and suppress noise, and a Textual Difference Enhancement (TDE) module to capture fine-grained semantic shifts. An Image Text Feature Fusion (ITFF) module is designed to integrate cross-modal features. Experiments show MMChange outperforms existing methods on LEVIRCD, WHUCD, and SYSUCD datasets, validating its effectiveness for multimodal RSCD.</div>
+<div class="mono" style="margin-top:8px">MMChange 是一种结合图像和文本模态的 RSCD 方法，以提高准确性和鲁棒性。它包含一个用于图像特征精炼的 IFR 模块、一个用于生成语义描述的 VLM，以及一个用于捕捉细粒度语义变化的 TDE 模块。ITFF 模块促进跨模态的深度集成。实验表明，MMChange 在 LEVIRCD、WHUCD 和 SYSUCD 数据集上的表现优于现有方法，证实了其在多模态 RSCD 中的有效性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Dynamic Modality-Camera Invariant Clustering for Unsupervised   Visible-Infrared Person Re-identification</div>
-<div class="meta-line">Authors: Yiming Yang, Weipeng Hu, Haifeng Hu</div>
-<div class="meta-line">First: 2024-12-11T09:31:03+00:00 · Latest: 2024-12-11T09:31:03+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2412.08231v1">Abs</a> · <a href="http://arxiv.org/pdf/2412.08231v1">PDF</a></div>
+<div class="title">ANTS: Shaping the Adaptive Negative Textual Space by MLLM for OOD   Detection</div>
+<div class="meta-line">Authors: Zhu Wenjie, Zhang Yabin, Xin Jin, Wenjun Zeng, Lei Zhang</div>
+<div class="meta-line">First: 2025-09-04T07:26:20+00:00 · Latest: 2025-09-04T07:26:20+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03951v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03951v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised learning visible-infrared person re-identification (USL-VI-ReID)
-offers a more flexible and cost-effective alternative compared to supervised
-methods. This field has gained increasing attention due to its promising
-potential. Existing methods simply cluster modality-specific samples and employ
-strong association techniques to achieve instance-to-cluster or
-cluster-to-cluster cross-modality associations. However, they ignore
-cross-camera differences, leading to noticeable issues with excessive splitting
-of identities. Consequently, this undermines the accuracy and reliability of
-cross-modal associations. To address these issues, we propose a novel Dynamic
-Modality-Camera Invariant Clustering (DMIC) framework for USL-VI-ReID.
-Specifically, our DMIC naturally integrates Modality-Camera Invariant Expansion
-(MIE), Dynamic Neighborhood Clustering (DNC) and Hybrid Modality Contrastive
-Learning (HMCL) into a unified framework, which eliminates both the
-cross-modality and cross-camera discrepancies in clustering. MIE fuses
-inter-modal and inter-camera distance coding to bridge the gaps between
-modalities and cameras at the clustering level. DNC employs two dynamic search
-strategies to refine the network&#x27;s optimization objective, transitioning from
-improving discriminability to enhancing cross-modal and cross-camera
-generalizability. Moreover, HMCL is designed to optimize instance-level and
-cluster-level distributions. Memories for intra-modality and inter-modality
-training are updated using randomly selected samples, facilitating real-time
-exploration of modality-invariant representations. Extensive experiments have
-demonstrated that our DMIC addresses the limitations present in current
-clustering approaches and achieve competitive performance, which significantly
-reduces the performance gap with supervised methods.</div></details>
+<div class="mono">The introduction of negative labels (NLs) has proven effective in enhancing
+Out-of-Distribution (OOD) detection. However, existing methods often lack an
+understanding of OOD images, making it difficult to construct an accurate
+negative space. In addition, the presence of false negative labels
+significantly degrades their near-OOD performance. To address these issues, we
+propose shaping an Adaptive Negative Textual Space (ANTS) by leveraging the
+understanding and reasoning capabilities of multimodal large language models
+(MLLMs). Specifically, we identify images likely to be OOD samples as negative
+images and prompt the MLLM to describe these images, generating expressive
+negative sentences that precisely characterize the OOD distribution and enhance
+far-OOD detection. For the near-OOD setting, where OOD samples resemble the
+in-distribution (ID) subset, we first identify the subset of ID classes that
+are visually similar to negative images and then leverage the reasoning
+capability of MLLMs to generate visually similar negative labels tailored to
+this subset, effectively reducing false negatives and improving near-OOD
+detection. To balance these two types of negative textual spaces, we design an
+adaptive weighted score that enables the method to handle different OOD task
+settings (near-OOD and far-OOD) without relying on task-specific prior
+knowledge, making it highly adaptable in open environments. On the ImageNet
+benchmark, our ANTS significantly reduces the FPR95 by 4.2\%, establishing a
+new state-of-the-art. Furthermore, our method is training-free and zero-shot,
+enabling high scalability.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>动态模态-相机不变聚类在无监督可见-红外行人重识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督学习可见-红外行人重识别（USL-VI-ReID）相比监督方法提供了更灵活和成本效益更高的替代方案。该领域因其巨大的潜力而越来越受到关注。现有方法简单地聚类模态特定样本，并采用强关联技术实现跨模态实例到聚类或聚类到聚类的关联。然而，它们忽略了跨相机差异，导致身份分割过度，从而影响跨模态关联的准确性和可靠性。为解决这些问题，我们提出了一种新的动态模态-相机不变聚类（DMIC）框架用于USL-VI-ReID。具体而言，我们的DMIC自然地将模态-相机不变扩展（MIE）、动态邻域聚类（DNC）和混合模态对比学习（HMCL）整合到一个统一框架中，消除了聚类中的跨模态和跨相机差异。MIE融合跨模态和跨相机的距离编码，在聚类层面弥合模态和相机之间的差距。DNC采用两种动态搜索策略来细化网络的优化目标，从提高可区分性过渡到增强跨模态和跨相机的一般性。此外，HMCL旨在优化实例级和聚类级分布。使用随机选择的样本更新模态内和跨模态训练的记忆，促进实时探索模态不变表示。大量实验表明，我们的DMIC解决了当前聚类方法的局限性，实现了竞争力的性能，显著减少了与监督方法的性能差距。</div>
+<div class="mono"><b>标题：</b>ANTS: 通过MLLM塑造适应性负文本空间以进行OOD检测</div>
+<div class="mono" style="margin-top:8px">引入负标签（NLs）已被证明能有效提升Out-of-Distribution (OOD)检测。然而，现有方法往往缺乏对OOD图像的理解，难以构建准确的负空间。此外，假负标签的存在显著降低了其近OOD性能。为解决这些问题，我们提出利用多模态大型语言模型（MLLM）的理解和推理能力，塑造一个适应性负文本空间（ANTS）。具体而言，我们识别出可能为OOD样本的图像作为负图像，并促使MLLM描述这些图像，生成能够精确刻画OOD分布并增强远OOD检测的表达性负句子。对于近OOD设置，其中OOD样本与分布内（ID）子集相似，我们首先识别出与负图像视觉相似的ID类子集，然后利用MLLM的推理能力生成针对该子集的视觉相似负标签，有效减少假负标签并提高近OOD检测。为了平衡这两种类型的负文本空间，我们设计了一个自适应加权分数，使方法能够在无需依赖特定任务先验知识的情况下处理不同的OOD任务设置（近OOD和远OOD），使其在开放环境中具有高度适应性。在ImageNet基准测试中，我们的ANTS将FPR95显著降低了4.2%，建立了新的最佳水平。此外，我们的方法无需训练且零样本，具有高可扩展性。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper proposes a Dynamic Modality-Camera Invariant Clustering (DMIC) framework for unsupervised visible-infrared person re-identification (USL-VI-ReID) to address the issue of excessive identity splitting due to cross-camera differences. DMIC integrates Modality-Camera Invariant Expansion (MIE), Dynamic Neighborhood Clustering (DNC), and Hybrid Modality Contrastive Learning (HMCL) to eliminate cross-modality and cross-camera discrepancies. Experiments show that DMIC improves clustering accuracy and reduces the performance gap with supervised methods.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过解决现有方法忽略跨摄像头差异导致的身份分裂问题，提高无监督可见光-红外行人再识别的性能。提出的动态模态-摄像头不变聚类（DMIC）框架整合了模态-摄像头不变扩展（MIE）、动态邻域聚类（DNC）和混合模态对比学习（HMCL），以消除跨模态和跨摄像头的差异。DMIC通过广泛的实验展示了优越的性能，显著缩小了与监督方法的性能差距。</div>
+<div class="mono">The paper introduces ANTS, a method that uses multimodal large language models to shape an adaptive negative textual space for enhancing Out-of-Distribution (OOD) detection. By identifying OOD samples and prompting MLLMs to generate precise negative descriptions, ANTS improves far-OOD detection. For near-OOD samples, it generates visually similar negative labels to reduce false negatives. ANTS uses an adaptive weighted score to balance far-OOD and near-OOD settings, achieving state-of-the-art performance with a 4.2% reduction in FPR95 on ImageNet. The method is training-free and zero-shot, making it highly scalable.</div>
+<div class="mono" style="margin-top:8px">论文提出了ANTs方法，利用多模态大语言模型塑造自适应的负文本空间以提升Out-of-Distribution (OOD)检测。通过识别OOD样本并促使MLLM生成精确的负描述，ANTs提高了远OOD检测效果。对于近OOD样本，它生成视觉上相似的负标签以减少误负。ANTs使用自适应加权分数来平衡远OOD和近OOD设置，实现了在ImageNet基准上的最新性能，FPR95降低了4.2%。该方法无需训练且为零样本，具有高度的可扩展性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Mix-Modality Person Re-Identification: A New and Practical Paradigm</div>
-<div class="meta-line">Authors: Wei Liu, Xin Xu, Hua Chang, Xin Yuan, Zheng Wang</div>
-<div class="meta-line">First: 2024-12-06T02:19:57+00:00 · Latest: 2024-12-06T02:19:57+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2412.04719v1">Abs</a> · <a href="http://arxiv.org/pdf/2412.04719v1">PDF</a></div>
+<div class="title">Defending LVLMs Against Vision Attacks through Partial-Perception   Supervision</div>
+<div class="meta-line">Authors: Qi Zhou, Tianlin Li, Qing Guo, Dongxia Wang, Yun Lin, Yang Liu, Jin Song Dong</div>
+<div class="meta-line">Venue: ICML 2025</div>
+<div class="meta-line">First: 2024-12-17T09:38:58+00:00 · Latest: 2025-09-04T06:43:22+00:00</div>
+<div class="meta-line">Comments: Accepted to ICML 2025</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2412.12722v2">Abs</a> · <a href="http://arxiv.org/pdf/2412.12722v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Current visible-infrared cross-modality person re-identification research has
-only focused on exploring the bi-modality mutual retrieval paradigm, and we
-propose a new and more practical mix-modality retrieval paradigm. Existing
-Visible-Infrared person re-identification (VI-ReID) methods have achieved some
-results in the bi-modality mutual retrieval paradigm by learning the
-correspondence between visible and infrared modalities. However, significant
-performance degradation occurs due to the modality confusion problem when these
-methods are applied to the new mix-modality paradigm. Therefore, this paper
-proposes a Mix-Modality person re-identification (MM-ReID) task, explores the
-influence of modality mixing ratio on performance, and constructs mix-modality
-test sets for existing datasets according to the new mix-modality testing
-paradigm. To solve the modality confusion problem in MM-ReID, we propose a
-Cross-Identity Discrimination Harmonization Loss (CIDHL) adjusting the
-distribution of samples in the hyperspherical feature space, pulling the
-centers of samples with the same identity closer, and pushing away the centers
-of samples with different identities while aggregating samples with the same
-modality and the same identity. Furthermore, we propose a Modality Bridge
-Similarity Optimization Strategy (MBSOS) to optimize the cross-modality
-similarity between the query and queried samples with the help of the similar
-bridge sample in the gallery. Extensive experiments demonstrate that compared
-to the original performance of existing cross-modality methods on MM-ReID, the
-addition of our CIDHL and MBSOS demonstrates a general improvement.</div></details>
+<div class="mono">Recent studies have raised significant concerns regarding the vulnerability
+of Large Vision Language Models (LVLMs) to maliciously injected or perturbed
+input images, which can mislead their responses. Existing defense methods show
+that such vision attacks are sensitive to image modifications especially
+cropping, using majority voting across responses of modified images as
+corrected responses. However, these modifications often result in partial
+images and distort the semantics, which reduces response quality on clean
+images after voting. Instead of directly using responses from partial images
+for voting, we investigate using them to supervise the LVLM&#x27;s responses to the
+original images. We propose a black-box, training-free method called DPS
+(Defense through Partial-Perception Supervision). In this approach, the model
+is prompted using the responses generated by a model that perceives only a
+partial image. With DPS, the model can adjust its response based on partial
+image understanding when under attack, while confidently maintaining its
+original response for clean input. Our findings show that the weak model can
+supervise the strong model: when faced with an attacked input, the strong model
+becomes less confident and adjusts its response based on the weak model&#x27;s
+partial understanding, effectively defending against the attack. With clean
+input, it confidently maintains its original response. Empirical experiments
+show our method outperforms the baseline, cutting the average attack success
+rate by 76.3% across six datasets on three popular models.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>多模态人员再识别：一种新的和实用的范式</div>
-<div class="mono" style="margin-top:8px">当前可见-红外跨模态人员再识别研究仅专注于探索双模态互检索范式，我们提出了一种新的和更实用的混合模态检索范式。现有的可见-红外人员再识别（VI-ReID）方法通过学习可见和红外模态之间的对应关系，在双模态互检索范式中取得了一些成果。然而，当这些方法应用于新的混合模态范式时，由于模态混淆问题，性能显著下降。因此，本文提出了混合模态人员再识别（MM-ReID）任务，探讨了模态混合比例对性能的影响，并根据新的混合模态测试范式为现有数据集构建了混合模态测试集。为了解决MM-ReID中的模态混淆问题，我们提出了一种跨身份鉴别和谐化损失（CIDHL），调整超球面特征空间中样本的分布，将具有相同身份的样本中心拉近，将具有不同身份的样本中心推开，同时聚合具有相同模态和相同身份的样本。此外，我们提出了一种模态桥梁相似性优化策略（MBSOS），通过帮助查询样本和查询样本之间的相似桥样本优化跨模态相似性。广泛的实验表明，与现有跨模态方法在MM-ReID上的原始性能相比，加入我们的CIDHL和MBSOS显示出普遍的改进。</div>
+<div class="mono"><b>标题：</b>通过部分感知监督防御LVLM的视觉攻击</div>
+<div class="mono" style="margin-top:8px">近期研究对大型视觉语言模型（LVLMs）在恶意注入或篡改输入图像时的脆弱性提出了严重关切，这些篡改可以误导其响应。现有防御方法表明，此类视觉攻击对图像修改特别敏感，尤其是裁剪，通过在修改图像的响应中采用多数投票来获得正确的响应。然而，这些修改通常会导致部分图像，从而扭曲语义，这在投票后降低了干净图像的响应质量。我们不直接使用部分图像的响应进行投票，而是研究使用它们来监督LVLM对原始图像的响应。我们提出了一种无需训练的黑盒方法，称为DPS（通过部分感知监督的防御）。在此方法中，模型使用仅感知部分图像的模型生成的响应进行提示。通过DPS，模型在受到攻击时可以根据部分图像的理解调整其响应，同时自信地保持其原始响应以应对干净输入。我们的研究发现，弱模型可以监督强模型：当面对攻击输入时，强模型变得不那么自信，并根据弱模型的部分理解调整其响应，从而有效防御攻击。在干净输入时，它自信地保持其原始响应。实验证明，我们的方法优于基线，在三个流行模型的六个数据集上将平均攻击成功率降低了76.3%。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the limitations of current visible-infrared person re-identification methods by introducing a new mix-modality retrieval paradigm. It proposes a Mix-Modality person re-identification (MM-ReID) task and a Cross-Identity Discrimination Harmonization Loss (CIDHL) to mitigate the modality confusion problem. Additionally, a Modality Bridge Similarity Optimization Strategy (MBSOS) is introduced to enhance cross-modality similarity. Experimental results show that these methods improve the performance of existing cross-modality methods in the mix-modality paradigm.</div>
-<div class="mono" style="margin-top:8px">本文通过引入新的混模态检索范式，解决了当前可见光-红外人再识别方法的局限性。提出了混模态人再识别（MM-ReID）任务和跨身份鉴别和谐化损失（CIDHL）以缓解模态混淆问题。此外，还提出了模态桥梁相似性优化策略（MBSOS）以通过馆藏中的相似桥梁样本优化查询样本与被查询样本之间的跨模态相似性。实验结果表明，这些方法在混模态范式下提高了现有跨模态方法的性能。</div>
+<div class="mono">This study addresses the vulnerability of Large Vision Language Models (LVLMs) to vision attacks by proposing a method called DPS (Defense through Partial-Perception Supervision). DPS uses responses from a model that perceives only partial images to supervise the LVLM&#x27;s responses to the original images. This approach helps the model adjust its response when under attack and maintain its original response for clean inputs, significantly reducing the average attack success rate by 76.3% across six datasets on three popular models.</div>
+<div class="mono" style="margin-top:8px">该论文提出了一种名为DPS（通过部分感知监督防御）的方法，用于防范大型视觉语言模型（LVLM）受到的视觉攻击。DPS 使用来自部分图像响应来监督原始图像的响应，使模型在受到攻击时能够调整其响应，同时在干净输入时保持信心。实验表明，DPS 在六个数据集上将三个流行模型的平均攻击成功率降低了 76.3%。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Exploring Homogeneous and Heterogeneous Consistent Label Associations   for Unsupervised Visible-Infrared Person ReID</div>
-<div class="meta-line">Authors: Lingfeng He, De Cheng, Nannan Wang, Xinbo Gao</div>
-<div class="meta-line">First: 2024-02-01T15:33:17+00:00 · Latest: 2024-12-04T03:55:35+00:00</div>
-<div class="meta-line">Comments: Accepted by IJCV2024</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2402.00672v4">Abs</a> · <a href="http://arxiv.org/pdf/2402.00672v4">PDF</a> · <a href="https://github.com/FranklinLingfeng/code_for_MULT">Code1</a></div>
+<div class="title">Attn-Adapter: Attention Is All You Need for Online Few-shot Learner of   Vision-Language Model</div>
+<div class="meta-line">Authors: Phuoc-Nguyen Bui, Khanh-Binh Nguyen, Hyunseung Choo</div>
+<div class="meta-line">Venue: ICCV 2025</div>
+<div class="meta-line">First: 2025-09-04T05:42:02+00:00 · Latest: 2025-09-04T05:42:02+00:00</div>
+<div class="meta-line">Comments: ICCV 2025 - LIMIT Workshop</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03895v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03895v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID)
-endeavors to retrieve pedestrian images of the same identity from different
-modalities without annotations. While prior work focuses on establishing
-cross-modality pseudo-label associations to bridge the modality-gap, they
-ignore maintaining the instance-level homogeneous and heterogeneous consistency
-between the feature space and the pseudo-label space, resulting in coarse
-associations. In response, we introduce a Modality-Unified Label Transfer
-(MULT) module that simultaneously accounts for both homogeneous and
-heterogeneous fine-grained instance-level structures, yielding high-quality
-cross-modality label associations. It models both homogeneous and heterogeneous
-affinities, leveraging them to quantify the inconsistency between the
-pseudo-label space and the feature space, subsequently minimizing it. The
-proposed MULT ensures that the generated pseudo-labels maintain alignment
-across modalities while upholding structural consistency within intra-modality.
-Additionally, a straightforward plug-and-play Online Cross-memory Label
-Refinement (OCLR) module is proposed to further mitigate the side effects of
-noisy pseudo-labels while simultaneously aligning different modalities, coupled
-with an Alternative Modality-Invariant Representation Learning (AMIRL)
-framework. Experiments demonstrate that our proposed method outperforms
-existing state-of-the-art USL-VI-ReID methods, highlighting the superiority of
-our MULT in comparison to other cross-modality association methods. Code is
-available at https://github.com/FranklinLingfeng/code_for_MULT.</div></details>
+<div class="mono">Contrastive vision-language models excel in zero-shot image recognition but
+face challenges in few-shot scenarios due to computationally intensive offline
+fine-tuning using prompt learning, which risks overfitting. To overcome these
+limitations, we propose Attn-Adapter, a novel online few-shot learning
+framework that enhances CLIP&#x27;s adaptability via a dual attention mechanism. Our
+design incorporates dataset-specific information through two components: the
+Memory Attn-Adapter, which refines category embeddings using support examples,
+and the Local-Global Attn-Adapter, which enriches image embeddings by
+integrating local and global features. This architecture enables dynamic
+adaptation from a few labeled samples without retraining the base model.
+Attn-Adapter outperforms state-of-the-art methods in cross-category and
+cross-dataset generalization, maintaining efficient inference and scaling
+across CLIP backbones.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>探索一致标签关联的同质性和异质性对于无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需标注的情况下，从不同模态中检索同一身份的行人图像。先前的工作集中在建立跨模态的伪标签关联以弥补模态差异，但忽略了在特征空间和伪标签空间之间保持实例级的同质性和异质性一致性，导致关联粗糙。为此，我们引入了一个模态统一标签转移（MULT）模块，该模块同时考虑了同质性和异质性的细粒度实例级结构，从而产生高质量的跨模态标签关联。该模块利用同质性和异质性亲和力来量化伪标签空间与特征空间之间的不一致性，并对其进行最小化。所提出的MULT确保生成的伪标签在不同模态之间保持对齐，同时在同模态内保持结构一致性。此外，我们还提出了一种简单的即插即用在线跨记忆标签精炼（OCLR）模块，以进一步减轻噪声伪标签的副作用，同时对齐不同模态，结合了一种替代模态不变表示学习（AMIRL）框架。实验表明，我们提出的方法优于现有最先进的USL-VI-ReID方法，突显了我们MULT在与其他跨模态关联方法相比的优势。代码可在https://github.com/FranklinLingfeng/code_for_MULT获取。</div>
+<div class="mono"><b>标题：</b>Attn-Adapter：无需离线微调的视觉-语言模型在线少样本学习者</div>
+<div class="mono" style="margin-top:8px">对比视觉-语言模型在零样本图像识别中表现出色，但在少样本场景中由于使用提示学习进行计算密集型离线微调而面临过拟合风险。为克服这些限制，我们提出了一种名为Attn-Adapter的新颖在线少样本学习框架，通过双重注意力机制增强CLIP的适应性。我们的设计通过两个组件引入数据集特定信息：Memory Attn-Adapter，通过支持样本细化类别嵌入；Local-Global Attn-Adapter，通过整合局部和全局特征丰富图像嵌入。该架构能够在少量标记样本下实现动态适应，而无需重新训练基础模型。Attn-Adapter在跨类别和跨数据集泛化方面优于现有方法，同时保持高效的推理并适用于CLIP基础模型的不同版本。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) endeavors to retrieve pedestrian images of the same identity from different modalities without annotations.</div>
+<div class="mono">The research aims to address the limitations of contrastive vision-language models in few-shot scenarios by proposing Attn-Adapter, which uses a dual attention mechanism to enhance CLIP&#x27;s adaptability. The method involves Memory Attn-Adapter for refining category embeddings and Local-Global Attn-Adapter for enriching image embeddings. Experimental results show that Attn-Adapter outperforms state-of-the-art methods in cross-category and cross-dataset generalization while maintaining efficient inference and scalability across CLIP backbones.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过提出Attn-Adapter，一种新颖的在线少样本学习框架，解决对比视觉-语言模型在少样本场景中的局限性。该方法通过双重注意力机制增强CLIP的适应性，通过Memory Attn-Adapter和Local-Global Attn-Adapter整合特定数据集的信息。该方法能够在不重新训练基础模型的情况下，从少量标记样本中动态适应，并在跨类别和跨数据集泛化方面优于现有最佳方法，同时保持高效的推理和跨CLIP骨干网络的可扩展性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Unsupervised Visible-Infrared Person ReID by Collaborative Learning with   Neighbor-Guided Label Refinement</div>
-<div class="meta-line">Authors: De Cheng, Xiaojian Huang, Nannan Wang, Lingfeng He, Zhihui Li, Xinbo Gao</div>
-<div class="meta-line">Venue: ACM MM 2023</div>
-<div class="meta-line">First: 2023-05-22T04:40:30+00:00 · Latest: 2024-11-03T13:50:53+00:00</div>
-<div class="meta-line">Comments: Accepted by ACM MM 2023</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2305.12711v4">Abs</a> · <a href="http://arxiv.org/pdf/2305.12711v4">PDF</a></div>
+<div class="title">Weakly-Supervised Learning of Dense Functional Correspondences</div>
+<div class="meta-line">Authors: Stefan Stojanov, Linan Zhao, Yunzhi Zhang, Daniel L. K. Yamins, Jiajun Wu</div>
+<div class="meta-line">Venue: ICCV 2025</div>
+<div class="meta-line">First: 2025-09-04T05:39:16+00:00 · Latest: 2025-09-04T05:39:16+00:00</div>
+<div class="meta-line">Comments: Accepted at ICCV 2025. Project website:
+  https://dense-functional-correspondence.github.io/</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03893v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03893v1">PDF</a> · <a href="https://dense-functional-correspondence.github.io/">Project1</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised learning visible-infrared person re-identification (USL-VI-ReID)
-aims at learning modality-invariant features from unlabeled cross-modality
-dataset, which is crucial for practical applications in video surveillance
-systems. The key to essentially address the USL-VI-ReID task is to solve the
-cross-modality data association problem for further heterogeneous joint
-learning. To address this issue, we propose a Dual Optimal Transport Label
-Assignment (DOTLA) framework to simultaneously assign the generated labels from
-one modality to its counterpart modality. The proposed DOTLA mechanism
-formulates a mutual reinforcement and efficient solution to cross-modality data
-association, which could effectively reduce the side-effects of some
-insufficient and noisy label associations. Besides, we further propose a
-cross-modality neighbor consistency guided label refinement and regularization
-module, to eliminate the negative effects brought by the inaccurate supervised
-signals, under the assumption that the prediction or label distribution of each
-example should be similar to its nearest neighbors. Extensive experimental
-results on the public SYSU-MM01 and RegDB datasets demonstrate the
-effectiveness of the proposed method, surpassing existing state-of-the-art
-approach by a large margin of 7.76% mAP on average, which even surpasses some
-supervised VI-ReID methods.</div></details>
+<div class="mono">Establishing dense correspondences across image pairs is essential for tasks
+such as shape reconstruction and robot manipulation. In the challenging setting
+of matching across different categories, the function of an object, i.e., the
+effect that an object can cause on other objects, can guide how correspondences
+should be established. This is because object parts that enable specific
+functions often share similarities in shape and appearance. We derive the
+definition of dense functional correspondence based on this observation and
+propose a weakly-supervised learning paradigm to tackle the prediction task.
+The main insight behind our approach is that we can leverage vision-language
+models to pseudo-label multi-view images to obtain functional parts. We then
+integrate this with dense contrastive learning from pixel correspondences to
+distill both functional and spatial knowledge into a new model that can
+establish dense functional correspondence. Further, we curate synthetic and
+real evaluation datasets as task benchmarks. Our results demonstrate the
+advantages of our approach over baseline solutions consisting of off-the-shelf
+self-supervised image representations and grounded vision language models.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>协作学习与邻域引导标签精炼的无监督可见-红外行人再识别</div>
-<div class="mono" style="margin-top:8px">无监督学习可见-红外行人再识别（USL-VI-ReID）旨在从未标记的跨模态数据集中学习模态不变特征，这对于视频监控系统中的实际应用至关重要。解决USL-VI-ReID任务的关键在于解决跨模态数据关联问题，以便进一步进行异质联合学习。为了解决这一问题，我们提出了一种双最优传输标签分配（DOTLA）框架，以同时将一种模态生成的标签分配给其对应模态。提出的DOTLA机制将跨模态数据关联问题转化为一种相互强化和高效的解决方案，从而有效减少了某些不足和噪声标签关联的副作用。此外，我们还提出了一种跨模态邻域一致性引导的标签精炼和正则化模块，在假设每个示例的预测或标签分布应与其最近邻相似的前提下，消除不准确监督信号带来的负面影响。在公开的SYSU-MM01和RegDB数据集上的广泛实验结果表明，所提出的方法具有很高的有效性，平均mAP值比现有最先进的方法高出7.76%，甚至超过了某些监督VI-ReID方法。</div>
+<div class="mono"><b>标题：</b>弱监督学习密集功能对应</div>
+<div class="mono" style="margin-top:8px">在形状重建和机器人操作等任务中，跨图像对建立密集对应关系是必不可少的。在不同类别之间的匹配挑战中，对象的功能，即对象对其他对象可能产生的效果，可以指导对应关系的建立。因为能够实现特定功能的对象部分在形状和外观上往往具有相似性。我们基于这一观察定义了密集功能对应，并提出了一种弱监督学习范式来解决预测任务。我们方法的核心洞察是，可以利用视觉语言模型对多视角图像进行伪标签以获得功能部分，然后将此与基于像素对应关系的密集对比学习相结合，将功能和空间知识提炼到一个新模型中，以建立密集功能对应。此外，我们还整理了合成和真实评估数据集作为任务基准。我们的结果表明，与基于现成的自监督图像表示和基于视觉语言模型的基线解决方案相比，我们方法的优势。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the unsupervised learning of visible-infrared person re-identification (USL-VI-ReID) by proposing a Dual Optimal Transport Label Assignment (DOTLA) framework. The method aims to solve the cross-modality data association problem to enable joint learning of heterogeneous data. Experimental results on public datasets SYSU-MM01 and RegDB show that the proposed approach outperforms existing state-of-the-art methods by 7.76% in mean average precision (mAP).</div>
-<div class="mono" style="margin-top:8px">论文提出了一种双最优传输标签分配（DOTLA）框架，以解决跨模态数据关联问题，从而实现无监督的可见红外行人重识别（USL-VI-ReID）。该框架将一种模态生成的标签分配给另一种模态，增强跨模态联合学习。此外，还引入了一个跨模态邻居一致性引导的标签精炼模块，以提高标签准确性。实验结果表明，该方法在SYSU-MM01和RegDB数据集上的平均精度（mAP）上优于现有方法，高出7.76%。</div>
+<div class="mono">This paper addresses the challenge of establishing dense correspondences across image pairs, especially in different categories. It proposes a weakly-supervised learning approach that leverages vision-language models to pseudo-label functional parts and integrates this with dense contrastive learning. The key finding is that this method outperforms baseline solutions using off-the-shelf self-supervised image representations and grounded vision language models on both synthetic and real datasets.</div>
+<div class="mono" style="margin-top:8px">该论文通过利用物体部分的功能作用来解决不同类别物体间密集对应关系的建立难题，提出了一种弱监督学习方法，使用视觉语言模型伪标签图像，并将其与基于像素对应关系的密集对比学习相结合。结果表明，该方法在合成和真实数据集上的密集功能对应关系建立方面优于基线解决方案。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Efficient Bilateral Cross-Modality Cluster Matching for Unsupervised   Visible-Infrared Person ReID</div>
-<div class="meta-line">Authors: De Cheng, Lingfeng He, Nannan Wang, Shizhou Zhang, Zhen Wang, Xinbo Gao</div>
-<div class="meta-line">Venue: ACM MM 2023</div>
-<div class="meta-line">First: 2023-05-22T03:27:46+00:00 · Latest: 2024-11-03T13:48:21+00:00</div>
-<div class="meta-line">Comments: Accepted by ACM MM 2023</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2305.12673v4">Abs</a> · <a href="http://arxiv.org/pdf/2305.12673v4">PDF</a></div>
+<div class="title">Expedition &amp; Expansion: Leveraging Semantic Representations for   Goal-Directed Exploration in Continuous Cellular Automata</div>
+<div class="meta-line">Authors: Sina Khajehabdollahi, Gautier Hamon, Marko Cvjetko, Pierre-Yves Oudeyer, Clément Moulin-Frier, Cédric Colas</div>
+<div class="meta-line">First: 2025-09-04T03:44:44+00:00 · Latest: 2025-09-04T03:44:44+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03863v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03863v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) aims to
-match pedestrian images of the same identity from different modalities without
-annotations. Existing works mainly focus on alleviating the modality gap by
-aligning instance-level features of the unlabeled samples. However, the
-relationships between cross-modality clusters are not well explored. To this
-end, we propose a novel bilateral cluster matching-based learning framework to
-reduce the modality gap by matching cross-modality clusters. Specifically, we
-design a Many-to-many Bilateral Cross-Modality Cluster Matching (MBCCM)
-algorithm through optimizing the maximum matching problem in a bipartite graph.
-Then, the matched pairwise clusters utilize shared visible and infrared
-pseudo-labels during the model training. Under such a supervisory signal, a
-Modality-Specific and Modality-Agnostic (MSMA) contrastive learning framework
-is proposed to align features jointly at a cluster-level. Meanwhile, the
-cross-modality Consistency Constraint (CC) is proposed to explicitly reduce the
-large modality discrepancy. Extensive experiments on the public SYSU-MM01 and
-RegDB datasets demonstrate the effectiveness of the proposed method, surpassing
-state-of-the-art approaches by a large margin of 8.76% mAP on average.</div></details>
+<div class="mono">Discovering diverse visual patterns in continuous cellular automata (CA) is
+challenging due to the vastness and redundancy of high-dimensional behavioral
+spaces. Traditional exploration methods like Novelty Search (NS) expand locally
+by mutating known novel solutions but often plateau when local novelty is
+exhausted, failing to reach distant, unexplored regions. We introduce
+Expedition and Expansion (E&amp;E), a hybrid strategy where exploration alternates
+between local novelty-driven expansions and goal-directed expeditions. During
+expeditions, E&amp;E leverages a Vision-Language Model (VLM) to generate linguistic
+goals--descriptions of interesting but hypothetical patterns that drive
+exploration toward uncharted regions. By operating in semantic spaces that
+align with human perception, E&amp;E both evaluates novelty and generates goals in
+conceptually meaningful ways, enhancing the interpretability and relevance of
+discovered behaviors. Tested on Flow Lenia, a continuous CA known for its rich,
+emergent behaviors, E&amp;E consistently uncovers more diverse solutions than
+existing exploration methods. A genealogical analysis further reveals that
+solutions originating from expeditions disproportionately influence long-term
+exploration, unlocking new behavioral niches that serve as stepping stones for
+subsequent search. These findings highlight E&amp;E&#x27;s capacity to break through
+local novelty boundaries and explore behavioral landscapes in human-aligned,
+interpretable ways, offering a promising template for open-ended exploration in
+artificial life and beyond.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>高效双边跨模态簇匹配的无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需标注的情况下，匹配不同模态下同一身份的行人图像。现有工作主要集中在通过对齐未标注样本的实例级特征来缓解模态差异。然而，跨模态簇之间的关系尚未得到充分探索。为此，我们提出了一种新的双边簇匹配学习框架，通过匹配跨模态簇来减少模态差异。具体地，我们通过在二分图中优化最大匹配问题设计了一种多对多双边跨模态簇匹配（MBCCM）算法。然后，匹配的成对簇在模型训练过程中利用共享的可见光和红外伪标签。在这样的监督信号下，我们提出了一种模态特定和模态无关的对比学习框架，以在簇级联合对齐特征。同时，我们提出了跨模态一致性约束（CC）以显式地减少大模态差异。在公开的SYSU-MM01和RegDB数据集上的广泛实验表明，所提出的方法具有很高的有效性，在平均mAP上比现有最佳方法高出8.76%。</div>
+<div class="mono"><b>标题：</b>探险与扩展：利用语义表示在连续细胞自动机中进行目标导向探索</div>
+<div class="mono" style="margin-top:8px">在连续细胞自动机（CA）中发现多样的视觉模式具有挑战性，因为高维行为空间既庞大又冗余。传统的探索方法如新颖性搜索（NS）通过突变已知的新颖解进行局部扩展，但在局部新颖性耗尽时往往会停滞，无法到达遥远的未探索区域。我们引入了探险与扩展（E&amp;E）这一混合策略，其中探索交替进行局部新颖性驱动的扩展和目标导向的探险。在探险期间，E&amp;E 利用视觉语言模型（VLM）生成语言目标——对有趣但假设的模式的描述，从而驱动探索向未开发区域前进。通过在与人类感知相一致的语义空间中操作，E&amp;E 既评估新颖性又以概念上有意义的方式生成目标，从而增强发现行为的可解释性和相关性。在Flow Lenia上进行测试，这是一种以丰富、涌现行为著称的连续CA，E&amp;E 一致地发现了比现有探索方法更多的多样化解决方案。进一步的谱系分析表明，源自探险的解决方案在长期探索中占主导地位，解锁了新的行为生态位，为后续搜索提供了踏脚石。这些发现突显了E&amp;E在突破局部新颖性边界、以与人类对齐的方式探索行为景观方面的潜力，为人工生命中的开放探索提供了有希望的模板，超越了人工生命领域。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses unsupervised visible-infrared person re-identification by proposing a bilateral cluster matching framework. It introduces a Many-to-many Bilateral Cross-Modality Cluster Matching algorithm to match clusters across modalities and a Modality-Specific and Modality-Agnostic contrastive learning framework to align features. The method also includes a cross-modality consistency constraint to reduce modality discrepancy. Experiments show the proposed method outperforms existing approaches with an average mAP improvement of 8.76%.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种新的双边簇匹配框架来解决无监督可见红外行人重识别（USL-VI-ReID）的问题。该框架通过匹配跨模态簇并使用Many-to-many Bilateral Cross-Modality Cluster Matching算法在簇级对齐特征来减少模态差距。此外，还引入了模态特定和模态无关对比学习框架以及跨模态一致性约束。在SYSU-MM01和RegDB数据集上的实验结果表明，该方法显著提高了性能，平均mAP提高了8.76%，超过现有最佳方法。</div>
+<div class="mono">Discovering diverse visual patterns in continuous cellular automata (CA) is challenging due to the vastness and redundancy of high-dimensional behavioral spaces.</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Generative Adversarial Patches for Physical Attacks on Cross-Modal   Pedestrian Re-Identification</div>
-<div class="meta-line">Authors: Yue Su, Hao Li, Maoguo Gong</div>
-<div class="meta-line">First: 2024-10-26T06:40:10+00:00 · Latest: 2024-10-26T06:40:10+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2410.20097v1">Abs</a> · <a href="http://arxiv.org/pdf/2410.20097v1">PDF</a></div>
+<div class="title">Measuring How (Not Just Whether) VLMs Build Common Ground</div>
+<div class="meta-line">Authors: Saki Imai, Mert İnan, Anthony Sicilia, Malihe Alikhani</div>
+<div class="meta-line">First: 2025-09-04T01:43:49+00:00 · Latest: 2025-09-04T01:43:49+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03805v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03805v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared pedestrian Re-identification (VI-ReID) aims to match
-pedestrian images captured by infrared cameras and visible cameras. However,
-VI-ReID, like other traditional cross-modal image matching tasks, poses
-significant challenges due to its human-centered nature. This is evidenced by
-the shortcomings of existing methods, which struggle to extract common features
-across modalities, while losing valuable information when bridging the gap
-between them in the implicit feature space, potentially compromising security.
-To address this vulnerability, this paper introduces the first physical
-adversarial attack against VI-ReID models. Our method, termed Edge-Attack,
-specifically tests the models&#x27; ability to leverage deep-level implicit features
-by focusing on edge information, the most salient explicit feature
-differentiating individuals across modalities. Edge-Attack utilizes a novel
-two-step approach. First, a multi-level edge feature extractor is trained in a
-self-supervised manner to capture discriminative edge representations for each
-individual. Second, a generative model based on Vision Transformer Generative
-Adversarial Networks (ViTGAN) is employed to generate adversarial patches
-conditioned on the extracted edge features. By applying these patches to
-pedestrian clothing, we create realistic, physically-realizable adversarial
-samples. This black-box, self-supervised approach ensures the generalizability
-of our attack against various VI-ReID models. Extensive experiments on
-SYSU-MM01 and RegDB datasets, including real-world deployments, demonstrate the
-effectiveness of Edge- Attack in significantly degrading the performance of
-state-of-the-art VI-ReID methods.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the vulnerability of Visible-infrared pedestrian Re-identification (VI-ReID) models by introducing Edge-Attack, a physical adversarial attack. The method focuses on edge information to generate adversarial patches using a two-step process: training a multi-level edge feature extractor and employing a Vision Transformer Generative Adversarial Network (ViTGAN) to create adversarial patches. Experiments on SYSU-MM01 and RegDB datasets show that Edge-Attack significantly degrades the performance of state-of-the-art VI-ReID methods.</div>
-<div class="mono" style="margin-top:8px">本文通过引入Edge-攻击，一种物理对抗攻击，来解决可见-红外行人再识别（VI-ReID）模型的漏洞。该方法采用两步法：首先训练多级边缘特征提取器以捕获区分性边缘表示，然后使用基于Vision Transformer生成对抗网络（ViTGAN）生成基于提取边缘特征的对抗补丁。将这些补丁应用于行人服装，可以生成现实的对抗样本，显著降低最先进的VI-ReID方法的性能。</div>
-</details>
-</div>
-<div class="card">
-<div class="title">WRIM-Net: Wide-Ranging Information Mining Network for Visible-Infrared   Person Re-Identification</div>
-<div class="meta-line">Authors: Yonggan Wu, Ling-Chao Meng, Yuan Zichao, Sixian Chan, Hong-Qiang Wang</div>
-<div class="meta-line">First: 2024-08-20T08:06:16+00:00 · Latest: 2024-08-20T08:06:16+00:00</div>
-<div class="meta-line">Comments: 18 pages, 5 figures</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2408.10624v1">Abs</a> · <a href="http://arxiv.org/pdf/2408.10624v1">PDF</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">For the visible-infrared person re-identification (VI-ReID) task, one of the
-primary challenges lies in significant cross-modality discrepancy. Existing
-methods struggle to conduct modality-invariant information mining. They often
-focus solely on mining singular dimensions like spatial or channel, and
-overlook the extraction of specific-modality multi-dimension information. To
-fully mine modality-invariant information across a wide range, we introduce the
-Wide-Ranging Information Mining Network (WRIM-Net), which mainly comprises a
-Multi-dimension Interactive Information Mining (MIIM) module and an
-Auxiliary-Information-based Contrastive Learning (AICL) approach. Empowered by
-the proposed Global Region Interaction (GRI), MIIM comprehensively mines
-non-local spatial and channel information through intra-dimension interaction.
-Moreover, Thanks to the low computational complexity design, separate MIIM can
-be positioned in shallow layers, enabling the network to better mine
-specific-modality multi-dimension information. AICL, by introducing the novel
-Cross-Modality Key-Instance Contrastive (CMKIC) loss, effectively guides the
-network in extracting modality-invariant information. We conduct extensive
-experiments not only on the well-known SYSU-MM01 and RegDB datasets but also on
-the latest large-scale cross-modality LLCM dataset. The results demonstrate
-WRIM-Net&#x27;s superiority over state-of-the-art methods.</div></details>
+<div class="mono">Large vision language models (VLMs) increasingly claim reasoning skills, yet
+current benchmarks evaluate them in single-turn or question answering settings.
+However, grounding is an interactive process in which people gradually develop
+shared understanding through ongoing communication. We introduce a four-metric
+suite (grounding efficiency, content alignment, lexical adaptation, and
+human-likeness) to systematically evaluate VLM performance in interactive
+grounding contexts. We deploy the suite on 150 self-play sessions of
+interactive referential games between three proprietary VLMs and compare them
+with human dyads. All three models diverge from human patterns on at least
+three metrics, while GPT4o-mini is the closest overall. We find that (i) task
+success scores do not indicate successful grounding and (ii) high
+image-utterance alignment does not necessarily predict task success. Our metric
+suite and findings offer a framework for future research on VLM grounding.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>WRIM-Net：可见-红外人体重识别广泛信息挖掘网络</div>
-<div class="mono" style="margin-top:8px">对于可见-红外人体重识别（VI-ReID）任务，主要挑战在于显著的跨模态差异。现有方法难以进行模态不变的信息挖掘。它们通常仅专注于挖掘单一维度的信息，如空间或通道，而忽视了特定模态多维度信息的提取。为全面挖掘广泛范围内的模态不变信息，我们引入了广泛信息挖掘网络（WRIM-Net），主要由多维度交互信息挖掘（MIIM）模块和基于辅助信息的对比学习（AICL）方法组成。借助提出的全局区域交互（GRI），MIIM通过内在维度交互全面挖掘非局部的空间和通道信息。此外，由于低计算复杂度设计，单独的MIIM可以放置在浅层，使网络更好地挖掘特定模态多维度信息。AICL通过引入新颖的跨模态关键实例对比损失（CMKIC），有效引导网络提取模态不变信息。我们在著名的SYSU-MM01和RegDB数据集上以及最新的大规模跨模态LLCM数据集上进行了广泛的实验。结果表明WRIM-Net优于现有方法。</div>
-</details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research aims to address the challenge of cross-modality discrepancy in visible-infrared person re-identification by introducing WRIM-Net, which includes a Multi-dimension Interactive Information Mining module and an Auxiliary-Information-based Contrastive Learning approach. The key findings show that WRIM-Net outperforms existing methods on well-known datasets like SYSU-MM01 and RegDB, as well as on the large-scale LLCM dataset, by effectively mining modality-invariant information across a wide range of dimensions.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过引入WRIM-Net解决可见-红外人再识别中的跨模态差异问题，WRIM-Net包含多维度交互信息挖掘模块和辅助信息基于对比学习方法。该方法利用全局区域交互全面挖掘空间和通道信息，并使用新型跨模态关键实例对比损失引导提取模态不变信息。实验结果表明，WRIM-Net在SYSU-MM01、RegDB和LLCM数据集上优于现有最先进的方法。</div>
+<div class="mono"><b>标题：</b>测量VLMs如何（而不仅仅是是否）建立共同基础</div>
+<div class="mono" style="margin-top:8px">大型视觉语言模型（VLMs）越来越多地声称具有推理能力，但当前基准仅在单轮或问答设置中评估它们。然而，接地是一个互动过程，在这个过程中，人们通过持续沟通逐渐发展共享理解。我们引入了一套四指标（接地效率、内容对齐、词汇适应性和类人度）来系统评估VLM在互动接地环境中的表现。我们在150场自玩的互动指称游戏中部署了这套指标，并将它们与人类双人组进行了比较。所有三个模型在至少三个指标上偏离了人类模式，而GPT4o-mini总体上最接近人类。我们发现，(i) 任务成功分数并不能表明成功的接地，(ii) 高图像-语句对齐并不一定预测任务成功。我们的指标套件和发现为未来VLM接地研究提供了一个框架。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Multi-Memory Matching for Unsupervised Visible-Infrared Person   Re-Identification</div>
-<div class="meta-line">Authors: Jiangming Shi, Xiangbo Yin, Yeyun Chen, Yachao Zhang, Zhizhong Zhang, Yuan Xie, Yanyun Qu</div>
-<div class="meta-line">First: 2024-01-12T01:24:04+00:00 · Latest: 2024-07-29T09:40:11+00:00</div>
-<div class="meta-line">Comments: Accepted by ECCV2024</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2401.06825v2">Abs</a> · <a href="http://arxiv.org/pdf/2401.06825v2">PDF</a></div>
+<div class="title">Causality-guided Prompt Learning for Vision-language Models via Visual   Granulation</div>
+<div class="meta-line">Authors: Mengyu Gao, Qiulei Dong</div>
+<div class="meta-line">Venue: ICCV 2025</div>
+<div class="meta-line">First: 2025-09-04T01:40:41+00:00 · Latest: 2025-09-04T01:40:41+00:00</div>
+<div class="meta-line">Comments: ICCV 2025 Accepted</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03803v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03803v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) is a
-promising yet challenging retrieval task. The key challenges in USL-VI-ReID are
-to effectively generate pseudo-labels and establish pseudo-label
-correspondences across modalities without relying on any prior annotations.
-Recently, clustered pseudo-label methods have gained more attention in
-USL-VI-ReID. However, previous methods fell short of fully exploiting the
-individual nuances, as they simply utilized a single memory that represented an
-identity to establish cross-modality correspondences, resulting in ambiguous
-cross-modality correspondences. To address the problem, we propose a
-Multi-Memory Matching (MMM) framework for USL-VI-ReID. We first design a
-Cross-Modality Clustering (CMC) module to generate the pseudo-labels through
-clustering together both two modality samples. To associate cross-modality
-clustered pseudo-labels, we design a Multi-Memory Learning and Matching (MMLM)
-module, ensuring that optimization explicitly focuses on the nuances of
-individual perspectives and establishes reliable cross-modality
-correspondences. Finally, we design a Soft Cluster-level Alignment (SCA) module
-to narrow the modality gap while mitigating the effect of noise pseudo-labels
-through a soft many-to-many alignment strategy. Extensive experiments on the
-public SYSU-MM01 and RegDB datasets demonstrate the reliability of the
-established cross-modality correspondences and the effectiveness of our MMM.
-The source codes will be released.</div></details>
+<div class="mono">Prompt learning has recently attracted much attention for adapting
+pre-trained vision-language models (e.g., CLIP) to downstream recognition
+tasks. However, most of the existing CLIP-based prompt learning methods only
+show a limited ability for handling fine-grained datasets. To address this
+issue, we propose a causality-guided text prompt learning method via visual
+granulation for CLIP, called CaPL, where the explored visual granulation
+technique could construct sets of visual granules for the text prompt to
+capture subtle discrepancies among different fine-grained classes through
+casual inference. The CaPL method contains the following two modules: (1) An
+attribute disentanglement module is proposed to decompose visual features into
+non-individualized attributes (shared by some classes) and individualized
+attributes (specific to single classes) using a Brownian Bridge Diffusion
+Model; (2) A granule learning module is proposed to construct visual granules
+by integrating the aforementioned attributes for recognition under two causal
+inference strategies. Thanks to the learned visual granules, more
+discriminative text prompt is expected to be learned. Extensive experimental
+results on 15 datasets demonstrate that our CaPL method significantly
+outperforms the state-of-the-art prompt learning methods, especially on
+fine-grained datasets.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>多记忆匹配在无监督可见-红外行人重识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）是一项有前景但极具挑战性的检索任务。USL-VI-ReID 的关键挑战在于有效生成伪标签，并在不依赖任何先验注释的情况下建立跨模态伪标签对应关系。最近，聚类伪标签方法在 USL-VI-ReID 中引起了更多关注。然而，之前的方法未能充分利用个体差异，因为它们仅利用单一记忆来表示身份以建立跨模态对应关系，导致跨模态对应关系模糊。为解决这一问题，我们提出了一种 USL-VI-ReID 的多记忆匹配（MMM）框架。我们首先设计了一个跨模态聚类（CMC）模块，通过聚类两种模态样本来生成伪标签。为了关联跨模态聚类伪标签，我们设计了一个多记忆学习和匹配（MMLM）模块，确保优化明确关注个体视角的差异并建立可靠的跨模态对应关系。最后，我们设计了一个软聚类级对齐（SCA）模块，在通过软多对多对齐策略减轻噪声伪标签影响的同时缩小模态差距。在公开的 SYSU-MM01 和 RegDB 数据集上的广泛实验表明，建立的跨模态对应关系的可靠性和我们 MMM 的有效性。源代码将被发布。</div>
+<div class="mono"><b>标题：</b>基于视觉粒化引导因果性的提示学习方法在视觉语言模型中的应用</div>
+<div class="mono" style="margin-top:8px">提示学习最近引起了对适应预训练视觉语言模型（例如CLIP）到下游识别任务的广泛关注。然而，现有的大多数基于CLIP的提示学习方法在处理细粒度数据集时能力有限。为了解决这一问题，我们提出了一种基于视觉粒化的因果性引导文本提示学习方法，称为CaPL，其中探索的视觉粒化技术可以为文本提示构建视觉粒子集，通过因果推理捕捉不同细粒度类之间的细微差异。CaPL方法包含以下两个模块：（1）提出了一种属性解耦模块，使用布朗桥扩散模型将视觉特征分解为非个体化属性（由某些类共享）和个体化属性（仅对单一类特定）；（2）提出了一种粒子学习模块，通过结合上述属性在两种因果推理策略下构建视觉粒子进行识别。由于学习到的视觉粒子，期望能够学习到更具区分性的文本提示。在15个数据集上的广泛实验结果表明，我们的CaPL方法显著优于最先进的提示学习方法，尤其是在细粒度数据集上。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of unsupervised visible-infrared person re-identification by proposing a Multi-Memory Matching (MMM) framework. This framework includes a Cross-Modality Clustering (CMC) module for generating pseudo-labels and a Multi-Memory Learning and Matching (MMLM) module for establishing reliable cross-modality correspondences. The Soft Cluster-level Alignment (SCA) module further refines these correspondences. Experiments on SYSU-MM01 and RegDB datasets show the effectiveness of the proposed method in generating reliable cross-modality correspondences.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种多记忆匹配（MMM）框架来解决无监督可见红外行人重识别的挑战。引入了跨模态聚类（CMC）模块生成伪标签，并设计了多记忆学习和匹配（MMLM）模块以建立可靠的跨模态对应关系。此外，还设计了软聚类级对齐（SCA）模块以减少模态差距并减轻噪声的影响。在SYSU-MM01和RegDB数据集上的实验表明，所提出的方法能够生成可靠的跨模态对应关系。</div>
+<div class="mono">The research aims to enhance the fine-grained classification capabilities of pre-trained vision-language models like CLIP through a novel causality-guided prompt learning method called CaPL. CaPL uses visual granulation to decompose visual features into shared and individualized attributes and constructs discriminative visual granules for improved text prompts. Experimental results on 15 datasets show that CaPL outperforms existing methods, particularly on fine-grained datasets.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过一种名为CaPL的因果引导文本提示学习方法来增强像CLIP这样的视觉语言模型处理细粒度数据集的能力。CaPL使用视觉粒化将视觉特征分解为共享和个体化属性，并构建视觉粒子以进行更好的因果推理。实验结果显示，CaPL在15个数据集上优于现有方法，特别是在细粒度数据集上表现出色。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Dynamic Identity-Guided Attention Network for Visible-Infrared Person   Re-identification</div>
-<div class="meta-line">Authors: Peng Gao, Yujian Lee, Hui Zhang, Xubo Liu, Yiyang Hu, Guquan Jing</div>
-<div class="meta-line">First: 2024-05-21T12:04:56+00:00 · Latest: 2024-07-22T09:23:26+00:00</div>
-<div class="meta-line">Comments: I need to further debug my code to improve accuracy</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2405.12713v2">Abs</a> · <a href="http://arxiv.org/pdf/2405.12713v2">PDF</a></div>
+<div class="title">MedVista3D: Vision-Language Modeling for Reducing Diagnostic Errors in   3D CT Disease Detection, Understanding and Reporting</div>
+<div class="meta-line">Authors: Yuheng Li, Yenho Chen, Yuxiang Lai, Jike Zhong, Vanessa Wildman, Xiaofeng Yang</div>
+<div class="meta-line">First: 2025-09-04T01:28:44+00:00 · Latest: 2025-09-04T01:28:44+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03800v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03800v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) aims to match people with
-the same identity between visible and infrared modalities. VI-ReID is a
-challenging task due to the large differences in individual appearance under
-different modalities. Existing methods generally try to bridge the cross-modal
-differences at image or feature level, which lacks exploring the discriminative
-embeddings. Effectively minimizing these cross-modal discrepancies relies on
-obtaining representations that are guided by identity and consistent across
-modalities, while also filtering out representations that are irrelevant to
-identity. To address these challenges, we introduce a dynamic identity-guided
-attention network (DIAN) to mine identity-guided and modality-consistent
-embeddings, facilitating effective bridging the gap between different
-modalities. Specifically, in DIAN, to pursue a semantically richer
-representation, we first use orthogonal projection to fuse the features from
-two connected coarse and fine layers. Furthermore, we first use dynamic
-convolution kernels to mine identity-guided and modality-consistent
-representations. More notably, a cross embedding balancing loss is introduced
-to effectively bridge cross-modal discrepancies by above embeddings.
-Experimental results on SYSU-MM01 and RegDB datasets show that DIAN achieves
-state-of-the-art performance. Specifically, for indoor search on SYSU-MM01, our
-method achieves 86.28% rank-1 accuracy and 87.41% mAP, respectively. Our code
-will be available soon.</div></details>
+<div class="mono">Radiologic diagnostic errors-under-reading errors, inattentional blindness,
+and communication failures-remain prevalent in clinical practice. These issues
+often stem from missed localized abnormalities, limited global context, and
+variability in report language. These challenges are amplified in 3D imaging,
+where clinicians must examine hundreds of slices per scan. Addressing them
+requires systems with precise localized detection, global volume-level
+reasoning, and semantically consistent natural language reporting. However,
+existing 3D vision-language models are unable to meet all three needs jointly,
+lacking local-global understanding for spatial reasoning and struggling with
+the variability and noise of uncurated radiology reports. We present
+MedVista3D, a multi-scale semantic-enriched vision-language pretraining
+framework for 3D CT analysis. To enable joint disease detection and holistic
+interpretation, MedVista3D performs local and global image-text alignment for
+fine-grained representation learning within full-volume context. To address
+report variability, we apply language model rewrites and introduce a Radiology
+Semantic Matching Bank for semantics-aware alignment. MedVista3D achieves
+state-of-the-art performance on zero-shot disease classification, report
+retrieval, and medical visual question answering, while transferring well to
+organ segmentation and prognosis prediction. Code and datasets will be
+released.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外人体重识别的动态身份引导注意力网络</div>
-<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）旨在将不同模态下的同一身份的人匹配起来。由于不同模态下个体外观的巨大差异，VI-ReID 是一个具有挑战性的任务。现有方法通常试图在图像或特征级别上弥合跨模态差异，但缺乏探索具有区分性的嵌入。有效缩小这些跨模态差异依赖于获得由身份引导且跨模态一致的表示，同时过滤掉与身份无关的表示。为了解决这些挑战，我们引入了动态身份引导注意力网络（DIAN），以挖掘身份引导且模态一致的嵌入，从而促进不同模态之间的有效连接。具体而言，在 DIAN 中，为了追求语义更丰富的表示，我们首先使用正交投影将两个相连的粗层和细层的特征融合。此外，我们首先使用动态卷积核挖掘身份引导且模态一致的表示。更值得注意的是，我们引入了一种跨嵌入平衡损失，通过上述嵌入有效弥合跨模态差异。在 SYSU-MM01 和 RegDB 数据集上的实验结果表明，DIAN 达到了最先进的性能。具体而言，对于 SYSU-MM01 的室内搜索，我们的方法分别实现了 86.28% 的 rank-1 准确率和 87.41% 的 mAP。我们的代码将很快开源。</div>
+<div class="mono"><b>标题：</b>MedVista3D：用于减少3D CT疾病检测、理解和报告中的诊断错误的视觉-语言建模</div>
+<div class="mono" style="margin-top:8px">放射学诊断错误，如漏诊、注意力盲点和沟通失败，在临床实践中仍然普遍存在。这些问题通常源于局部异常的遗漏、全球上下文的限制以及报告语言的差异性。这些问题在3D成像中被放大，因为临床医生必须检查每幅扫描中的数百个切片。解决这些问题需要具备精确局部检测、全局体素级推理和语义一致自然语言报告的系统。然而，现有的3D视觉-语言模型无法同时满足这三个需求，缺乏空间推理所需的局部-全局理解，并且难以处理未经整理的放射学报告的差异性和噪声。我们提出了MedVista3D，一种用于3D CT分析的多尺度语义增强视觉-语言预训练框架。为了实现联合疾病检测和整体解释，MedVista3D在全体积上下文中进行局部和全局图像-文本对齐，以实现细粒度的表示学习。为了解决报告的差异性，我们应用了语言模型重写，并引入了放射学语义匹配库，以实现语义感知的对齐。MedVista3D在零样本疾病分类、报告检索和医学视觉问答方面达到了最先进的性能，同时在器官分割和预后预测方面表现出良好的迁移能力。代码和数据集将被发布。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper introduces DIAN, a dynamic identity-guided attention network for visible-infrared person re-identification. DIAN uses orthogonal projection and dynamic convolution kernels to mine identity-guided and modality-consistent embeddings, and a cross embedding balancing loss to effectively bridge cross-modal discrepancies. The method achieves state-of-the-art performance, with 86.28% rank-1 accuracy and 87.41% mAP on the SYSU-MM01 dataset for indoor search.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种动态身份引导注意力网络DIAN，旨在通过挖掘身份引导和模态一致的嵌入来弥合可见光和红外模态之间的差距。DIAN 使用正交投影和动态卷积核融合特征并平衡跨模态差异。该方法在SYSU-MM01数据集室内搜索任务中达到最先进的性能，具体为86.28%的rank-1准确率和87.41%的mAP。</div>
+<div class="mono">Radiologic diagnostic errors-under-reading errors, inattentional blindness, and communication failures-remain prevalent in clinical practice.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过解决漏诊、注意力盲点和沟通失误等问题，减少3D CT疾病检测、理解和报告中的诊断错误。MedVista3D是一个多尺度语义增强的视觉-语言预训练框架，用于进行局部和全局图像-文本对齐，以实现精细粒度的表示学习。该模型还引入了放射学语义匹配库来处理报告的变异性。MedVista3D在零样本疾病分类、报告检索和医学视觉问答等方面达到了最先进的性能，并且在器官分割和预后预测方面也有良好的迁移能力。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Mutual Information Guided Optimal Transport for Unsupervised   Visible-Infrared Person Re-identification</div>
-<div class="meta-line">Authors: Zhizhong Zhang, Jiangming Wang, Xin Tan, Yanyun Qu, Junping Wang, Yong Xie, Yuan Xie</div>
-<div class="meta-line">First: 2024-07-17T17:32:07+00:00 · Latest: 2024-07-17T17:32:07+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2407.12758v1">Abs</a> · <a href="http://arxiv.org/pdf/2407.12758v1">PDF</a></div>
+<div class="title">STA-Net: A Decoupled Shape and Texture Attention Network for Lightweight   Plant Disease Classification</div>
+<div class="meta-line">Authors: Zongsen Qiu</div>
+<div class="meta-line">First: 2025-09-03T22:46:20+00:00 · Latest: 2025-09-03T22:46:20+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03754v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03754v1">PDF</a> · <a href="https://github.com/RzMY/STA-Net">Code1</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Unsupervised visible infrared person re-identification (USVI-ReID) is a
-challenging retrieval task that aims to retrieve cross-modality pedestrian
-images without using any label information. In this task, the large
-cross-modality variance makes it difficult to generate reliable cross-modality
-labels, and the lack of annotations also provides additional difficulties for
-learning modality-invariant features. In this paper, we first deduce an
-optimization objective for unsupervised VI-ReID based on the mutual information
-between the model&#x27;s cross-modality input and output. With equivalent
-derivation, three learning principles, i.e., &quot;Sharpness&quot; (entropy
-minimization), &quot;Fairness&quot; (uniform label distribution), and &quot;Fitness&quot; (reliable
-cross-modality matching) are obtained. Under their guidance, we design a loop
-iterative training strategy alternating between model training and
-cross-modality matching. In the matching stage, a uniform prior guided optimal
-transport assignment (&quot;Fitness&quot;, &quot;Fairness&quot;) is proposed to select matched
-visible and infrared prototypes. In the training stage, we utilize this
-matching information to introduce prototype-based contrastive learning for
-minimizing the intra- and cross-modality entropy (&quot;Sharpness&quot;). Extensive
-experimental results on benchmarks demonstrate the effectiveness of our method,
-e.g., 60.6% and 90.3% of Rank-1 accuracy on SYSU-MM01 and RegDB without any
-annotations.</div></details>
+<div class="mono">Responding to rising global food security needs, precision agriculture and
+deep learning-based plant disease diagnosis have become crucial. Yet, deploying
+high-precision models on edge devices is challenging. Most lightweight networks
+use attention mechanisms designed for generic object recognition, which poorly
+capture subtle pathological features like irregular lesion shapes and complex
+textures. To overcome this, we propose a twofold solution: first, using a
+training-free neural architecture search method (DeepMAD) to create an
+efficient network backbone for edge devices; second, introducing the
+Shape-Texture Attention Module (STAM). STAM splits attention into two branches
+-- one using deformable convolutions (DCNv4) for shape awareness and the other
+using a Gabor filter bank for texture awareness. On the public CCMT plant
+disease dataset, our STA-Net model (with 401K parameters and 51.1M FLOPs)
+reached 89.00% accuracy and an F1 score of 88.96%. Ablation studies confirm
+STAM significantly improves performance over baseline and standard attention
+models. Integrating domain knowledge via decoupled attention thus presents a
+promising path for edge-deployed precision agriculture AI. The source code is
+available at https://github.com/RzMY/STA-Net.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>互信息引导的最优传输在无监督可见红外行人再识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督可见红外行人再识别（USVI-ReID）是一项具有挑战性的检索任务，旨在在不使用任何标签信息的情况下检索跨模态的行人图像。在这个任务中，巨大的跨模态差异使得生成可靠的跨模态标签变得困难，而缺乏注释也增加了学习模态不变特征的难度。在本文中，我们首先基于模型的跨模态输入和输出之间的互信息推导出一个无监督VI-ReID的优化目标。通过等价推导，我们获得了三个学习原则，即“锐度”（熵最小化）、“公平性”（均匀标签分布）和“适应性”（可靠的跨模态匹配）。在这些原则的指导下，我们设计了一种交替进行模型训练和跨模态匹配的循环训练策略。在匹配阶段，我们提出了一种均匀先验引导的最优传输分配（“适应性”，“公平性”）来选择匹配的可见和红外原型。在训练阶段，我们利用这种匹配信息引入基于原型的对比学习，以最小化类内和跨模态的熵（“锐度”）。在基准上的广泛实验结果表明了我们方法的有效性，例如，在SYSU-MM01和RegDB上分别达到了60.6%和90.3%的Rank-1精度，且没有任何注释。</div>
+<div class="mono"><b>标题：</b>STA-Net：一种用于轻量级植物病害分类的解耦形状和纹理注意力网络</div>
+<div class="mono" style="margin-top:8px">为应对全球粮食安全需求的上升，精准农业和基于深度学习的植物病害诊断变得至关重要。然而，在边缘设备上部署高精度模型具有挑战性。大多数轻量级网络使用设计用于通用对象识别的注意力机制，这不能很好地捕捉到如不规则病斑形状和复杂纹理等细微的病理特征。为解决这一问题，我们提出了一种两步解决方案：首先，使用无训练神经架构搜索方法（DeepMAD）为边缘设备创建高效的网络骨干；其次，引入形状-纹理注意力模块（STAM）。STAM将注意力机制分为两个分支——一个使用可变形卷积（DCNv4）进行形状感知，另一个使用Gabor滤波器组进行纹理感知。在公共的CCMT植物病害数据集上，我们的STA-Net模型（参数量40.1万，FLOPs 51.1百万）达到了89.00%的准确率和88.96%的F1分数。消融研究证实，STAM在性能上显著优于基线和标准注意力模型。通过解耦注意力机制整合领域知识，为边缘部署的精准农业AI提供了一条有前景的道路。源代码可在https://github.com/RzMY/STA-Net 获取。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Unsupervised visible infrared person re-identification (USVI-ReID) is a challenging retrieval task that aims to retrieve cross-modality pedestrian images without using any label information.</div>
-<div class="mono" style="margin-top:8px">本文通过基于互信息的方法解决了无监督的可见光-红外行人重识别挑战，提出了三个学习原则：“Sharpness”（熵最小化）、“Fairness”（均匀标签分布）和“Fitness”（可靠的跨模态匹配）。方法交替进行模型训练和跨模态匹配，使用均匀先验引导的最优运输分配来选择匹配的原型，并利用匹配信息进行基于原型的对比学习以最小化熵。实验结果表明，在SYSU-MM01和RegDB基准上，该方法在无任何标注的情况下显著提高了Rank-1准确率。</div>
+<div class="mono">The research aims to address the challenge of deploying high-precision plant disease classification models on edge devices for precision agriculture. The authors propose STA-Net, which uses a training-free neural architecture search method to create an efficient backbone and introduces the Shape-Texture Attention Module (STAM) that decouples shape and texture awareness. On the CCMT dataset, STA-Net achieved 89.00% accuracy and an F1 score of 88.96%, demonstrating significant improvements over baseline models through ablation studies.</div>
+<div class="mono" style="margin-top:8px">研究旨在解决将高精度植物疾病分类模型部署到边缘设备以支持精准农业的挑战。作者提出了STA-Net，使用无训练的神经架构搜索方法创建高效的骨干，并引入了将形状和纹理感知分离的Shape-Texture注意力模块（STAM）。在CCMT数据集上，STA-Net实现了89.00%的准确率和88.96%的F1分数，通过消融研究证明了相对于基线模型和标准注意力模型的显著性能提升。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Enhancing Visible-Infrared Person Re-identification with Modality- and   Instance-aware Visual Prompt Learning</div>
-<div class="meta-line">Authors: Ruiqi Wu, Bingliang Jiao, Wenxuan Wang, Meng Liu, Peng Wang</div>
-<div class="meta-line">Venue: ICMR&#x27;24: Proceedings of the 2024 International Conference on
-  Multimedia Retrieval (2024) 579 - 588</div>
-<div class="meta-line">First: 2024-06-18T06:39:03+00:00 · Latest: 2024-06-18T06:39:03+00:00</div>
-<div class="meta-line">Comments: Accepyed by ACM International Conference on Multimedia Retrieval
-  (ICMR&#x27;24)</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2406.12316v1">Abs</a> · <a href="http://arxiv.org/pdf/2406.12316v1">PDF</a></div>
+<div class="title">Singular Value Few-shot Adaptation of Vision-Language Models</div>
+<div class="meta-line">Authors: Taha Koleilat, Hassan Rivaz, Yiming Xiao</div>
+<div class="meta-line">First: 2025-09-03T22:00:23+00:00 · Latest: 2025-09-03T22:00:23+00:00</div>
+<div class="meta-line">Comments: 10 pages, 2 figures, 8 tables</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03740v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03740v1">PDF</a> · <a href="https://github.com/HealthX-Lab/CLIP-SVD">Code1</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">The Visible-Infrared Person Re-identification (VI ReID) aims to match visible
-and infrared images of the same pedestrians across non-overlapped camera views.
-These two input modalities contain both invariant information, such as shape,
-and modality-specific details, such as color. An ideal model should utilize
-valuable information from both modalities during training for enhanced
-representational capability. However, the gap caused by modality-specific
-information poses substantial challenges for the VI ReID model to handle
-distinct modality inputs simultaneously. To address this, we introduce the
-Modality-aware and Instance-aware Visual Prompts (MIP) network in our work,
-designed to effectively utilize both invariant and specific information for
-identification. Specifically, our MIP model is built on the transformer
-architecture. In this model, we have designed a series of modality-specific
-prompts, which could enable our model to adapt to and make use of the specific
-information inherent in different modality inputs, thereby reducing the
-interference caused by the modality gap and achieving better identification.
-Besides, we also employ each pedestrian feature to construct a group of
-instance-specific prompts. These customized prompts are responsible for guiding
-our model to adapt to each pedestrian instance dynamically, thereby capturing
-identity-level discriminative clues for identification. Through extensive
-experiments on SYSU-MM01 and RegDB datasets, the effectiveness of both our
-designed modules is evaluated. Additionally, our proposed MIP performs better
-than most state-of-the-art methods.</div></details>
+<div class="mono">Vision-language models (VLMs) like CLIP have shown impressive zero-shot and
+few-shot learning capabilities across diverse applications. However, adapting
+these models to new fine-grained domains remains difficult due to reliance on
+prompt engineering and the high cost of full model fine-tuning. Existing
+adaptation approaches rely on augmented components, such as prompt tokens and
+adapter modules, which could limit adaptation quality, destabilize the model,
+and compromise the rich knowledge learned during pretraining. In this work, we
+present \textbf{CLIP-SVD}, a novel \textit{multi-modal} and
+\textit{parameter-efficient} adaptation technique that leverages Singular Value
+Decomposition (SVD) to modify the internal parameter space of CLIP without
+injecting additional modules. Specifically, we fine-tune only the singular
+values of the CLIP parameter matrices to rescale the basis vectors for domain
+adaptation while retaining the pretrained model. This design enables enhanced
+adaptation performance using only \textbf{0.04\%} of the model&#x27;s total
+parameters and better preservation of its generalization ability. CLIP-SVD
+achieves state-of-the-art classification results on 11 natural and 10
+biomedical datasets, outperforming previous methods in both accuracy and
+generalization under few-shot settings. Additionally, we leverage a natural
+language-based approach to analyze the effectiveness and dynamics of the CLIP
+adaptation to allow interpretability of CLIP-SVD. The code is publicly
+available at https://github.com/HealthX-Lab/CLIP-SVD.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>利用模态和实例感知视觉提示学习增强可见光-红外人再识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外人再识别（VI ReID）旨在匹配非重叠摄像头视图中相同行人的可见光和红外图像。这两种输入模态包含不变信息，如形状，以及模态特定细节，如颜色。理想的模型应该在训练过程中利用两种模态的有价值信息，以增强表示能力。然而，由模态特定信息引起的差距给VI ReID模型同时处理不同模态输入带来了重大挑战。为解决这一问题，我们在工作中引入了模态感知和实例感知视觉提示（MIP）网络，旨在有效利用不变和特定信息进行识别。具体而言，我们的MIP模型基于变压器架构。在这个模型中，我们设计了一系列模态特定提示，使我们的模型能够适应并利用不同模态输入中固有的特定信息，从而减少模态差距造成的干扰并实现更好的识别。此外，我们还利用每个行人的特征构建了一组实例特定提示。这些定制提示负责引导我们的模型动态适应每个行人类别，从而捕捉识别所需的身份级区分线索。通过在SYSU-MM01和RegDB数据集上的广泛实验，评估了我们设计模块的有效性。此外，我们提出的MIP方法在大多数最先进的方法中表现更好。</div>
+<div class="mono"><b>标题：</b>视觉语言模型的单值分解少量样本适应</div>
+<div class="mono" style="margin-top:8px">视觉语言模型（VLMs）如CLIP在多种应用中展示了令人印象深刻的零样本和少量样本学习能力。然而，由于依赖于提示工程和全模型微调的高成本，将这些模型适应到新的细粒度领域仍然具有挑战性。现有的适应方法依赖于增强组件，如提示标记和适配器模块，这可能会限制适应质量，使模型不稳定，并损害其在预训练期间学到的丰富知识。在本文中，我们提出了**CLIP-SVD**，这是一种新颖的**多模态**和**参数高效**的适应技术，利用单值分解（SVD）修改CLIP的内部参数空间，而不注入额外模块。具体而言，我们仅微调CLIP参数矩阵的单值，以重新缩放基向量进行领域适应，同时保留预训练模型。此设计仅使用模型总参数的**0.04%**便能实现增强的适应性能，并更好地保留其泛化能力。CLIP-SVD在11个自然和10个生物医学数据集上实现了最先进的分类结果，在少量样本设置中在准确性和泛化方面均优于先前的方法。此外，我们利用基于自然语言的方法分析CLIP适应的有效性和动态，以实现CLIP-SVD的可解释性。代码可在https://github.com/HealthX-Lab/CLIP-SVD上公开获取。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-identification (VI ReID) by introducing the Modality-aware and Instance-aware Visual Prompts (MIP) network. This network uses a transformer architecture to effectively utilize both invariant and modality-specific information. The MIP model includes modality-specific prompts to handle distinct modality inputs and instance-specific prompts to capture identity-level discriminative clues. Experiments on SYSU-MM01 and RegDB datasets show that MIP outperforms most state-of-the-art methods in VI ReID tasks.</div>
-<div class="mono" style="margin-top:8px">论文通过引入Modality-aware和Instance-aware Visual Prompts (MIP)网络解决了可见光-红外人像再识别（VI ReID）的挑战。该网络采用变压器架构，有效利用不变性和模态特定信息。MIP模型包含模态特定提示以处理不同模态输入的差异，并包含实例特定提示以捕捉身份级区分线索。在SYSU-MM01和RegDB数据集上的实验表明，MIP在VI ReID任务中优于大多数最先进的方法。</div>
+<div class="mono">Vision-language models (VLMs) like CLIP have shown impressive zero-shot and few-shot learning capabilities across diverse applications.</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Visible-Infrared Person Re-Identification via Patch-Mixed Cross-Modality   Learning</div>
-<div class="meta-line">Authors: Zhihao Qian, Yutian Lin, Bo Du</div>
-<div class="meta-line">First: 2023-02-16T10:56:00+00:00 · Latest: 2024-04-30T09:51:32+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2302.08212v2">Abs</a> · <a href="http://arxiv.org/pdf/2302.08212v2">PDF</a></div>
+<div class="title">Short-Form Video Recommendations with Multimodal Embeddings: Addressing   Cold-Start and Bias Challenges</div>
+<div class="meta-line">Authors: Andrii Dzhoha, Katya Mirylenka, Egor Malykh, Marco-Andrea Buchmann, Francesca Catino</div>
+<div class="meta-line">First: 2025-07-25T14:57:04+00:00 · Latest: 2025-09-03T20:09:30+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2507.19346v2">Abs</a> · <a href="http://arxiv.org/pdf/2507.19346v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) aims to retrieve images
-of the same pedestrian from different modalities, where the challenges lie in
-the significant modality discrepancy. To alleviate the modality gap, recent
-methods generate intermediate images by GANs, grayscaling, or mixup strategies.
-However, these methods could introduce extra data distribution, and the
-semantic correspondence between the two modalities is not well learned. In this
-paper, we propose a Patch-Mixed Cross-Modality framework (PMCM), where two
-images of the same person from two modalities are split into patches and
-stitched into a new one for model learning. A part-alignment loss is introduced
-to regularize representation learning, and a patch-mixed modality learning loss
-is proposed to align between the modalities. In this way, the model learns to
-recognize a person through patches of different styles, thereby the modality
-semantic correspondence can be inferred. In addition, with the flexible image
-generation strategy, the patch-mixed images freely adjust the ratio of
-different modality patches, which could further alleviate the modality
-imbalance problem. On two VI-ReID datasets, we report new state-of-the-art
-performance with the proposed method.</div></details>
+<div class="mono">In recent years, social media users have spent significant amounts of time on
+short-form video platforms. As a result, established platforms in other
+domains, such as e-commerce, have begun introducing short-form video content to
+engage users and increase their time spent on the platform. The success of
+these experiences is due not only to the content itself but also to a unique UI
+innovation: instead of offering users a list of choices to click, platforms
+actively recommend content for users to watch one at a time. This creates new
+challenges for recommender systems, especially when launching a new video
+experience. Beyond the limited interaction data, immersive feed experiences
+introduce stronger position bias due to the UI and duration bias when
+optimizing for watch-time, as models tend to favor shorter videos. These
+issues, together with the feedback loop inherent in recommender systems, make
+it difficult to build effective solutions. In this paper, we highlight the
+challenges faced when introducing a new short-form video experience and present
+our experience showing that, even with sufficient video interaction data, it
+can be more beneficial to leverage a video retrieval system using a fine-tuned
+multimodal vision-language model to overcome these challenges. This approach
+demonstrated greater effectiveness compared to conventional supervised learning
+methods in online experiments conducted on our e-commerce platform.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外人体重识别通过块混合跨模态学习</div>
-<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）旨在从不同模态中检索同一行人的图像，其中挑战在于显著的模态差异。为缓解模态差距，最近的方法通过生成中间图像、使用 GAN、灰度化或 mixup 策略。然而，这些方法可能会引入额外的数据分布，且两种模态之间的语义对应关系没有很好地学习。在本文中，我们提出了一种块混合跨模态框架（PMCM），其中来自两种模态的同一个人的两张图像被分割成块并拼接成一个新的图像以供模型学习。引入了一种部分对齐损失来正则化表示学习，并提出了一种块混合模态学习损失以在模态之间进行对齐。这样，模型学会通过不同风格的块来识别一个人，从而可以推断出模态语义对应关系。此外，通过灵活的图像生成策略，块混合图像可以自由调整不同模态块的比例，从而进一步缓解模态不平衡问题。在两个 VI-ReID 数据集上，我们使用所提出的方法报告了新的最佳性能。</div>
+<div class="mono"><b>标题：</b>基于多模态嵌入的短视频推荐：解决冷启动和偏差挑战</div>
+<div class="mono" style="margin-top:8px">近年来，社交媒体用户在短视频平台上花费了大量时间。因此，其他领域的已建立平台，如电子商务，已经开始引入短视频内容以吸引用户并增加他们在平台上的停留时间。这些体验的成功不仅归功于内容本身，还归功于一种独特的UI创新：平台不再为用户提供可供点击的选择列表，而是积极推荐用户逐个观看的内容。这为推荐系统带来了新的挑战，尤其是在推出新的视频体验时。除了有限的交互数据外，沉浸式信息流体验还由于UI和优化观看时间时的时长偏差而引入了更强的位置偏差。这些问题，加上推荐系统固有的反馈循环，使得构建有效的解决方案变得困难。在本文中，我们强调了引入新的短视频体验所面临的挑战，并展示了即使有足够的视频交互数据，利用微调的多模态视觉-语言模型的视频检索系统也可以更有效地克服这些挑战。这种方法在我们电子商务平台进行的在线实验中比传统的监督学习方法更有效。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of visible-infrared person re-identification by proposing a Patch-Mixed Cross-Modality framework (PMCM). The method splits images into patches from both visible and infrared modalities and stitches them to learn cross-modality representations. It introduces a part-alignment loss to regularize representation learning and a patch-mixed modality learning loss to align the two modalities. Experimental results on two datasets show that PMCM achieves new state-of-the-art performance in VI-ReID.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种Patch-Mixed Cross-Modality框架（PMCM），通过将来自两种模态的图像分割成块并拼接，来解决可见光-红外人像再识别的挑战。关键发现包括在两个数据集上取得了新的最佳性能，并引入了部分对齐损失和块混合模态学习损失来规范和对齐模态。</div>
+<div class="mono">This paper addresses the challenges of introducing short-form video recommendations in e-commerce platforms, particularly the cold-start and bias issues. It proposes using a fine-tuned multimodal vision-language model for video retrieval, which was more effective than traditional supervised learning methods in overcoming these challenges. The approach was validated through online experiments on the platform, showing improved performance.</div>
+<div class="mono" style="margin-top:8px">本文探讨了在电子商务平台上引入短格式视频推荐所面临的冷启动和偏见问题，并提出使用微调的多模态视觉-语言模型进行视频检索的方法，这种方法在克服这些挑战方面比传统监督学习方法更为有效。该方法通过平台上的在线实验得到了验证，显示出更好的性能。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Parameter Hierarchical Optimization for Visible-Infrared Person   Re-Identification</div>
-<div class="meta-line">Authors: Zeng YU, Yunxiao Shi</div>
-<div class="meta-line">First: 2024-04-11T17:27:39+00:00 · Latest: 2024-04-11T17:27:39+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2404.07930v1">Abs</a> · <a href="http://arxiv.org/pdf/2404.07930v1">PDF</a></div>
+<div class="title">E-ARMOR: Edge case Assessment and Review of Multilingual Optical   Character Recognition</div>
+<div class="meta-line">Authors: Aryan Gupta, Anupam Purwar</div>
+<div class="meta-line">First: 2025-09-03T18:08:41+00:00 · Latest: 2025-09-03T18:08:41+00:00</div>
+<div class="meta-line">Comments: Sprinklr OCR provides a fast and compute light way of performing OCR</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03615v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03615v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-reID) aims at matching
-cross-modality pedestrian images captured by disjoint visible or infrared
-cameras. Existing methods alleviate the cross-modality discrepancies via
-designing different kinds of network architectures. Different from available
-methods, in this paper, we propose a novel parameter optimizing paradigm,
-parameter hierarchical optimization (PHO) method, for the task of VI-ReID. It
-allows part of parameters to be directly optimized without any training, which
-narrows the search space of parameters and makes the whole network more easier
-to be trained. Specifically, we first divide the parameters into different
-types, and then introduce a self-adaptive alignment strategy (SAS) to
-automatically align the visible and infrared images through transformation.
-Considering that features in different dimension have varying importance, we
-develop an auto-weighted alignment learning (AAL) module that can automatically
-weight features according to their importance. Importantly, in the alignment
-process of SAS and AAL, all the parameters are immediately optimized with
-optimization principles rather than training the whole network, which yields a
-better parameter training manner. Furthermore, we establish the cross-modality
-consistent learning (CCL) loss to extract discriminative person representations
-with translation consistency. We provide both theoretical justification and
-empirical evidence that our proposed PHO method outperform existing VI-reID
-approaches.</div></details>
+<div class="mono">Optical Character Recognition (OCR) in multilingual, noisy, and diverse
+real-world images remains a significant challenge for optical character
+recognition systems. With the rise of Large Vision-Language Models (LVLMs),
+there is growing interest in their ability to generalize and reason beyond
+fixed OCR pipelines. In this work, we introduce Sprinklr-Edge-OCR, a novel OCR
+system built specifically optimized for edge deployment in resource-constrained
+environments. We present a large-scale comparative evaluation of five
+state-of-the-art LVLMs (InternVL, Qwen, GOT OCR, LLaMA, MiniCPM) and two
+traditional OCR systems (Sprinklr-Edge-OCR, SuryaOCR) on a proprietary, doubly
+hand annotated dataset of multilingual (54 languages) images. Our benchmark
+covers a broad range of metrics including accuracy, semantic consistency,
+language coverage, computational efficiency (latency, memory, GPU usage), and
+deployment cost. To better reflect real-world applicability, we also conducted
+edge case deployment analysis, evaluating model performance on CPU only
+environments. Among the results, Qwen achieved the highest precision (0.54),
+while Sprinklr-Edge-OCR delivered the best overall F1 score (0.46) and
+outperformed others in efficiency, processing images 35 faster (0.17 seconds
+per image on average) and at less than 0.01 of the cost (0.006 USD per 1,000
+images) compared to LVLM. Our findings demonstrate that the most optimal OCR
+systems for edge deployment are the traditional ones even in the era of LLMs
+due to their low compute requirements, low latency, and very high
+affordability.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">This study evaluates the performance of five state-of-the-art Large Vision-Language Models (LVLMs) and two traditional OCR systems on a multilingual image dataset. The evaluation covers metrics such as accuracy, semantic consistency, language coverage, computational efficiency, and deployment cost. Qwen showed the highest precision, but Sprinklr-Edge-OCR achieved the best overall F1 score and was the most efficient, processing images 35 times faster and at a much lower cost. The findings suggest that traditional OCR systems remain optimal for edge deployment due to their low compute requirements, low latency, and high affordability.</div>
+<div class="mono" style="margin-top:8px">研究评估了五种最先进的大型视觉-语言模型和两种传统OCR系统在多语言图像数据集上的性能。评估涵盖了准确性、语义一致性、语言覆盖率、计算效率和部署成本等指标。Qwen在精确度上表现最佳，但Sprinklr-Edge-OCR在整体F1分数上表现最好，处理速度比其他系统快35倍，并且成本仅为每1000张图像0.006美元。研究结果表明，即使在大型语言模型时代，传统的OCR系统仍然是边缘部署的最佳选择，因为它们具有低计算需求、低延迟和高成本效益的特点。</div>
+</details>
+</div>
+<div class="card">
+<div class="title">LimiX: Unleashing Structured-Data Modeling Capability for Generalist   Intelligence</div>
+<div class="meta-line">Authors: Xingxuan Zhang, Gang Ren, Han Yu, Hao Yuan, Hui Wang, Jiansheng Li, Jiayun Wu, Lang Mo, Li Mao, Mingchao Hao, Ningbo Dai, Renzhe Xu, Shuyang Li, Tianyang Zhang, Yue He, Yuanrui Wang, Yunjia Zhang, Zijing Xu, Dongzhe Li, Fang Gao, Hao Zou, Jiandong Liu, Jiashuo Liu, Jiawei Xu, Kaijie Cheng, Kehan Li, Linjun Zhou, Qing Li, Shaohua Fan, Xiaoyu Lin, Xinyan Han, Xuanyue Li, Yan Lu, Yuan Xue, Yuanyuan Jiang, Zimu Wang, Zhenlei Wang, Peng Cui</div>
+<div class="meta-line">First: 2025-09-03T17:39:08+00:00 · Latest: 2025-09-03T17:39:08+00:00</div>
+<div class="meta-line">Comments: 56 pages</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03505v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03505v1">PDF</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">We argue that progress toward general intelligence requires complementary
+foundation models grounded in language, the physical world, and structured
+data. This report presents LimiX, the first installment of our large
+structured-data models (LDMs). LimiX treats structured data as a joint
+distribution over variables and missingness, thus capable of addressing a wide
+range of tabular tasks through query-based conditional prediction via a single
+model. LimiX is pretrained using masked joint-distribution modeling with an
+episodic, context-conditional objective, where the model predicts for query
+subsets conditioned on dataset-specific contexts, supporting rapid,
+training-free adaptation at inference. We evaluate LimiX across 10 large
+structured-data benchmarks with broad regimes of sample size, feature
+dimensionality, class number, categorical-to-numerical feature ratio,
+missingness, and sample-to-feature ratios. With a single model and a unified
+interface, LimiX consistently surpasses strong baselines including
+gradient-boosting trees, deep tabular networks, recent tabular foundation
+models, and automated ensembles, as shown in Figure 1 and Figure 2. The
+superiority holds across a wide range of tasks, such as classification,
+regression, missing value imputation, and data generation, often by substantial
+margins, while avoiding task-specific architectures or bespoke training per
+task. All LimiX models are publicly accessible under Apache 2.0.</div></details>
+</div>
+<div class="card">
+<div class="title">WildFireCan-MMD: A Multimodal Dataset for Classification of   User-Generated Content During Wildfires in Canada</div>
+<div class="meta-line">Authors: Braeden Sherritt, Isar Nejadgholi, Efstratios Aivaliotis, Khaled Mslmani, Marzieh Amini</div>
+<div class="meta-line">First: 2025-04-17T14:43:56+00:00 · Latest: 2025-09-03T16:22:06+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2504.13231v3">Abs</a> · <a href="http://arxiv.org/pdf/2504.13231v3">PDF</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Rapid information access is vital during wildfires, yet traditional data
+sources are slow and costly. Social media offers real-time updates, but
+extracting relevant insights remains a challenge. In this work, we focus on
+multimodal wildfire social media data, which, although existing in current
+datasets, is currently underrepresented in Canadian contexts. We present
+WildFireCan-MMD, a new multimodal dataset of X posts from recent Canadian
+wildfires, annotated across twelve key themes. We evaluate zero-shot
+vision-language models on this dataset and compare their results with those of
+custom-trained and baseline classifiers. We show that while baseline methods
+and zero-shot prompting offer quick deployment, custom-trained models
+outperform them when labelled data is available. Our best-performing custom
+model reaches 84.48% f-score, outperforming VLMs and baseline classifiers. We
+also demonstrate how this model can be used to uncover trends during wildfires,
+through the collection and analysis of a large unlabeled dataset. Our dataset
+facilitates future research in wildfire response, and our findings highlight
+the importance of tailored datasets and task-specific training. Importantly,
+such datasets should be localized, as disaster response requirements vary
+across regions and contexts.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外行人重识别的参数分层优化</div>
-<div class="mono" style="margin-top:8px">可见-红外行人重识别（VI-reID）旨在匹配由分离的可见光或红外摄像机捕获的跨模态行人图像。现有方法通过设计不同类型的网络架构来缓解跨模态差异。与现有方法不同，本文提出了一种新颖的参数优化范式——参数分层优化（PHO）方法，用于VI-ReID任务。它允许部分参数无需任何训练即可直接优化，从而缩小参数搜索空间，使整个网络更容易训练。具体来说，我们首先将参数分为不同类型，然后引入一种自适应对齐策略（SAS），通过变换自动对齐可见光和红外图像。考虑到不同维度的特征具有不同的重要性，我们开发了一种自动加权对齐学习（AAL）模块，可以根据其重要性自动加权特征。重要的是，在SAS和AAL的对齐过程中，所有参数都立即根据优化原则进行优化，而不是训练整个网络，从而获得更好的参数训练方式。此外，我们建立了跨模态一致学习（CCL）损失，以通过平移一致性提取具有区分性的行人表示。我们提供了理论依据和实验证据，证明我们提出的PHO方法优于现有的VI-reID方法。</div>
+<div class="mono"><b>标题：</b>WildFireCan-MMD：一种用于加拿大野火期间用户生成内容分类的多模态数据集</div>
+<div class="mono" style="margin-top:8px">在野火期间快速获取信息至关重要，但传统数据源速度慢且成本高。社交媒体可以提供实时更新，但提取相关见解仍具挑战性。在本研究中，我们关注多模态野火社交媒体数据，尽管这些数据目前存在于现有数据集中，但在加拿大语境下却相对不足。我们介绍了WildFireCan-MMD，这是一个包含来自加拿大近期野火的X条多模态帖子的新数据集，并在十二个关键主题上进行了标注。我们评估了零样本视觉-语言模型在该数据集上的表现，并将其结果与自训练和基线分类器进行了比较。我们表明，虽然基线方法和零样本提示可以快速部署，但在有标注数据时，自训练模型的表现更优。我们表现最好的自训练模型达到了84.48%的F分数，优于视觉语言模型和基线分类器。我们还展示了如何使用该模型来揭示野火期间的趋势，通过收集和分析大量未标注的数据集。我们的数据集促进了未来在野火响应方面的研究，我们的发现强调了定制数据集和任务特定训练的重要性。重要的是，这样的数据集应该本地化，因为灾害响应需求在不同地区和背景下有所不同。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of visible-infrared person re-identification (VI-reID) by proposing a novel parameter hierarchical optimization (PHO) method. This method divides parameters into different types and introduces a self-adaptive alignment strategy (SAS) and an auto-weighted alignment learning (AAL) module to align visible and infrared images. The PHO method optimizes parameters directly without training, which simplifies the network training process. The authors also introduce a cross-modality consistent learning (CCL) loss to enhance discriminative person representation. Experimental results show that the PHO method outperforms existing VI-reID approaches.</div>
-<div class="mono" style="margin-top:8px">论文旨在通过提出一种新型参数层次优化（PHO）方法来解决可见光-红外人像再识别的挑战。该方法允许部分参数无需训练即可直接优化，从而缩小搜索空间并简化训练过程。关键组件包括自适应对齐策略（SAS）和自动加权对齐学习（AAL）模块，该模块根据特征的重要性自动对齐和加权。PHO方法还引入了跨模态一致学习（CCL）损失，以增强区分性的人像表示。实验表明，PHO方法在可见光-红外人像再识别任务中优于现有方法。</div>
+<div class="mono">This study addresses the need for rapid information access during wildfires by developing WildFireCan-MMD, a multimodal dataset of user-generated content from recent Canadian wildfires. The dataset is annotated across twelve key themes and evaluated using zero-shot vision-language models and custom-trained classifiers. The results show that custom-trained models outperform zero-shot models and baseline classifiers, achieving an f-score of 84.48%. The study also demonstrates the potential of this dataset for uncovering trends during wildfires through the analysis of large unlabeled datasets.</div>
+<div class="mono" style="margin-top:8px">本研究旨在利用社交媒体数据快速获取野火信息，开发了WildFireCan-MMD，一个包含近期加拿大野火用户生成内容的多模态数据集，并标注了十二个关键主题。研究人员评估了零样本视觉-语言模型和自训练分类器，发现自训练模型在准确率方面优于零样本模型和基线模型，达到了84.48%的F分数。研究还强调了灾害响应中本地化数据集的重要性。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Implicit Discriminative Knowledge Learning for Visible-Infrared Person   Re-Identification</div>
-<div class="meta-line">Authors: Kaijie Ren, Lei Zhang</div>
-<div class="meta-line">Venue: CVPR 2024</div>
-<div class="meta-line">First: 2024-03-18T12:12:45+00:00 · Latest: 2024-03-26T13:21:52+00:00</div>
-<div class="meta-line">Comments: CVPR 2024</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2403.11708v3">Abs</a> · <a href="http://arxiv.org/pdf/2403.11708v3">PDF</a> · <a href="https://github.com/1KK077/IDKL">Code1</a></div>
+<div class="title">TinyDrop: Tiny Model Guided Token Dropping for Vision Transformers</div>
+<div class="meta-line">Authors: Guoxin Wang, Qingyuan Wang, Binhua Huang, Shaowu Chen, Deepu John</div>
+<div class="meta-line">First: 2025-09-03T14:55:49+00:00 · Latest: 2025-09-03T14:55:49+00:00</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2509.03379v1">Abs</a> · <a href="http://arxiv.org/pdf/2509.03379v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-Infrared Person Re-identification (VI-ReID) is a challenging
-cross-modal pedestrian retrieval task, due to significant intra-class
-variations and cross-modal discrepancies among different cameras. Existing
-works mainly focus on embedding images of different modalities into a unified
-space to mine modality-shared features. They only seek distinctive information
-within these shared features, while ignoring the identity-aware useful
-information that is implicit in the modality-specific features. To address this
-issue, we propose a novel Implicit Discriminative Knowledge Learning (IDKL)
-network to uncover and leverage the implicit discriminative information
-contained within the modality-specific. First, we extract modality-specific and
-modality-shared features using a novel dual-stream network. Then, the
-modality-specific features undergo purification to reduce their modality style
-discrepancies while preserving identity-aware discriminative knowledge.
-Subsequently, this kind of implicit knowledge is distilled into the
-modality-shared feature to enhance its distinctiveness. Finally, an alignment
-loss is proposed to minimize modality discrepancy on enhanced modality-shared
-features. Extensive experiments on multiple public datasets demonstrate the
-superiority of IDKL network over the state-of-the-art methods. Code is
-available at https://github.com/1KK077/IDKL.</div></details>
+<div class="mono">Vision Transformers (ViTs) achieve strong performance in image classification
+but incur high computational costs from processing all image tokens. To reduce
+inference costs in large ViTs without compromising accuracy, we propose
+TinyDrop, a training-free token dropping framework guided by a lightweight
+vision model. The guidance model estimates the importance of tokens while
+performing inference, thereby selectively discarding low-importance tokens if
+large vit models need to perform attention calculations. The framework operates
+plug-and-play, requires no architectural modifications, and is compatible with
+diverse ViT architectures. Evaluations on standard image classification
+benchmarks demonstrate that our framework reduces FLOPs by up to 80% for ViTs
+with minimal accuracy degradation, highlighting its generalization capability
+and practical utility for efficient ViT-based classification.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外行人再识别中的隐式判别性知识学习</div>
-<div class="mono" style="margin-top:8px">可见-红外行人再识别（VI-ReID）是一项具有挑战性的跨模态行人检索任务，由于不同摄像头间显著的类内变化和跨模态差异。现有工作主要集中在将不同模态的图像嵌入到一个统一的空间中以挖掘模态共享特征，仅寻求这些共享特征中的区别性信息，而忽略了隐含在模态特定特征中的身份感知有用信息。为解决这一问题，我们提出了一种新颖的隐式判别性知识学习（IDKL）网络，以揭示并利用模态特定特征中隐含的判别性信息。首先，我们使用一种新颖的双流网络提取模态特定和模态共享特征。然后，模态特定特征经过净化以减少其模态风格差异，同时保留身份感知的判别性知识。随后，这种隐性知识被提炼到模态共享特征中以增强其区别性。最后，提出了一种对齐损失以最小化增强模态共享特征的模态差异。在多个公开数据集上的广泛实验表明，IDKL网络优于现有方法。代码可在https://github.com/1KK077/IDKL获取。</div>
+<div class="mono"><b>标题：</b>TinyDrop: 由轻量级视觉模型引导的视觉变换器子词丢弃方法</div>
+<div class="mono" style="margin-top:8px">视觉变换器（ViTs）在图像分类中表现出色，但处理所有图像子词时会产生较高的计算成本。为了在不牺牲准确性的前提下降低大型ViTs的推理成本，我们提出了一种名为TinyDrop的训练免费子词丢弃框架，该框架由轻量级视觉模型引导。在进行推理时，指导模型会估计子词的重要性，从而在大型ViT模型需要进行注意力计算时选择性地丢弃低重要性子词。该框架即插即用，无需进行架构修改，并且兼容多种ViT架构。在标准图像分类基准上的评估表明，我们的框架可以将ViTs的FLOPs最多减少80%，同时准确率下降幅度较小，突显了其泛化能力和在高效ViT分类中的实用价值。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-identification (VI-ReID) by proposing a novel Implicit Discriminative Knowledge Learning (IDKL) network. This network extracts modality-specific and modality-shared features using a dual-stream network, purifies the modality-specific features to preserve discriminative identity information, and distills this information into the modality-shared features. An alignment loss is also introduced to minimize modality discrepancies. Experiments show that IDKL outperforms existing methods on multiple public datasets.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种新颖的隐式鉴别知识学习（IDKL）网络，以解决可见光-红外人像再识别的挑战。该网络使用双流方法提取模态特定和模态共享特征，净化模态特定特征以保留鉴别性的身份信息，并将这种信息注入到模态共享特征中。引入了一种对齐损失来进一步减少模态间的差异。实验结果表明，IDKL在网络多个公开数据集上的表现优于现有方法。</div>
+<div class="mono">TinyDrop is a training-free token dropping framework for reducing the computational cost of Vision Transformers (ViTs) in image classification. It uses a lightweight guidance model to estimate the importance of tokens during inference, allowing low-importance tokens to be discarded. Experiments show that TinyDrop can reduce FLOPs by up to 80% with minimal accuracy loss, making it a practical solution for efficient ViT-based classification.</div>
+<div class="mono" style="margin-top:8px">TinyDrop 是一种无需训练的 token 舍弃框架，旨在减少 Vision Transformers (ViTs) 在图像分类任务中的计算成本。它使用一个轻量级的指导模型在推理过程中估计 token 的重要性，从而选择性地舍弃低重要性的 token。实验表明，TinyDrop 可以将 FLOPs 减少高达 80%，同时保持最小的准确性下降，使其成为高效 ViT 基础分类的实际解决方案。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">YYDS: Visible-Infrared Person Re-Identification with Coarse Descriptions</div>
-<div class="meta-line">Authors: Yunhao Du, Zhicheng Zhao, Fei Su</div>
-<div class="meta-line">First: 2024-03-07T03:26:02+00:00 · Latest: 2024-03-07T03:26:02+00:00</div>
-<div class="meta-line">Comments: 14 pages, 6 figures</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2403.04183v1">Abs</a> · <a href="http://arxiv.org/pdf/2403.04183v1">PDF</a> · <a href="https://github.com/dyhBUPT/YYDS">Code1</a></div>
+<div class="title">ChordPrompt: Orchestrating Cross-Modal Prompt Synergy for Multi-Domain   Incremental Learning in CLIP</div>
+<div class="meta-line">Authors: Zhiyuan Wang, Bokui Chen</div>
+<div class="meta-line">First: 2025-06-24T13:22:06+00:00 · Latest: 2025-09-03T12:23:15+00:00</div>
+<div class="meta-line">Comments: Accepted by the European Conference on Machine Learning and
+  Principles and Practice of Knowledge Discovery in Databases (ECML-PKDD 2025)</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2506.19608v2">Abs</a> · <a href="http://arxiv.org/pdf/2506.19608v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) is challenging due to
-considerable cross-modality discrepancies. Existing works mainly focus on
-learning modality-invariant features while suppressing modality-specific ones.
-However, retrieving visible images only depends on infrared samples is an
-extreme problem because of the absence of color information. To this end, we
-present the Refer-VI-ReID settings, which aims to match target visible images
-from both infrared images and coarse language descriptions (e.g., &quot;a man with
-red top and black pants&quot;) to complement the missing color information. To
-address this task, we design a Y-Y-shape decomposition structure, dubbed YYDS,
-to decompose and aggregate texture and color features of targets. Specifically,
-the text-IoU regularization strategy is firstly presented to facilitate the
-decomposition training, and a joint relation module is then proposed to infer
-the aggregation. Furthermore, the cross-modal version of k-reciprocal
-re-ranking algorithm is investigated, named CMKR, in which three neighbor
-search strategies and one local query expansion method are explored to
-alleviate the modality bias problem of the near neighbors. We conduct
-experiments on SYSU-MM01, RegDB and LLCM datasets with our manually annotated
-descriptions. Both YYDS and CMKR achieve remarkable improvements over SOTA
-methods on all three datasets. Codes are available at
-https://github.com/dyhBUPT/YYDS.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by introducing Refer-VI-ReID, which leverages coarse language descriptions to complement the lack of color information in infrared images. The YYDS model decomposes and aggregates texture and color features, while the CMKR algorithm improves near-neighbor search strategies to reduce modality bias. Experiments on SYSU-MM01, RegDB, and LLCM datasets show significant improvements over state-of-the-art methods.</div>
-<div class="mono" style="margin-top:8px">该论文通过引入Refer-VI-ReID，利用粗粒度的语言描述来补充红外图像中缺失的颜色信息，解决可见光-红外人像再识别的挑战。YYDS模型分解和聚合纹理和颜色特征，而CMKR算法改进了近邻搜索策略以减少模态偏差。在SYSU-MM01、RegDB和LLCM数据集上的实验表明，该方法显著优于现有最佳方法。</div>
-</details>
-</div>
-<div class="card">
-<div class="title">Frequency Domain Modality-invariant Feature Learning for   Visible-infrared Person Re-Identification</div>
-<div class="meta-line">Authors: Yulin Li, Tianzhu Zhang, Yongdong Zhang</div>
-<div class="meta-line">First: 2024-01-03T17:11:27+00:00 · Latest: 2024-01-04T03:23:04+00:00</div>
-<div class="meta-line">Comments: Under review</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2401.01839v2">Abs</a> · <a href="http://arxiv.org/pdf/2401.01839v2">PDF</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) is challenging due to the
-significant cross-modality discrepancies between visible and infrared images.
-While existing methods have focused on designing complex network architectures
-or using metric learning constraints to learn modality-invariant features, they
-often overlook which specific component of the image causes the modality
-discrepancy problem. In this paper, we first reveal that the difference in the
-amplitude component of visible and infrared images is the primary factor that
-causes the modality discrepancy and further propose a novel Frequency Domain
-modality-invariant feature learning framework (FDMNet) to reduce modality
-discrepancy from the frequency domain perspective. Our framework introduces two
-novel modules, namely the Instance-Adaptive Amplitude Filter (IAF) module and
-the Phrase-Preserving Normalization (PPNorm) module, to enhance the
-modality-invariant amplitude component and suppress the modality-specific
-component at both the image- and feature-levels. Extensive experimental results
-on two standard benchmarks, SYSU-MM01 and RegDB, demonstrate the superior
-performance of our FDMNet against state-of-the-art methods.</div></details>
+<div class="mono">Continual learning (CL) empowers pre-trained vision-language models to adapt
+effectively to novel or previously underrepresented data distributions without
+comprehensive retraining, enhancing their adaptability and efficiency. While
+vision-language models like CLIP show great promise, they struggle to maintain
+performance across domains in incremental learning scenarios. Existing prompt
+learning methods face two main limitations: 1) they primarily focus on
+class-incremental learning scenarios, lacking specific strategies for
+multi-domain task incremental learning; 2) most current approaches employ
+single-modal prompts, neglecting the potential benefits of cross-modal
+information exchange. To address these challenges, we propose the \ChordPrompt
+framework, which facilitates a harmonious interplay between visual and textual
+prompts. \ChordPrompt introduces cross-modal prompts to leverage interactions
+between visual and textual information. Our approach also employs
+domain-adaptive text prompts to select appropriate prompts for continual
+adaptation across multiple domains. Comprehensive experiments on multi-domain
+incremental learning benchmarks demonstrate that \ChordPrompt outperforms
+state-of-the-art methods in zero-shot generalization and downstream task
+performance.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外人体重识别的频域模态不变特征学习</div>
-<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）由于可见光和红外图像之间存在显著的跨模态差异而具有挑战性。虽然现有方法集中在设计复杂的网络架构或使用度量学习约束来学习模态不变特征，但它们往往忽略了导致模态差异问题的具体图像成分。在本文中，我们首先揭示可见光和红外图像的幅度成分差异是主要因素，进一步提出了一种新颖的频域模态不变特征学习框架（FDMNet），从频域角度减少模态差异。我们的框架引入了两个新颖模块，即实例自适应幅度滤波器（IAF）模块和短语保留归一化（PPNorm）模块，以增强模态不变的幅度成分并抑制图像和特征层面的模态特定成分。在SYSU-MM01和RegDB两个标准基准上的广泛实验结果表明，我们的FDMNet在与最先进的方法相比时表现出更优的性能。</div>
+<div class="mono"><b>标题：</b>ChordPrompt：跨模态提示协同 orchestrating 多域增量学习在 CLIP 中的跨模态提示协同</div>
+<div class="mono" style="margin-top:8px">持续学习（CL）使预训练的视觉-语言模型能够有效地适应新的或以前未充分代表的数据分布，而无需进行全面的重新训练，从而增强其适应性和效率。尽管视觉-语言模型如CLIP表现出巨大的潜力，但在增量学习场景中，它们难以在不同领域中保持性能。现有的提示学习方法面临两个主要限制：1）它们主要集中在类别增量学习场景上，缺乏针对多域任务增量学习的具体策略；2）大多数当前方法使用单模态提示，忽视了跨模态信息交换的潜在益处。为了解决这些挑战，我们提出了ChordPrompt框架，该框架促进了视觉和文本提示之间的和谐互动。ChordPrompt引入了跨模态提示，以利用视觉和文本信息之间的交互。我们的方法还使用了领域自适应文本提示，以选择适合持续适应多个领域的提示。在多域增量学习基准上的全面实验表明，ChordPrompt在零样本泛化和下游任务性能方面优于现有方法。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of visible-infrared person re-identification by focusing on the amplitude differences between visible and infrared images. It proposes a Frequency Domain modality-invariant feature learning framework (FDMNet) that includes an Instance-Adaptive Amplitude Filter (IAF) and Phrase-Preserving Normalization (PPNorm) module to enhance modality-invariant features and suppress modality-specific components. Experiments on SYSU-MM01 and RegDB benchmarks show that FDMNet outperforms existing methods in reducing modality discrepancy.</div>
-<div class="mono" style="margin-top:8px">论文通过关注可见光和红外图像之间的振幅差异，解决了可见光-红外人再识别的挑战。提出了一种频域不变特征学习框架FDMNet，包含实例自适应振幅滤波器(IAF)模块和短语保持归一化(PPNorm)模块，以增强不变的振幅成分并抑制特定成分。在SYSU-MM01和RegDB标准基准上的实验结果表明，FDMNet在该任务中优于现有方法。</div>
+<div class="mono">ChordPrompt is designed to improve multi-domain incremental learning in CLIP by integrating cross-modal prompts and domain-adaptive text prompts. The framework addresses the limitations of existing methods by focusing on multi-domain task incremental learning and leveraging cross-modal information exchange. Experiments show that ChordPrompt outperforms state-of-the-art methods in zero-shot generalization and downstream task performance.</div>
+<div class="mono" style="margin-top:8px">研究旨在提高预训练的视觉-语言模型如CLIP在多领域增量学习场景中的适应性。ChordPrompt框架引入了跨模态提示以增强视觉和文本信息之间的交互，并使用领域自适应文本提示来选择合适的提示以实现持续适应。实验表明，ChordPrompt在零样本泛化和下游任务性能方面优于现有方法。</div>
 </details>
 </div>
 <div class="card">
-<div class="title">Transferring Modality-Aware Pedestrian Attentive Learning for   Visible-Infrared Person Re-identification</div>
-<div class="meta-line">Authors: Yuwei Guo, Wenhao Zhang, Licheng Jiao, Shuang Wang, Shuo Wang, Fang Liu</div>
-<div class="meta-line">First: 2023-12-12T07:15:17+00:00 · Latest: 2023-12-19T02:46:50+00:00</div>
-<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2312.07021v2">Abs</a> · <a href="http://arxiv.org/pdf/2312.07021v2">PDF</a></div>
+<div class="title">Mitigating Hallucination in Large Vision-Language Models through   Aligning Attention Distribution to Information Flow</div>
+<div class="meta-line">Authors: Jianfei Zhao, Feng Zhang, Xin Sun, Chong Feng</div>
+<div class="meta-line">Venue: EMNLP 2025</div>
+<div class="meta-line">First: 2025-05-20T12:10:13+00:00 · Latest: 2025-09-03T11:34:49+00:00</div>
+<div class="meta-line">Comments: Accepted to Findings of EMNLP 2025</div>
+<div class="links" style="margin-top:8px"><a href="http://arxiv.org/abs/2505.14257v2">Abs</a> · <a href="http://arxiv.org/pdf/2505.14257v2">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
-<div class="mono">Visible-infrared person re-identification (VI-ReID) aims to search the same
-pedestrian of interest across visible and infrared modalities. Existing models
-mainly focus on compensating for modality-specific information to reduce
-modality variation. However, these methods often lead to a higher computational
-overhead and may introduce interfering information when generating the
-corresponding images or features. To address this issue, it is critical to
-leverage pedestrian-attentive features and learn modality-complete and
--consistent representation. In this paper, a novel Transferring Modality-Aware
-Pedestrian Attentive Learning (TMPA) model is proposed, focusing on the
-pedestrian regions to efficiently compensate for missing modality-specific
-features. Specifically, we propose a region-based data augmentation module
-PedMix to enhance pedestrian region coherence by mixing the corresponding
-regions from different modalities. A lightweight hybrid compensation module,
-i.e., the Modality Feature Transfer (MFT), is devised to integrate cross
-attention and convolution networks to fully explore the discriminative
-modality-complete features with minimal computational overhead. Extensive
-experiments conducted on the benchmark SYSU-MM01 and RegDB datasets
-demonstrated the effectiveness of our proposed TMPA model.</div></details>
+<div class="mono">Due to the unidirectional masking mechanism, Decoder-Only models propagate
+information from left to right. LVLMs (Large Vision-Language Models) follow the
+same architecture, with visual information gradually integrated into semantic
+representations during forward propagation. Through systematic analysis, we
+observe that the majority of the visual information is absorbed into the
+semantic representations. However, the model&#x27;s attention distribution does not
+exhibit sufficient emphasis on semantic representations. This misalignment
+between the attention distribution and the actual information flow undermines
+the model&#x27;s visual understanding ability and contributes to hallucinations. To
+address this issue, we enhance the model&#x27;s visual understanding by leveraging
+the core information embedded in semantic representations. Specifically, we
+identify attention heads that focus on core semantic representations based on
+their attention distributions. Then, through a two-stage optimization paradigm,
+we propagate the advantages of these attention heads across the entire model,
+aligning the attention distribution with the actual information flow. We
+evaluate our method on three image captioning benchmarks using five different
+LVLMs, demonstrating its effectiveness in significantly reducing
+hallucinations. Further experiments reveal a trade-off between reduced
+hallucinations and richer details. Notably, our method allows for manual
+adjustment of the model&#x27;s conservativeness, enabling flexible control to meet
+diverse real-world requirements.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>将模态感知行人注意学习应用于可见光-红外行人再识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外行人再识别（VI-ReID）旨在跨可见光和红外模态搜索同一行人。现有模型主要集中在补偿模态特定信息以减少模态差异。然而，这些方法往往导致更高的计算开销，并可能在生成相应图像或特征时引入干扰信息。为解决这一问题，关键在于利用行人注意特征并学习模态完整且一致的表示。本文提出了一种新颖的模态感知行人注意学习（TMPA）模型，专注于行人区域以高效地补偿缺失的模态特定特征。具体地，我们提出了一种基于区域的数据增强模块PedMix，通过从不同模态混合相应的区域来增强行人区域的一致性。设计了一种轻量级的混合补偿模块，即模态特征转移（MFT），结合跨注意力和卷积网络，以最小的计算开销全面探索判别性的模态完整特征。在基准数据集SYSU-MM01和RegDB上的广泛实验表明了我们提出的TMPA模型的有效性。</div>
+<div class="mono"><b>标题：</b>通过使注意力分布与信息流对齐来缓解大型视觉-语言模型中的幻觉</div>
+<div class="mono" style="margin-top:8px">由于单向掩码机制，解码器仅模型从左到右传播信息。大型视觉-语言模型（LVLMs）遵循相同的架构，在前向传播过程中，视觉信息逐渐整合到语义表示中。通过系统分析，我们发现大部分视觉信息被吸收到了语义表示中。然而，模型的注意力分布并未充分强调语义表示。这种注意力分布与实际信息流之间的不匹配削弱了模型的视觉理解能力，并导致幻觉。为了解决这一问题，我们通过利用嵌入在语义表示中的核心信息来增强模型的视觉理解能力。具体来说，我们根据注意力分布识别出专注于核心语义表示的注意力头。然后，通过两阶段优化范式，我们将这些注意力头的优势在整个模型中传播，使注意力分布与实际信息流对齐。我们在三个图像字幕基准上使用五种不同的LVLMs评估了我们的方法，证明了其在显著减少幻觉方面的有效性。进一步的实验揭示了减少幻觉与更丰富的细节之间的权衡。值得注意的是，我们的方法允许手动调整模型的保守性，从而灵活地满足各种实际需求。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by proposing a novel TMPA model that focuses on pedestrian regions to compensate for missing modality-specific features. It introduces a PedMix module for enhancing pedestrian region coherence and a lightweight MFT module for integrating cross attention and convolution networks. Experiments on SYSU-MM01 and RegDB datasets show the effectiveness of the proposed model in reducing modality variation and computational overhead.</div>
-<div class="mono" style="margin-top:8px">本文提出了一种名为TMPA的新模型，专注于行人区域来补偿缺失的模态特定特征。该模型包含一个PedMix模块以增强行人区域的一致性，以及一个MFT模块以整合跨注意力和卷积网络来探索具有最小计算开销的判别性模态完整特征。在SYSU-MM01和RegDB数据集上的实验表明，所提出的TMPA模型在减少模态差异和计算开销方面具有有效性。</div>
+<div class="mono">This paper addresses the issue of hallucination in large vision-language models by aligning the model&#x27;s attention distribution with the actual information flow. The authors observe that while visual information is integrated into semantic representations, the model&#x27;s attention does not sufficiently emphasize these representations, leading to hallucinations. They propose a two-stage optimization method to enhance the model&#x27;s visual understanding by propagating the advantages of attention heads that focus on core semantic representations. Experiments on three image captioning benchmarks show that this method significantly reduces hallucinations, though it may reduce the richness of details. The method also allows for manual adjustment of the model&#x27;s conservativeness, providing flexible control for different real-world applications.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过使注意力分布与实际信息流对齐来减轻大型视觉语言模型中的幻觉。方法包括识别专注于核心语义表示的注意力头，并通过两阶段优化过程传播其优势。在三个图像字幕基准测试中使用五种不同的LVLM进行的实验表明，该方法有效地减少了幻觉，尽管这会带来幻觉和细节丰富性之间的权衡。还可以手动调整模型的保守性，以满足不同的实际需求。</div>
 </details>
 </div></div>
     <details style="margin-top:16px" class="detail"><summary>History</summary>
-      <div class="history-list"><a href="archive/20250905_1222.html">20250905_1222</a>
-<a href="archive/20250905_0335.html">20250905_0335</a>
-<a href="archive/20250904_1123.html">20250904_1123</a>
+      <div class="history-list"><a href="archive/20250905_0319.html">20250905_0319</a>
 <a href="archive/20250904_0323.html">20250904_0323</a>
 <a href="archive/20250903_0355.html">20250903_0355</a>
 <a href="archive/20250902_0325.html">20250902_0325</a>
