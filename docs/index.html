@@ -74,7 +74,7 @@ summary{cursor:pointer;color:var(--acc)}
   <button class="btn" onclick="__expandAll(false)">Collapse All</button>
 </div>
 
-        <span class="badge">2025-09-05 12:22</span>
+        <span class="badge">2025-09-06 03:50</span>
       </div>
     </div>
     <div class="hr"></div>
@@ -109,9 +109,13 @@ training even achieves performance comparable to SOTA centralized methods. This
 work offers a novel research entry for deploying VI-ReID into real-world
 scenarios and can benefit the community. Code is available at:
 https://github.com/Joey623/L2RW.</div></details>
+<details class="detail"><summary>中文标题/摘要</summary>
+<div class="mono"><b>标题：</b>L2RW+: 针对隐私保护的全面可见-红外行人重识别基准</div>
+<div class="mono" style="margin-top:8px">可见-红外行人重识别（VI-ReID）是一项具有挑战性的任务，旨在匹配在不同光照条件下拍摄的行人图像，已引起广泛关注并取得了显著成果。然而，现有方法采用集中式训练，忽略了实际中数据分布在多个设备或实体之间可能带来的隐私问题。本文提出L2RW+基准，旨在将VI-ReID推向实际应用。L2RW+的核心理念是，在数据共享受限的场景中，将去中心化训练纳入VI-ReID可以解决隐私问题。具体而言，我们为不同隐私敏感度级别设计了协议和相应的算法。在我们的新基准中，我们模拟了在实际数据条件下进行训练的情况：1）每个摄像头的数据完全隔离，或2）不同的数据实体（例如，某一地区的数据控制者）可以选择性地共享数据。这样，我们模拟了具有严格隐私限制的场景，更接近实际条件。全面的实验表明，去中心化VI-ReID训练在图像和视频级别上都是可行的，并且具有潜力。特别是在数据规模增加时，去中心化和集中化训练之间的性能差距减小，特别是在视频级别的VI-ReID中。在未见领域，去中心化训练甚至达到了与最新集中化方法相当的性能。这项工作为将VI-ReID部署到实际场景提供了新的研究切入点，并可惠及社区。代码可在：https://github.com/Joey623/L2RW 获取。</div>
+</details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper introduces L2RW+, a benchmark designed to address privacy concerns in visible-infrared person re-identification (VI-ReID) by incorporating decentralized training. The benchmark simulates real-world data isolation and selective sharing scenarios, showing that decentralized training can achieve performance comparable to centralized methods, especially in video-level VI-ReID. Comprehensive experiments demonstrate the feasibility and potential of decentralized VI-ReID training under various privacy sensitivity levels.</div>
-<div class="mono" style="margin-top:8px">该论文提出了L2RW+基准，通过引入去中心化训练来解决隐私问题。它模拟了数据隔离或选择性共享的场景，更贴近实际应用条件。实验表明，去中心化训练在视频级重识别中可以达到与中心化方法相当的性能，并且随着数据量的增加，去中心化与中心化的性能差距减小。这项工作为在实际场景中部署可见红外行人重识别提供了新的方法。</div>
+<div class="mono">Visible-infrared person re-identification (VI-ReID) is a challenging task that aims to match pedestrian images captured under varying lighting conditions, which has drawn intensive research attention and achieved promising results.</div>
+<div class="mono" style="margin-top:8px">论文提出了L2RW+基准，用于可见-红外行人重识别（VI-ReID），并引入了去中心化训练以解决隐私问题。研究设计了不同隐私敏感级别的协议，并模拟了真实世界的数据条件，其中每个摄像头的数据完全隔离或选择性共享。实验表明，去中心化训练是可行的，并且在视频级别的VI-ReID中可以达到与中心化方法相当的性能，甚至在未见过的领域也是如此。这项工作为将VI-ReID部署到真实世界场景提供了新的研究方向。</div>
 </details>
 </div>
 <div class="card">
@@ -142,11 +146,7 @@ images captured at various distances, enabling cross-range, cross-spectral
 evaluations.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>跨光谱人体识别中的侧信息嵌入：LLCM基准及IJB-MDF上的范围诱导遮挡分析</div>
-<div class="mono" style="margin-top:8px">视觉变换器（ViTs）在生物特征识别任务中表现出色，包括面部和人体识别。在本工作中，我们将预训练在可见光（VIS）图像上的ViT模型应用于具有挑战性的跨光谱人体识别问题，该问题涉及可见光和红外（IR）域中捕获的图像匹配。最近的ViT架构探索了引入超出传统位置嵌入的其他嵌入。在此基础上，我们整合了侧信息嵌入（SIE），并研究了编码域和相机信息以增强跨光谱匹配的影响。令人惊讶的是，我们的结果表明，仅编码相机信息而不显式地引入域信息，在LLCM数据集上实现了最先进的性能。虽然在可见光谱的人再识别（Re-ID）中已经广泛研究了遮挡处理，但在可见光-红外（VI）Re-ID中的遮挡处理仍然很大程度上被忽视——主要是因为现有的VI-ReID数据集，如LLCM、SYSU-MM01和RegDB，主要包含全身、未遮挡的图像。为了解决这一差距，我们使用IARPA Janus基准多域面部（IJB-MDF）数据集分析了由不同距离捕获的可见光和红外图像引起的范围诱导遮挡的影响，该数据集提供了多样化的可见光和红外图像，使我们能够进行跨范围、跨光谱评估。</div>
-</details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This work adapts a Vision Transformer pretrained on visible imagery to cross-spectral body recognition, incorporating Side Information Embedding (SIE) to encode domain and camera information. Surprisingly, encoding only camera information without domain information achieves state-of-the-art performance on the LLCM dataset. The study also explores range-induced occlusions in visible-infrared Re-ID using the IJB-MDF dataset, providing insights into cross-range, cross-spectral evaluations.</div>
-<div class="mono" style="margin-top:8px">这项工作将预训练在可见光图像上的Vision Transformer应用于跨光谱人体识别，并引入了Side Information Embedding (SIE)来编码域和相机信息。研究结果表明，仅编码相机信息而不编码域信息即可在LLCM数据集上达到最先进的性能。此外，该研究还使用IJB-MDF数据集探索了可见光-红外光Re-ID中的范围诱导遮挡，提供了跨范围、跨光谱评估的见解。</div>
+<div class="mono" style="margin-top:8px">视觉变换器（ViTs）在生物特征识别任务中表现出色，包括面部和人体识别。在本工作中，我们将预训练在可见光（VIS）图像上的ViT模型应用于具有挑战性的跨光谱人体识别问题，该问题涉及可见光和红外（IR）域中图像的匹配。最近的ViT架构探索了引入传统位置嵌入之外的其他嵌入。在此基础上，我们整合了侧信息嵌入（SIE），并研究了编码域和相机信息以增强跨光谱匹配的影响。令人惊讶的是，我们的结果表明，仅编码相机信息而不显式地引入域信息，在LLCM数据集上实现了最先进的性能。虽然在可见光谱的人再识别（Re-ID）中已经广泛研究了遮挡处理，但在可见光-红外（VI）Re-ID中，遮挡处理仍然很大程度上未被探索——主要是因为现有的VI-ReID数据集，如LLCM、SYSU-MM01和RegDB，主要包含全身影像且未被遮挡。为了解决这一差距，我们使用IARPA Janus基准多域面部（IJB-MDF）数据集分析了范围诱导遮挡的影响，该数据集提供了在不同距离拍摄的多样化的可见光和红外图像，使我们能够进行跨范围、跨光谱评估。</div>
 </details>
 </div>
 <div class="card">
@@ -183,8 +183,11 @@ proposed method, which achieves superior performances to state-of-the-art
 methods. Our code is available at
 \href{https://github.com/FranklinLingfeng/code-for-SALCR}.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>语义对齐学习与协作精炼在无监督VI-ReID中的应用</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人再识别（USL-VI-ReID）旨在无需人工注释的情况下，匹配不同模态下同一个体的行人图像。先前的方法通过标签关联算法统一跨模态图像的伪标签，然后设计对比学习框架进行全局特征学习。然而，这些方法忽略了由细粒度模式带来的特征表示和伪标签分布的跨模态变化。这种洞察导致仅优化全局特征时，模态共享学习不足。为解决这一问题，我们提出了一种语义对齐学习与协作精炼（SALCR）框架，该框架为每个模态强调的特定细粒度模式建立优化目标，从而实现不同模态标签分布的互补对齐。具体而言，我们首先引入了一种双向统一跨模态实例伪标签的双关联与全局学习（DAGI）模块。随后，执行了一种细粒度语义对齐学习（FGSAL）模块，从跨模态实例中探索每个模态强调的部分级语义对齐模式。然后基于语义对齐特征及其相应的标签空间构建优化目标。为缓解来自噪声伪标签的副作用，我们提出了一种全局-部分协作精炼（GPCR）模块，动态挖掘全局和部分特征的可靠正样本集并优化实例间关系。大量实验表明，所提出的方法具有优越的性能，优于现有方法。我们的代码可在https://github.com/FranklinLingfeng/code-for-SALCR获取。</div>
+<div class="mono"><b>标题：</b>语义对齐学习与协作精炼的无监督可见-红外行人重识别</div>
+<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需人工注释的情况下，匹配不同模态下同一个体的行人图像。先前的方法通过标签关联算法统一跨模态图像的伪标签，然后设计对比学习框架进行全局特征学习。然而，这些方法忽略了由细粒度模式带来的特征表示和伪标签分布的跨模态变化。这种洞察导致仅优化全局特征时，模态共享学习不足。为解决这一问题，我们提出了一种语义对齐学习与协作精炼（SALCR）框架，该框架为每个模态强调的特定细粒度模式建立优化目标，从而实现不同模态标签分布的互补对齐。具体而言，我们首先引入了一种双向统一跨模态实例伪标签的双关联与全局学习（DAGI）模块。随后，执行了一种细粒度语义对齐学习（FGSAL）模块，从跨模态实例中探索每个模态强调的部分级语义对齐模式。基于语义对齐特征及其相应的标签空间，构建了优化目标。为缓解来自噪声伪标签的副作用，我们提出了一种全局-部分协作精炼（GPCR）模块，动态挖掘全局和部分特征的可靠正样本集，并优化实例间关系。大量实验表明，所提出的方法具有优越的性能，优于现有方法。我们的代码可在https://github.com/FranklinLingfeng/code-for-SALCR 获取。</div>
+</details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) seeks to match pedestrian images of the same individual across different modalities without human annotations for model learning.</div>
 </details>
 </div>
 <div class="card">
@@ -219,12 +222,12 @@ that between the features before decoupling and the textual embeddings.
 Extensive experiments on three VI-ReID datasets demonstrate the superiority of
 our DSFAD.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>多模态语义引导的特征对齐与解耦合在可见光-红外人体重识别中的应用</div>
-<div class="mono" style="margin-top:8px">可见光-红外人体重识别（VI-ReID）由于可见光和红外图像之间存在较大的模态差异而成为一个具有挑战性的任务，这使得特征难以对齐到一个合适的共同空间。此外，诸如光照和色彩对比度等风格噪声降低了特征的身份可区分性和模态不变性。为了解决这些挑战，我们提出了一种新颖的多模态语义引导的特征对齐与解耦合（DSFAD）网络，将不同模态的身份相关特征对齐到文本嵌入空间，并在每个模态内解耦身份无关特征。具体而言，我们开发了一种多模态语义引导的特征对齐（DSFA）模块，该模块生成具有多种句法结构的行人描述，以引导跨模态的视觉特征对齐。此外，为了过滤掉风格信息，我们提出了一种语义边界引导的特征解耦（SMFD）模块，该模块将视觉特征分解为行人相关和风格相关组件，然后约束前者与文本嵌入之间的相似度至少比后者与文本嵌入之间的相似度高一个边界。此外，为了防止在特征解耦过程中丢失行人语义，我们设计了一种语义一致性引导的特征恢复（SCFR）模块，该模块进一步从风格相关特征中挖掘有用的信息，并将其恢复回行人相关特征，然后约束恢复后的特征与文本嵌入之间的相似度与解耦前的特征与文本嵌入之间的相似度保持一致。在三个VI-ReID数据集上的广泛实验表明了我们DSFAD的优越性。</div>
+<div class="mono"><b>标题：</b>多语义引导的可见光-红外人再识别特征对齐与解耦</div>
+<div class="mono" style="margin-top:8px">可见光-红外人再识别（VI-ReID）由于可见光和红外图像之间存在较大的模态差异，使得特征对齐到一个合适的公共空间变得复杂。此外，诸如光照和色彩对比度等风格噪声降低了特征的身份可区分性和模态不变性。为了解决这些挑战，我们提出了一种新颖的多语义引导的特征对齐与解耦（DSFAD）网络，将不同模态的身份相关特征对齐到文本嵌入空间，并在每个模态内解耦身份无关特征。具体而言，我们开发了一种多语义引导的特征对齐（DSFA）模块，该模块生成具有多种句法结构的行人描述，以引导跨模态视觉特征的对齐。此外，为了过滤掉风格信息，我们提出了一种语义边界引导的特征解耦（SMFD）模块，该模块将视觉特征分解为行人相关和风格相关的成分，然后约束前者与文本嵌入之间的相似度至少比后者与文本嵌入之间的相似度高一个边界。此外，为了防止特征解耦过程中行人语义的丢失，我们设计了一种语义一致性引导的特征恢复（SCFR）模块，该模块进一步从风格相关特征中挖掘有用的识别信息，并将其恢复到行人相关特征中，然后约束恢复后的特征与文本嵌入之间的相似度与解耦前的特征与文本嵌入之间的相似度保持一致。在三个VI-ReID数据集上的广泛实验表明了我们DSFAD的优越性。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-Identification by proposing a DSFAD network. This network aligns identity-relevant features from visible and infrared images into a textual embedding space and decouples identity-irrelevant features. Key modules include DSFA for cross-modality alignment, SMFD for filtering style information, and SCFR for maintaining semantic consistency. Experiments show the method&#x27;s effectiveness on three datasets.</div>
-<div class="mono" style="margin-top:8px">论文提出DSFAD网络来解决可见光-红外人再识别（VI-ReID）的挑战。该网络包含DSFA模块进行跨模态特征对齐和SMFD模块进行特征解耦以过滤样式信息。SCFR模块确保在解耦过程中保留行人的语义。实验结果显示该方法在提高身份可区分性和模态不变性方面具有优越性。</div>
+<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-Identification by proposing a DSFAD network. This network includes a DSFA module for cross-modality feature alignment and an SMFD module for feature decoupling to filter out style noise. Additionally, a SCFR module ensures that pedestrian semantics are preserved during decoupling. Experiments on three datasets show the effectiveness of the proposed method in improving identity discriminability and modality invariance.</div>
+<div class="mono" style="margin-top:8px">论文提出DSFAD网络以解决可见光-红外人像重识别（VI-ReID）的挑战。该网络包括DSFA模块进行跨模态特征对齐到文本嵌入空间，SMFD模块进行身份相关和样式相关特征的解耦，以及SCFR模块恢复有用的行人语义并将其恢复到行人相关特征中。实验表明，所提出的方法在提高VI-ReID性能方面具有有效性。</div>
 </details>
 </div>
 <div class="card">
@@ -258,13 +261,9 @@ and appearance features, ScRL demonstrates superior performance through
 extensive experiments. On the SYSU-MM01, HITSZ-VCM, and RegDB datasets, it
 achieves Rank-1 (mAP) accuracies of 76.1% (72.6%), 71.2% (52.9%), and 92.4%
 (86.7%), respectively, surpassing existing state-of-the-art methods.</div></details>
-<details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>基于形状中心表示学习的可见光-红外人体重识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外人体重识别（VI-ReID）在全天候监控系统中起着关键作用。然而，现有方法主要关注学习外观特征，而忽视了身体形状特征，这些特征不仅补充了外观特征，还表现出对模态变化的固有鲁棒性。尽管具有潜力，但有效整合形状和外观特征仍然具有挑战性。外观特征对模态变化和背景噪声高度敏感，而形状特征则因辅助模型的限制而经常受到红外形状估计不准确的影响。为了解决这些挑战，我们提出了形状中心表示学习（ScRL）框架，通过创新地整合形状和外观特征来提升VI-ReID性能。具体而言，我们引入了红外形状恢复（ISR），通过利用红外外观特征在特征级别恢复红外身体形状表示的不准确性。此外，我们提出了形状特征传播（SFP），在推理过程中能够直接从原始图像中提取形状特征，且计算复杂度较低。同时，我们设计了外观特征增强（AFE），利用形状特征来强调与形状相关的外观特征，同时有效抑制与身份无关的噪声。得益于形状和外观特征的有效整合，ScRL在大量实验中表现出优越的性能。在SYSU-MM01、HITSZ-VCM和RegDB数据集上，它分别实现了76.1%（72.6%）的Rank-1（mAP）、71.2%（52.9%）和92.4%（86.7%）的准确率，超过了现有最先进的方法。</div>
-</details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-Identification (VI-ReID) by proposing the Shape-centered Representation Learning (ScRL) framework. ScRL integrates shape and appearance features to enhance performance, overcoming the limitations of each feature type. Key components include Infrared Shape Restoration (ISR) for feature-level shape restoration, Shape Feature Propagation (SFP) for efficient shape feature extraction, and Appearance Feature Enhancement (AFE) for improving appearance features using shape information. Extensive experiments on SYSU-MM01, HITSZ-VCM, and RegDB datasets show that ScRL outperforms existing methods, achieving superior Rank-1 (mAP) accuracies.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种基于形状的表示学习（ScRL）框架，以解决可见光-红外人像再识别（VI-ReID）的问题。ScRL通过整合形状和外观特征来提升性能，克服了每种特征的局限性。关键组件包括红外形状恢复（ISR）用于特征级的形状恢复、形状特征传播（SFP）用于高效的形状特征提取，以及外观特征增强（AFE）用于噪声抑制。广泛的实验表明，ScRL在多个数据集上优于现有方法，实现了高Rank-1（mAP）准确率。</div>
+<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-Identification (VI-ReID) by proposing the Shape-centered Representation Learning (ScRL) framework. This framework integrates shape and appearance features to enhance VI-ReID performance. Key components include Infrared Shape Restoration (ISR) for feature-level shape restoration, Shape Feature Propagation (SFP) for direct shape feature extraction, and Appearance Feature Enhancement (AFE) for emphasizing shape-related appearance features. Extensive experiments on SYSU-MM01, HITSZ-VCM, and RegDB datasets show that ScRL outperforms existing methods, achieving superior Rank-1 (mAP) accuracies of 76.1% (72.6%), 71.2% (52.9%), and 92.4% (86.7%).</div>
+<div class="mono" style="margin-top:8px">论文提出了一种名为Shape-centered Representation Learning (ScRL)的框架，以解决可见光-红外人再识别（VI-ReID）中的挑战。该框架通过整合形状和外观特征来提升VI-ReID性能。关键组件包括Infrared Shape Restoration (ISR)用于特征级形状恢复、Shape Feature Propagation (SFP)用于直接从原始图像中提取形状特征，以及Appearance Feature Enhancement (AFE)用于强调与形状相关的外观特征。在SYSU-MM01、HITSZ-VCM和RegDB数据集上的广泛实验表明，ScRL优于现有方法，分别实现了76.1% (72.6%)、71.2% (52.9%)和92.4% (86.7%)的Rank-1 (mAP)准确率。</div>
 </details>
 </div>
 <div class="card">
@@ -292,9 +291,13 @@ dataset. Finally, the Quadruple Center Triplet Loss (QCT) is further proposed
 to address the information discrepancy in the comprehensive features. Extensive
 experiments on the SYSU-MM01, RegDB, and LLCM datasets demonstrate that the
 proposed MSCMNet achieves the greatest accuracy.</div></details>
+<details class="detail"><summary>中文标题/摘要</summary>
+<div class="mono"><b>标题：</b>MSCMNet：多尺度语义相关性挖掘用于可见光-红外人体重识别</div>
+<div class="mono" style="margin-top:8px">可见光-红外人体重识别（VI-ReID）任务的主要挑战在于如何从不同模态中提取具有区分性的特征以供匹配使用。现有研究主要集中在减少模态差异上，但模态信息并未充分利用。为了解决这一问题，提出了一种多尺度语义相关性挖掘网络（MSCMNet），以全面利用多尺度语义特征，并尽可能减少特征提取中的模态信息损失。该网络包含三个新颖组件。首先，在考虑模态信息有效利用的基础上，设计了多尺度信息相关性挖掘块（MIMB），以探索多尺度的语义相关性。其次，为了丰富MIMB可以利用的语义信息，专门设计了一个具有非共享参数的四流特征提取器（QFE），以从数据的不同维度中提取信息。最后，进一步提出了四中心三重损失（QCT），以解决综合特征中的信息差异。在SYSU-MM01、RegDB和LLCM数据集上的广泛实验表明，提出的MSCMNet达到了最高的准确性。</div>
+</details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research aims to improve the accuracy of Visible-Infrared Person Re-Identification by addressing the challenge of extracting discriminative features from different modalities. The proposed MSCMNet employs a Multi-scale Information Correlation Mining Block, a quadruple-stream feature extractor, and a Quadruple Center Triplet Loss to comprehensively utilize semantic features across multiple scales and minimize modality information loss. Experimental results on SYSU-MM01, RegDB, and LLCM datasets show that MSCMNet achieves the highest accuracy among existing methods.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过解决不同模态特征提取的挑战，提高可见光-红外人体重识别的准确性。提出的MSCMNet引入了多尺度信息相关性挖掘块、四流特征提取器和四中心三重损失，以全面利用多尺度的语义特征并减少模态信息损失。在SYSU-MM01、RegDB和LLCM数据集上的实验结果表明，MSCMNet在现有方法中实现了最高的准确率。</div>
+<div class="mono">The research aims to improve the accuracy of Visible-Infrared Person Re-Identification by addressing the challenge of extracting discriminative features from different modalities. The proposed MSCMNet uses a Multi-scale Information Correlation Mining Block, a quadruple-stream feature extractor, and a Quadruple Center Triplet Loss to exploit semantic features across multiple scales and minimize modality information loss. Experiments show that MSCMNet outperforms existing methods on SYSU-MM01, RegDB, and LLCM datasets, achieving the highest accuracy.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过解决从不同模态提取具有区分性的特征的挑战，提高可见光-红外人像再识别的准确性。提出的MSCMNet引入了多尺度信息相关性挖掘模块、四流特征提取器和四中心三重损失，以全面利用多尺度的语义特征并最小化模态信息损失。在SYSU-MM01、RegDB和LLCM数据集上的实验结果表明，MSCMNet在现有方法中实现了最高的准确率。</div>
 </details>
 </div>
 <div class="card">
@@ -330,11 +333,11 @@ $9\%$ in mAP over the baseline on the LLCM dataset. Code:
 https://github.com/BorgDiven/DiVE</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>基于扩散的可见-红外行人再识别合成数据生成</div>
-<div class="mono" style="margin-top:8px">模型的性能与训练数据的丰富程度密切相关。在可见-红外行人再识别（VI-ReID）任务中，收集和标注不同摄像头和模态下每个个体的大规模图像既繁琐又耗时且成本高昂，且必须遵守数据保护法律，这给数据集需求带来了严峻挑战。当前研究探索了生成合成数据作为在场收集真实数据的高效且隐私保护的替代方案。然而，针对VI-ReID模型的特定数据合成技术尚未被研究。本文提出了一种新颖的数据生成框架，称为基于扩散的VI-ReID数据扩展（DiVE），该框架通过解耦身份和模态，自动获取大量具有身份保持的RGB-IR配对图像，以提高VI-ReID模型的性能。具体而言，身份表示是从具有相同ID的一组样本中获得的，而图像的模态则是通过在模态特定数据上微调稳定扩散（SD）来学习的。DiVE将文本驱动的图像合成扩展到具有身份保持的RGB-IR多模态图像合成。这种方法通过直接将合成数据纳入再识别模型训练中，显著降低了数据收集和标注的成本。实验表明，使用DiVE生成的合成数据训练的VI-ReID模型表现出显著的提升。特别是，使用合成图像训练的最新方法CAJ在LLCM数据集上的mAP提高了约9%。代码：https://github.com/BorgDiven/DiVE</div>
+<div class="mono" style="margin-top:8px">模型的性能与训练数据的丰富程度密切相关。在可见-红外行人再识别（VI-ReID）任务中，收集和标注不同摄像头和模态下每个个体的大规模图像既繁琐又耗时且成本高昂，且必须遵守数据保护法律，这给数据集需求带来了严峻挑战。当前研究探索了生成合成数据作为收集真实数据的高效且保护隐私的替代方案。然而，针对VI-ReID模型的特定数据合成技术尚未被研究。本文提出了一种名为基于扩散的VI-ReID数据扩展（DiVE）的新数据生成框架，通过解耦身份和模态，自动获取大量保留身份的RGB-IR配对图像，以提高VI-ReID模型的性能。具体而言，身份表示是从具有相同ID的一组样本中获得的，而图像的模态则是通过在模态特定数据上微调稳定扩散（SD）来学习的。DiVE将文本驱动的图像合成扩展到保留身份的RGB-IR多模态图像合成。这种方法通过直接将合成数据纳入再识别模型训练中，显著降低了数据收集和标注的成本。实验表明，使用DiVE生成的合成数据训练的VI-ReID模型表现出显著的提升。特别是，最先进的方法CAJ使用合成图像在LLCM数据集上的mAP提高了约9%。代码：https://github.com/BorgDiven/DiVE</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of data scarcity in Visible-Infrared person Re-ID tasks by proposing a novel data generation framework called DiVE. It decouples identity and modality to generate massive RGB-IR paired images with preserved identity using a diffusion-based method. Experiments show that models trained with synthetic data from DiVE achieve significant improvements, with the CAJ method showing a 9% increase in mAP on the LLCM dataset compared to the baseline.</div>
-<div class="mono" style="margin-top:8px">本文提出了一种名为DiVE的新数据生成框架，以解决可见红外人再识别任务中的数据稀缺问题。该方法通过扩散机制解耦身份和模态，生成大量具有身份保留的RGB-IR配对图像。实验表明，使用DiVE生成的合成数据训练的模型表现出显著提升，CAJ方法在LLCM数据集上的mAP相比基线提高了约9%。</div>
+<div class="mono">This paper addresses the challenge of collecting sufficient training data for Visible-Infrared person Re-Identification (VI-ReID) tasks by proposing a novel data generation framework called DiVE. DiVE decouples identity and modality to generate massive RGB-IR paired images with preserved identity, using a fine-tuned Stable Diffusion model. Experiments show that VI-ReID models trained with synthetic data from DiVE outperform those trained with real data, achieving a 9% improvement in mAP over the baseline method on the LLCM dataset.</div>
+<div class="mono" style="margin-top:8px">本文提出了一种名为Diffusion-based VI-ReID数据扩展（DiVE）的新数据生成框架，以解决可见-红外人再识别任务中收集足够训练数据的挑战。DiVE通过解耦身份和模态来生成具有保留身份的大量RGB-IR配对图像，从而提高VI-ReID模型的性能。实验表明，使用DiVE生成的合成数据训练的模型优于使用真实数据训练的模型，CAJ方法在LLCM数据集上的mAP提高了约9%，超过了基线。</div>
 </details>
 </div>
 <div class="card">
@@ -364,12 +367,12 @@ model, pretrained exclusively on VIS data, with a simple combination of
 cross-entropy and triplet losses achieves state-of-the-art mAP scores on the
 LLCM dataset.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>使用身体嵌入的多域生物识别</div>
-<div class="mono" style="margin-top:8px">随着我们从可见光谱转向红外成像，生物识别变得越来越具挑战性，其中域差异显著影响识别性能。在本文中，我们展示了在中波红外（MWIR）和长波红外（LWIR）域中，身体嵌入比面部嵌入更适合跨光谱的人体识别。由于缺乏多域数据集，之前关于跨光谱身体识别的研究——也称为可见-红外人体重识别（VI-ReID）——主要集中在单独的红外波段，如近红外（NIR）或LWIR。我们使用IARPA Janus基准多域面部（IJB-MDF）数据集来解决多域身体识别问题，该数据集允许将短波红外（SWIR）、MWIR和LWIR图像与RGB（VIS）图像进行匹配。我们利用视觉变换器架构在IJB-MDF数据集上建立基准结果，并通过大量实验提供了有关红外域之间的相互关系、VIS预训练模型的适应性、身体嵌入中局部语义特征的作用以及小数据集的有效训练策略的宝贵见解。此外，我们展示了仅使用交叉熵和三元组损失的简单组合对仅在VIS数据上预训练的身体模型进行微调，可以在LLCM数据集上达到最先进的mAP分数。</div>
+<div class="mono"><b>标题：</b>使用身体嵌入进行多域生物识别</div>
+<div class="mono" style="margin-top:8px">随着我们从可见光谱转向红外成像，生物识别变得越来越具有挑战性，其中域差异显著影响识别性能。在本文中，我们展示了在中波红外（MWIR）和长波红外（LWIR）域中，身体嵌入比面部嵌入更适合跨谱段的人体识别。由于缺乏多域数据集，之前关于跨谱段身体识别的研究——也称为可见-红外人体重识别（VI-ReID）——主要集中在单独的红外波段，如近红外（NIR）或LWIR。我们使用IARPA Janus基准多域面部（IJB-MDF）数据集来解决多域身体识别问题，该数据集允许将短波红外（SWIR）、MWIR和LWIR图像与RGB（VIS）图像进行匹配。我们利用视觉变换器架构在IJB-MDF数据集上建立基准结果，并通过大量实验提供了有关红外域之间的相互关系、VIS预训练模型的适应性、身体嵌入中局部语义特征的作用以及小数据集的有效训练策略的宝贵见解。此外，我们展示了仅使用可见光数据预训练的身体模型，通过简单的交叉熵和三元组损失的组合进行微调，可以在LLCM数据集上达到最先进的mAP分数。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of biometric recognition in infrared imagery by leveraging body embeddings, which outperform face embeddings in cross-spectral person identification across medium-wave infrared (MWIR) and long-wave infrared (LWIR) domains. Using the IARPA Janus Benchmark Multi-Domain Face dataset, the authors demonstrate the effectiveness of a vision transformer architecture and provide insights into the interrelation of infrared domains and the adaptability of visible spectrum-pretrained models. They also show that fine-tuning a body model pretrained on visible spectrum data with simple loss functions achieves state-of-the-art performance on the LLCM dataset.</div>
-<div class="mono" style="margin-top:8px">本文通过利用身体嵌入解决了红外成像中的生物识别挑战，发现其在中波红外（MWIR）和长波红外（LWIR）域的跨光谱人员识别中优于面部嵌入。利用IARPA Janus基准多域面部数据集，作者展示了视觉变换器架构的有效性，并提供了红外域间相互关系和可见光谱预训练模型适应性的见解。他们还表明，通过简单的交叉熵和三重损失函数对仅在可见光谱数据上预训练的身体模型进行微调，可以实现LLCM数据集上的最新性能。</div>
+<div class="mono">This paper addresses the challenge of biometric recognition in the infrared spectrum by leveraging body embeddings, which outperform face embeddings in cross-spectral person identification in MWIR and LWIR domains. Using the IJB-MDF dataset, the authors employ a vision transformer to achieve benchmark results and explore the interrelation of infrared domains, the adaptability of VIS-pretrained models, and effective training strategies. Key findings include the superior performance of body embeddings and the state-of-the-art mAP scores achieved through finetuning a VIS-pretrained model with cross-entropy and triplet losses on the LLCM dataset.</div>
+<div class="mono" style="margin-top:8px">本文通过利用身体嵌入进行跨光谱人体识别，解决了红外成像中的生物识别难题，特别是在MWIR和LWIR域。作者使用IARPA Janus基准多域面部数据集来评估其方法，并发现身体嵌入优于面部嵌入。他们采用视觉变换器架构，并证明仅通过交叉熵和三重损失的简单组合对仅在可见光数据上预训练的模型进行微调，可以在LLCM数据集上实现最先进的mAP分数，同时提供了红外域间关系和小数据集有效训练策略的见解。</div>
 </details>
 </div>
 <div class="card">
@@ -396,12 +399,12 @@ our approach, achieving a Rank-1 accuracy of $74.75\%$ on SYSU-MM01, surpassing
 the baseline by $7.93\%$ and outperforming the current state-of-the-art by
 $3.95\%$.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>分层粒度框架下的自适应照明不变协同特征整合用于可见光-红外重识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外人员重识别（VI-ReID）在搜索和救援、基础设施保护和夜间监控等应用中发挥着重要作用。然而，由于模态差异、光照变化和频繁遮挡，它面临着重大挑战。为克服这些障碍，我们提出了**AMINet**，一种自适应模态交互网络。AMINet 使用多粒度特征提取来从全身和上半身图像中捕获全面的身份属性，提高对遮挡和背景杂乱的鲁棒性。该模型结合了交互特征融合策略，以实现深层次的模内和跨模态对齐，增强泛化能力并有效弥合RGB-IR模态差距。此外，AMINet 利用相位一致性进行鲁棒的、光照不变的特征提取，并结合自适应多尺度核MMD对齐不同尺度下的特征分布。在基准数据集上的广泛实验表明，我们的方法非常有效，在SYSU-MM01上的Rank-1精度为74.75%，比基线高出7.93%，并优于当前最先进的方法3.95%。</div>
+<div class="mono"><b>标题：</b>分层粒度框架中的自适应照明不变协同特征整合：可见光-红外重识别</div>
+<div class="mono" style="margin-top:8px">可见光-红外人员重识别（VI-ReID）在搜索和救援、基础设施保护和夜间监控等应用中起着重要作用。然而，由于模态差异、光照变化和频繁遮挡，它面临着重大挑战。为克服这些障碍，我们提出了一种自适应模态交互网络AMINet。AMINet采用多粒度特征提取，从全身和上半身图像中捕获全面的身份属性，提高对遮挡和背景杂乱的鲁棒性。该模型结合了交互特征融合策略，进行深层次的模内和跨模态对齐，增强泛化能力并有效弥合RGB-IR模态差距。此外，AMINet利用相位一致性的鲁棒、光照不变特征提取，并结合自适应多尺度核MMD对齐不同尺度下的特征分布。在基准数据集上的广泛实验表明，我们的方法有效，SYSU-MM01上的Rank-1准确率为74.75%，比基线高出7.93%，比当前最先进的方法高出3.95%。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenges of Visible-Infrared Person Re-Identification (VI-ReID) by proposing AMINet, which uses multi-granularity feature extraction and adaptive multi-scale kernel MMD to improve robustness against occlusions and illumination variations. AMINet achieves a Rank-1 accuracy of 74.75% on SYSU-MM01, outperforming the current state-of-the-art by 3.95%.</div>
-<div class="mono" style="margin-top:8px">论文提出AMINet，通过使用多粒度特征提取和自适应多尺度核MMD来解决可见光-红外人再识别（VI-ReID）中的遮挡和光照变化问题。AMINet在SYSU-MM01数据集上的Rank-1准确率达到74.75%，超越当前最先进的方法3.95%。</div>
+<div class="mono">The paper addresses the challenges of Visible-Infrared Person Re-Identification (VI-ReID) by proposing AMINet, an Adaptive Modality Interaction Network. AMINet uses multi-granularity feature extraction to handle occlusions and background clutter, and integrates an interactive feature fusion strategy to align RGB and IR modalities. The model also employs phase congruency for illumination-invariant feature extraction and an adaptive multi-scale kernel MMD for scale alignment. Experiments show AMINet achieves a Rank-1 accuracy of 74.75% on SYSU-MM01, surpassing the baseline and the current state-of-the-art by significant margins.</div>
+<div class="mono" style="margin-top:8px">论文通过提出AMINet，使用多粒度特征提取和自适应多尺度核MMD进行鲁棒特征对齐，以应对可见光-红外人再识别（VI-ReID）的挑战。该模型在SYSU-MM01上的Rank-1准确率达到74.75%，分别比基线高出7.93%和当前最先进的方法高出3.95%。</div>
 </details>
 </div>
 <div class="card">
@@ -429,12 +432,12 @@ extensive experiments on the SYSU-MM01, RegDB and LLMC datasets indicate that
 our approach can provide state-of-the-art results using a single backbone, and
 showcase the flexibility of our approach in mixed gallery applications.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>从跨模态到混合模态可见红外再识别</div>
-<div class="mono" style="margin-top:8px">可见红外行人再识别（VI-ReID）旨在跨不同摄像模态匹配个体，这是现代监控系统中的关键任务。虽然当前的VI-ReID方法主要关注跨模态匹配，但在实际应用中，混合画廊中通常包含V和I图像，最先进的方法在混合模态下由于领域偏移大和低区分度表现出显著的性能限制。这是因为同一模态的画廊图像可能具有较小的领域差距，但对应不同的身份。本文引入了一种新的混合模态再识别设置，其中画廊包含两种模态的数据。为了解决跨模态领域偏移和同模态匹配低区分度的问题，我们提出了混合模态擦除和相关（MixER）方法。MixER学习方法通过正交分解、模态混淆和ID-模态相关目标来分离模态特异性和模态共享的身份信息。MixER增强了跨模态和混合模态设置下的特征鲁棒性。我们在SYSU-MM01、RegDB和LLMC数据集上的广泛实验表明，我们的方法可以使用单个骨干网络提供最先进的结果，并展示了我们的方法在混合画廊应用中的灵活性。</div>
+<div class="mono"><b>标题：</b>从跨模态到混合模态可见-红外重识别</div>
+<div class="mono" style="margin-top:8px">可见-红外人员重识别（VI-ReID）旨在跨不同摄像模态匹配个体，是现代监控系统中的关键任务。当前的VI-ReID方法主要关注跨模态匹配，但在实际应用中，混合画廊中通常包含可见光和红外图像，最先进的方法在混合模态下由于领域偏移大和低区分度表现出显著的性能限制。这是因为同一模态的画廊图像可能具有较小的领域差距，但对应不同的身份。本文引入了一种新的混合模态重识别设置，其中画廊包含两种模态的数据。为了解决跨模态领域偏移和同模态匹配低区分度的问题，我们提出了混合模态擦除和相关（MixER）方法。MixER学习方法通过正交分解、模态混淆和ID-模态相关目标来分离模态特有和模态共享的身份信息。MixER增强了跨模态和混合模态设置下的特征鲁棒性。我们在SYSU-MM01、RegDB和LLMC数据集上的广泛实验表明，我们的方法可以使用单一骨干网络提供最先进的结果，并展示了我们的方法在混合画廊应用中的灵活性。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of visible-infrared person re-identification (VI-ReID) in mixed-gallery settings, where galleries contain both visible and infrared images. The authors propose the MixER method, which disentangles modality-specific and shared identity information to enhance feature robustness. Experiments on SYSU-MM01, RegDB, and LLMC datasets show that MixER achieves state-of-the-art performance with a single backbone and improves performance in cross-modal and mixed-modal settings.</div>
-<div class="mono" style="margin-top:8px">本文针对当前可见光-红外人体再识别方法在处理包含可见光和红外图像的混合画廊时的局限性，引入了MixER方法，该方法通过解耦模态特定和共享的身份信息来增强跨模态的特征鲁棒性。该方法在SYSU-MM01、RegDB和LLMC数据集上的实验表明，它能够在交叉模态和混合模态设置中提供最先进的结果。</div>
+<div class="mono">This paper addresses the challenge of visible-infrared person re-identification (VI-ReID) in mixed-modal galleries, where images from both visible and infrared modalities coexist. The authors propose the MixER method, which disentangles modality-specific and shared identity information to enhance feature robustness. Experimental results on SYSU-MM01, RegDB, and LLMC datasets demonstrate that MixER achieves state-of-the-art performance with a single backbone and improves performance in cross-modal and mixed-modal settings.</div>
+<div class="mono" style="margin-top:8px">该论文针对当前可见-红外人员重识别方法在处理包含可见光和红外图像的混合画廊时的局限性，引入了MixER方法，该方法通过解耦模态特定和共享的身份信息来增强特征的鲁棒性。在SYSU-MM01、RegDB和LLMC数据集上的实验表明，MixER使用单一骨干网络即可达到最先进的效果，并且在跨模态和混合模态设置中表现出色。</div>
 </details>
 </div>
 <div class="card">
@@ -463,11 +466,11 @@ other state-of-the-art methods. The code is available at
 https://github.com/1024AILab/ReID-SEPG.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>红外可见光行人重识别的光谱增强和伪锚点引导</div>
-<div class="mono" style="margin-top:8px">深度学习的发展促进了行人重识别（ReID）技术在智能安全中的应用。可见光-红外行人重识别（VI-ReID）旨在跨红外和可见光模态图像匹配行人，实现全天候监控。当前依赖于无监督模态转换以及低效的嵌入约束来弥合红外和可见光图像之间的光谱差异的研究，限制了其潜在性能。为了解决上述方法的局限性，本文引入了一种简单而有效的光谱增强和伪锚点引导网络，命名为SEPG-Net。具体而言，我们提出了一种基于频域信息和灰度空间的更均匀的光谱增强方案，避免了低效模态转换通常引起的信息损失。此外，引入了一种伪锚点引导双向聚合（PABA）损失，以弥合局部模态差异，同时更好地保留了区分性身份嵌入。在两个公开基准数据集上的实验结果表明，SEPG-Net 的性能优于其他最先进的方法。代码可在 https://github.com/1024AILab/ReID-SEPG 获取。</div>
+<div class="mono" style="margin-top:8px">深度学习的发展促进了行人重识别（ReID）技术在智能安全中的应用。可见光-红外行人重识别（VI-ReID）旨在跨红外和可见光模态图像匹配行人，实现24小时监控。当前研究依赖于无监督的模态变换以及低效的嵌入约束来弥合红外和可见光图像之间的光谱差异，这限制了其潜在性能。为了解决上述方法的局限性，本文引入了一种简单而有效的光谱增强和伪锚点引导网络，命名为SEPG-Net。具体而言，我们提出了一种基于频域信息和灰度空间的更均匀的光谱增强方案，避免了低效模态变换通常引起的信息损失。此外，引入了一种伪锚点引导双向聚合（PABA）损失，以弥合局部模态差异，同时更好地保留区分性身份嵌入。在两个公开基准数据集上的实验结果表明，SEPG-Net 的性能优于其他最先进的方法。代码可在 https://github.com/1024AILab/ReID-SEPG 获取。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the limitations of current unsupervised methods in visible-infrared person re-identification by proposing SEPG-Net, which includes a spectral enhancement scheme and a Pseudo Anchor-guided Bidirectional Aggregation loss. The method enhances spectral consistency and preserves discriminative identity embeddings, leading to superior performance on two public benchmark datasets compared to existing state-of-the-art methods.</div>
-<div class="mono" style="margin-top:8px">本文通过提出SEPG-Net，即包含光谱增强方案和伪锚点引导双向聚合损失的方法，解决了当前无监督方法在可见红外行人再识别中的局限性。该方法增强了光谱一致性并保留了区分性身份嵌入，从而在两个公开基准数据集上的性能优于现有最先进的方法。</div>
+<div class="mono">This paper addresses the limitations of current unsupervised methods in visible-infrared person re-identification by proposing SEPG-Net, which includes a spectral enhancement scheme and a Pseudo Anchor-guided Bidirectional Aggregation loss. The method enhances spectral consistency and preserves discriminative identity embeddings, leading to superior performance compared to other state-of-the-art methods on two public datasets.</div>
+<div class="mono" style="margin-top:8px">本文通过提出SEPG-Net，即包含光谱增强方案和伪锚点引导双向聚合损失的方法，解决了当前无监督方法在可见光-红外行人再识别中的局限性。该方法增强了光谱一致性并保留了区分性身份嵌入，从而在两个公开基准数据集上的性能优于其他最先进的方法。</div>
 </details>
 </div>
 <div class="card">
@@ -495,12 +498,12 @@ contrastive learning by updating the memory in stages. Extensive experiments
 results on SYSU-MM01 and RegDB datasets demonstrate that the proposed ECUL
 shows promising performance and even outperforms certain supervised methods.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>扩展跨模态联合学习在无监督可见光-红外行人重识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督学习可见光-红外行人重识别（USL-VI-ReID）旨在从未标记的跨模态数据集中学习模态不变特征并减少模态间差异。然而，现有方法缺乏跨模态聚类或过度追求聚类级别的关联，这使得难以进行可靠的模态不变特征学习。为解决这一问题，我们提出了一种扩展跨模态联合学习（ECUL）框架，结合了扩展模态-相机聚类（EMCC）和两步记忆更新策略（TSMem）模块。具体而言，我们设计ECUL以自然地整合模内聚类、模间聚类和模间实例选择，建立紧凑且准确的跨模态关联，同时减少引入噪声标签。此外，EMCC通过扩展编码向量捕获并过滤邻域关系，进一步促进聚类算法中模态不变和相机不变知识的学习。最后，TSMem通过分阶段更新记忆为对比学习提供准确且通用的代理点。在SYSU-MM01和RegDB数据集上的广泛实验结果表明，提出的ECUL表现出色，甚至优于某些监督方法。</div>
+<div class="mono"><b>标题：</b>扩展跨模态联合学习在无监督可见-红外行人再识别中的应用</div>
+<div class="mono" style="margin-top:8px">无监督学习可见-红外行人再识别（USL-VI-ReID）旨在从未标记的跨模态数据集中学习模态不变特征并减少模态间差距。然而，现有方法缺乏跨模态聚类或过度追求聚类级别的关联，这使得难以进行可靠的模态不变特征学习。为解决这一问题，我们提出了一种扩展跨模态联合学习（ECUL）框架，结合了扩展模态-相机聚类（EMCC）和两步记忆更新策略（TSMem）模块。具体而言，我们设计ECUL以自然地整合模态内聚类、模态间聚类和模态间实例选择，建立紧凑且准确的跨模态关联，同时减少引入噪声标签。此外，EMCC通过扩展编码向量来捕获和过滤邻域关系，进一步促进聚类算法中模态不变和相机不变知识的学习。最后，TSMem通过分阶段更新记忆为对比学习提供准确且通用的代理点。在SYSU-MM01和RegDB数据集上的广泛实验结果表明，提出的ECUL表现出有希望的性能，并且甚至优于某些监督方法。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of unsupervised learning for visible-infrared person re-identification by proposing an Extended Cross-Modality United Learning (ECUL) framework. This framework includes Extended Modality-Camera Clustering (EMCC) and Two-Step Memory Updating Strategy (TSMem) modules to integrate intra-modality and inter-modality clustering, and to reduce the inter-modality gap. The experiments on SYSU-MM01 and RegDB datasets show that ECUL effectively learns modality-invariant features and outperforms certain supervised methods.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种扩展跨模态联合学习（ECUL）框架，以解决可见红外行人再识别的无监督学习问题。该框架结合了扩展模态-相机聚类（EMCC）和两步记忆更新策略（TSMem），以集成模内和模间聚类，并减少模间差距。在SYSU-MM01和RegDB数据集上的实验表明，ECUL表现出色，并优于某些监督方法。</div>
+<div class="mono">The paper addresses the challenge of unsupervised learning for visible-infrared person re-identification by proposing an Extended Cross-Modality United Learning (ECUL) framework. This framework includes Extended Modality-Camera Clustering (EMCC) and Two-Step Memory Updating Strategy (TSMem) to integrate intra-modality and inter-modality clustering, and to reduce the inter-modality gap. The experiments on SYSU-MM01 and RegDB datasets show that ECUL performs well and even surpasses some supervised methods.</div>
+<div class="mono" style="margin-top:8px">论文提出了一种扩展跨模态联合学习（ECUL）框架，以解决可见红外行人再识别的无监督学习问题。该框架结合了扩展模态-相机聚类（EMCC）和两步记忆更新策略（TSMem），以集成模态内和模态间聚类，并减少模态间差异。实验结果表明，ECUL在SYSU-MM01和RegDB数据集上表现出色，甚至超过了某些监督方法。</div>
 </details>
 </div>
 <div class="card">
@@ -528,11 +531,11 @@ USL-VI-ReID approaches, despite its simplicity. The source code is available
 at: https://github.com/tengxiao14/Neighbor-guided-USL-VI-ReID.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>通过从邻居推断缓解通用标签噪声以实现无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）在研究和实际应用中具有重要意义，但由于缺乏标注数据，仍面临挑战。现有方法旨在在无监督设置中学习跨模态不变的表示。然而，这些方法常常由于聚类结果不佳和模态间差异较大而遇到跨模态的标签噪声问题，这阻碍了有效的训练。为应对这些挑战，我们提出了一种简单而有效的解决方案，通过利用邻居信息缓解通用标签噪声以实现USL-VI-ReID。具体而言，我们引入了邻居引导的通用标签校准（N-ULC）模块，该模块用来自邻居样本的软标签替换同质和异质空间中的显式硬伪标签，以减少标签噪声。此外，我们还提出了邻居引导的动态加权（N-DW）模块，通过最小化不可靠样本的影响来增强训练稳定性。在RegDB和SYSU-MM01数据集上的广泛实验表明，尽管方法简单，但我们的方法仍优于现有USL-VI-ReID方法。源代码可在：https://github.com/tengxiao14/Neighbor-guided-USL-VI-ReID 获取。</div>
+<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）具有重要的研究和实际意义，但由于缺乏标注而仍然具有挑战性。现有方法旨在在无监督设置中学习跨模态不变的表示。然而，这些方法常常由于聚类结果不佳和模态差异较大而遇到跨模态的标签噪声问题，这阻碍了有效的训练。为了解决这些挑战，我们提出了一种通过利用邻居信息缓解通用标签噪声的简单而有效的USL-VI-ReID解决方案。具体而言，我们引入了邻居引导的通用标签校准（N-ULC）模块，该模块用来自邻居样本的软标签替换同质和异质空间中的显式硬伪标签，以减少标签噪声。此外，我们提出了邻居引导的动态加权（N-DW）模块，通过最小化不可靠样本的影响来增强训练稳定性。在RegDB和SYSU-MM01数据集上的广泛实验表明，尽管方法简单，但我们的方法仍优于现有USL-VI-ReID方法。源代码可在：https://github.com/tengxiao14/Neighbor-guided-USL-VI-ReID 获取。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research aims to improve unsupervised visible-infrared person re-identification (USL-VI-ReID) by addressing label noise issues. The method introduces the Neighbor-guided Universal Label Calibration (N-ULC) module, which uses soft labels from neighboring samples to reduce label noise, and the Neighbor-guided Dynamic Weighting (N-DW) module to minimize the impact of unreliable samples. Experiments on RegDB and SYSU-MM01 datasets show that the proposed method outperforms existing approaches despite its simplicity.</div>
-<div class="mono" style="margin-top:8px">本文提出了一种利用邻居信息缓解通用标签噪声的方法，以解决无监督可见-红外行人重识别（USL-VI-ReID）的挑战。该方法引入了基于邻居的通用标签校准（N-ULC）模块，使用邻近样本的软标签代替硬伪标签，并引入了基于邻居的动态加权（N-DW）模块以减少不可靠样本的影响。实验结果表明，该方法在RegDB和SYSU-MM01数据集上优于现有方法，尽管其结构简单。</div>
+<div class="mono">The research addresses the challenge of unsupervised visible-infrared person re-identification (USL-VI-ReID) by proposing a method to mitigate universal label noise using neighbor information. The approach introduces the Neighbor-guided Universal Label Calibration (N-ULC) module, which uses soft labels from neighboring samples instead of hard pseudo labels, and the Neighbor-guided Dynamic Weighting (N-DW) module to reduce the impact of unreliable samples. Experiments on RegDB and SYSU-MM01 datasets show that this method outperforms existing approaches despite its simplicity.</div>
+<div class="mono" style="margin-top:8px">论文通过提出一种缓解通用标签噪声的方法来解决无监督可见红外行人重识别（USL-VI-ReID）的挑战。它引入了邻域导向通用标签校准（N-ULC）模块，使用邻近样本的软标签来替代硬伪标签，并引入了邻域导向动态加权（N-DW）模块以减少不可靠样本的影响。实验结果表明，该方法在RegDB和SYSU-MM01数据集上的表现优于现有方法，尽管其结构简单。</div>
 </details>
 </div>
 <div class="card">
@@ -568,11 +571,11 @@ clustering approaches and achieve competitive performance, which significantly
 reduces the performance gap with supervised methods.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>动态模态-相机不变聚类在无监督可见-红外行人重识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督学习可见-红外行人重识别（USL-VI-ReID）相比监督方法提供了更灵活和成本效益更高的替代方案。该领域因其有希望的潜力而越来越受到关注。现有方法简单地聚类模态特定样本，并采用强关联技术实现跨模态实例到聚类或聚类到聚类的关联。然而，它们忽略了跨相机差异，导致身份分割过度，从而削弱了跨模态关联的准确性和可靠性。为了解决这些问题，我们提出了一种新颖的动态模态-相机不变聚类（DMIC）框架用于USL-VI-ReID。具体而言，我们的DMIC自然地将模态-相机不变扩展（MIE）、动态邻域聚类（DNC）和混合模态对比学习（HMCL）统一到一个框架中，消除了聚类中的跨模态和跨相机差异。MIE融合了跨模态和跨相机的距离编码，以在聚类级别弥合模态和相机之间的差距。DNC采用两种动态搜索策略来细化网络的优化目标，从提高可区分性过渡到增强跨模态和跨相机的一般性。此外，HMCL旨在优化实例级和聚类级的分布。使用随机选择的样本更新模态内和跨模态训练的记忆，促进实时探索模态不变表示。大量实验表明，我们的DMIC解决了当前聚类方法的局限性，实现了竞争力的性能，显著减少了与监督方法的性能差距。</div>
+<div class="mono" style="margin-top:8px">无监督学习可见-红外行人重识别（USL-VI-ReID）相比监督方法提供了更灵活和成本效益更高的替代方案。该领域因其巨大的潜力而越来越受到关注。现有方法简单地聚类模态特定样本，并采用强关联技术实现跨模态实例到聚类或聚类到聚类的关联。然而，它们忽略了跨相机差异，导致身份分割过度，从而影响跨模态关联的准确性和可靠性。为解决这些问题，我们提出了一种新的动态模态-相机不变聚类（DMIC）框架用于USL-VI-ReID。具体而言，我们的DMIC自然地将模态-相机不变扩展（MIE）、动态邻域聚类（DNC）和混合模态对比学习（HMCL）整合到一个统一框架中，消除了聚类中的跨模态和跨相机差异。MIE融合跨模态和跨相机的距离编码，在聚类层面弥合模态和相机之间的差距。DNC采用两种动态搜索策略来细化网络的优化目标，从提高可区分性过渡到增强跨模态和跨相机的一般性。此外，HMCL旨在优化实例级和聚类级分布。使用随机选择的样本更新模态内和跨模态训练的记忆，促进实时探索模态不变表示。大量实验表明，我们的DMIC解决了当前聚类方法的局限性，实现了竞争力的性能，显著减少了与监督方法的性能差距。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper proposes a Dynamic Modality-Camera Invariant Clustering (DMIC) framework for unsupervised visible-infrared person re-identification (USL-VI-ReID). DMIC integrates Modality-Camera Invariant Expansion (MIE), Dynamic Neighborhood Clustering (DNC), and Hybrid Modality Contrastive Learning (HMCL) to address the issues of cross-modality and cross-camera discrepancies. The framework improves clustering accuracy by fusing inter-modal and inter-camera distance coding, employing dynamic search strategies, and optimizing instance-level and cluster-level distributions, leading to competitive performance compared to supervised methods.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过解决现有方法忽略跨摄像头差异导致的显著身份分裂问题，提高无监督可见-红外行人再识别的准确性。提出的DMIC框架整合了MIE、DNC和HMCL，以消除跨模态和跨摄像头的差异。MIE和HMCL提升聚类准确性，而DNC提高泛化能力。实验结果表明，DMIC优于现有方法，并显著缩小了与监督方法的性能差距。</div>
+<div class="mono">The paper proposes a Dynamic Modality-Camera Invariant Clustering (DMIC) framework for unsupervised visible-infrared person re-identification (USL-VI-ReID) to address the issue of excessive identity splitting due to cross-camera differences. DMIC integrates Modality-Camera Invariant Expansion (MIE), Dynamic Neighborhood Clustering (DNC), and Hybrid Modality Contrastive Learning (HMCL) to eliminate cross-modality and cross-camera discrepancies. Experiments show that DMIC improves clustering accuracy and reduces the performance gap with supervised methods.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过解决现有方法忽略跨摄像头差异导致的身份分裂问题，提高无监督可见光-红外行人再识别的性能。提出的动态模态-摄像头不变聚类（DMIC）框架整合了模态-摄像头不变扩展（MIE）、动态邻域聚类（DNC）和混合模态对比学习（HMCL），以消除跨模态和跨摄像头的差异。DMIC通过广泛的实验展示了优越的性能，显著缩小了与监督方法的性能差距。</div>
 </details>
 </div>
 <div class="card">
@@ -605,11 +608,11 @@ to the original performance of existing cross-modality methods on MM-ReID, the
 addition of our CIDHL and MBSOS demonstrates a general improvement.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>多模态人员再识别：一种新的和实用的范式</div>
-<div class="mono" style="margin-top:8px">当前可见-红外跨模态人员再识别研究仅专注于探索双模态互检索范式，我们提出了一种新的和更实用的混合模态检索范式。现有的可见-红外人员再识别（VI-ReID）方法通过学习可见和红外模态之间的对应关系，在双模态互检索范式中取得了一些成果。然而，当这些方法应用于新的混合模态范式时，由于模态混淆问题，性能显著下降。因此，本文提出了混合模态人员再识别（MM-ReID）任务，探索模态混合比例对性能的影响，并根据新的混合模态测试范式为现有数据集构建混合模态测试集。为了解决MM-ReID中的模态混淆问题，我们提出了一种跨身份鉴别和谐化损失（CIDHL），调整超球面特征空间中样本的分布，将具有相同身份的样本中心拉近，将具有不同身份的样本中心推开，同时聚合具有相同模态和相同身份的样本。此外，我们提出了一种模态桥梁相似性优化策略（MBSOS），通过帮助查询样本和查询样本之间的相似桥样本优化跨模态相似性。广泛的实验表明，与现有跨模态方法在MM-ReID上的原始性能相比，加入我们的CIDHL和MBSOS显示出普遍的改进。</div>
+<div class="mono" style="margin-top:8px">当前可见-红外跨模态人员再识别研究仅专注于探索双模态互检索范式，我们提出了一种新的和更实用的混合模态检索范式。现有的可见-红外人员再识别（VI-ReID）方法通过学习可见和红外模态之间的对应关系，在双模态互检索范式中取得了一些成果。然而，当这些方法应用于新的混合模态范式时，由于模态混淆问题，性能显著下降。因此，本文提出了混合模态人员再识别（MM-ReID）任务，探讨了模态混合比例对性能的影响，并根据新的混合模态测试范式为现有数据集构建了混合模态测试集。为了解决MM-ReID中的模态混淆问题，我们提出了一种跨身份鉴别和谐化损失（CIDHL），调整超球面特征空间中样本的分布，将具有相同身份的样本中心拉近，将具有不同身份的样本中心推开，同时聚合具有相同模态和相同身份的样本。此外，我们提出了一种模态桥梁相似性优化策略（MBSOS），通过帮助查询样本和查询样本之间的相似桥样本优化跨模态相似性。广泛的实验表明，与现有跨模态方法在MM-ReID上的原始性能相比，加入我们的CIDHL和MBSOS显示出普遍的改进。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the limitations of current visible-infrared cross-modality person re-identification methods by proposing a new mix-modality retrieval paradigm. It introduces a Mix-Modality person re-identification (MM-ReID) task and a Cross-Identity Discrimination Harmonization Loss (CIDHL) to mitigate modality confusion. Additionally, a Modality Bridge Similarity Optimization Strategy (MBSOS) is proposed to enhance cross-modality similarity. Experimental results show that these methods improve the performance of existing cross-modality methods in the mix-modality paradigm.</div>
-<div class="mono" style="margin-top:8px">本文提出了一个新的混模态检索范式，以解决当前可见光-红外人再识别方法的局限性。它提出了混模态人再识别（MM-ReID）任务，并提出了一种跨身份鉴别和谐化损失（CIDHL）来缓解模态混淆问题。此外，还提出了一种模态桥梁相似性优化策略（MBSOS），通过参考画廊中的相似桥梁样本来优化查询样本与被查询样本之间的跨模态相似性。实验表明，这些方法在混模态设置下的性能优于现有方法。</div>
+<div class="mono">This paper addresses the limitations of current visible-infrared person re-identification methods by introducing a new mix-modality retrieval paradigm. It proposes a Mix-Modality person re-identification (MM-ReID) task and a Cross-Identity Discrimination Harmonization Loss (CIDHL) to mitigate the modality confusion problem. Additionally, a Modality Bridge Similarity Optimization Strategy (MBSOS) is introduced to enhance cross-modality similarity. Experimental results show that these methods improve the performance of existing cross-modality methods in the mix-modality paradigm.</div>
+<div class="mono" style="margin-top:8px">本文通过引入新的混模态检索范式，解决了当前可见光-红外人再识别方法的局限性。提出了混模态人再识别（MM-ReID）任务和跨身份鉴别和谐化损失（CIDHL）以缓解模态混淆问题。此外，还提出了模态桥梁相似性优化策略（MBSOS）以通过馆藏中的相似桥梁样本优化查询样本与被查询样本之间的跨模态相似性。实验结果表明，这些方法在混模态范式下提高了现有跨模态方法的性能。</div>
 </details>
 </div>
 <div class="card">
@@ -643,7 +646,10 @@ our MULT in comparison to other cross-modality association methods. Code is
 available at https://github.com/FranklinLingfeng/code_for_MULT.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>探索一致标签关联的同质性和异质性对于无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需标注的情况下，从不同模态中检索同一身份的行人图像。先前的工作集中在建立跨模态伪标签关联以弥补模态差距，但忽略了在特征空间和伪标签空间之间保持实例级的同质性和异质一致性，导致关联粗糙。为此，我们引入了一个模态统一标签转移（MULT）模块，该模块同时考虑了同质性和异质性的细粒度实例结构，从而产生高质量的跨模态标签关联。该模块利用同质性和异质性亲和力，量化伪标签空间与特征空间之间的不一致性，进而最小化这种不一致性。所提出的MULT确保生成的伪标签在不同模态之间保持对齐，同时在同模态内保持结构一致性。此外，我们还提出了一种简单的即插即用在线跨记忆标签精炼（OCLR）模块，以进一步减轻噪声伪标签的副作用，同时对齐不同模态，结合了一种交替模态不变表示学习（AMIRL）框架。实验表明，我们提出的方法在现有的USL-VI-ReID方法中表现更优，突显了我们MULT在与其他跨模态关联方法相比的优势。代码可在https://github.com/FranklinLingfeng/code_for_MULT获取。</div>
+<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需标注的情况下，从不同模态中检索同一身份的行人图像。先前的工作集中在建立跨模态的伪标签关联以弥补模态差异，但忽略了在特征空间和伪标签空间之间保持实例级的同质性和异质性一致性，导致关联粗糙。为此，我们引入了一个模态统一标签转移（MULT）模块，该模块同时考虑了同质性和异质性的细粒度实例级结构，从而产生高质量的跨模态标签关联。该模块利用同质性和异质性亲和力来量化伪标签空间与特征空间之间的不一致性，并对其进行最小化。所提出的MULT确保生成的伪标签在不同模态之间保持对齐，同时在同模态内保持结构一致性。此外，我们还提出了一种简单的即插即用在线跨记忆标签精炼（OCLR）模块，以进一步减轻噪声伪标签的副作用，同时对齐不同模态，结合了一种替代模态不变表示学习（AMIRL）框架。实验表明，我们提出的方法优于现有最先进的USL-VI-ReID方法，突显了我们MULT在与其他跨模态关联方法相比的优势。代码可在https://github.com/FranklinLingfeng/code_for_MULT获取。</div>
+</details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Unsupervised visible-infrared person re-identification (USL-VI-ReID) endeavors to retrieve pedestrian images of the same identity from different modalities without annotations.</div>
 </details>
 </div>
 <div class="card">
@@ -675,11 +681,11 @@ approach by a large margin of 7.76% mAP on average, which even surpasses some
 supervised VI-ReID methods.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>协作学习与邻域引导标签精炼的无监督可见-红外行人再识别</div>
-<div class="mono" style="margin-top:8px">无监督学习可见-红外行人再识别（USL-VI-ReID）旨在从跨模态的未标注数据集中学习模态不变特征，这对于视频监控系统中的实际应用至关重要。解决USL-VI-ReID任务的关键在于解决跨模态数据关联问题，以便进一步进行异质联合学习。为了解决这一问题，我们提出了一种双最优传输标签分配（DOTLA）框架，以同时将一种模态生成的标签分配给其对应的模态。提出的DOTLA机制以互为强化和高效的方式解决了跨模态数据关联问题，从而有效减少了某些不足和噪声标签关联的副作用。此外，我们还提出了一种跨模态邻域一致性引导的标签精炼和正则化模块，在假设每个示例的预测或标签分布应与其最近邻相似的前提下，消除不准确的监督信号带来的负面影响。在公开的SYSU-MM01和RegDB数据集上的广泛实验结果表明，所提出的方法具有很高的有效性，平均mAP比现有最先进的方法高出7.76%，甚至超过了某些监督VI-ReID方法。</div>
+<div class="mono" style="margin-top:8px">无监督学习可见-红外行人再识别（USL-VI-ReID）旨在从未标记的跨模态数据集中学习模态不变特征，这对于视频监控系统中的实际应用至关重要。解决USL-VI-ReID任务的关键在于解决跨模态数据关联问题，以便进一步进行异质联合学习。为了解决这一问题，我们提出了一种双最优传输标签分配（DOTLA）框架，以同时将一种模态生成的标签分配给其对应模态。提出的DOTLA机制将跨模态数据关联问题转化为一种相互强化和高效的解决方案，从而有效减少了某些不足和噪声标签关联的副作用。此外，我们还提出了一种跨模态邻域一致性引导的标签精炼和正则化模块，在假设每个示例的预测或标签分布应与其最近邻相似的前提下，消除不准确监督信号带来的负面影响。在公开的SYSU-MM01和RegDB数据集上的广泛实验结果表明，所提出的方法具有很高的有效性，平均mAP值比现有最先进的方法高出7.76%，甚至超过了某些监督VI-ReID方法。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the unsupervised learning of visible-infrared person re-identification (USL-VI-ReID) by proposing a Dual Optimal Transport Label Assignment (DOTLA) framework. The method aims to solve the cross-modality data association problem and improve heterogeneous joint learning. Experimental results on SYSU-MM01 and RegDB datasets show that the proposed method outperforms existing state-of-the-art approaches by 7.76% in mean average precision (mAP).</div>
-<div class="mono" style="margin-top:8px">论文提出了一种双最优传输标签分配(DOTLA)框架，用于解决可见光-红外人再识别(USL-VI-ReID)中的跨模态数据关联问题。该框架将一种模态生成的标签分配给另一种模态，增强了跨模态数据的关联性。此外，还提出了一种跨模态邻居一致性引导的标签精炼模块，以提高标签准确性。实验结果表明，该方法在SYSU-MM01和RegDB数据集上的平均精度(mAP)上优于现有最先进的方法，提高了7.76%。</div>
+<div class="mono">This paper addresses the unsupervised learning of visible-infrared person re-identification (USL-VI-ReID) by proposing a Dual Optimal Transport Label Assignment (DOTLA) framework. The method aims to solve the cross-modality data association problem to enable joint learning of heterogeneous data. Experimental results on public datasets SYSU-MM01 and RegDB show that the proposed approach outperforms existing state-of-the-art methods by 7.76% in mean average precision (mAP).</div>
+<div class="mono" style="margin-top:8px">论文提出了一种双最优传输标签分配（DOTLA）框架，以解决跨模态数据关联问题，从而实现无监督的可见红外行人重识别（USL-VI-ReID）。该框架将一种模态生成的标签分配给另一种模态，增强跨模态联合学习。此外，还引入了一个跨模态邻居一致性引导的标签精炼模块，以提高标签准确性。实验结果表明，该方法在SYSU-MM01和RegDB数据集上的平均精度（mAP）上优于现有方法，高出7.76%。</div>
 </details>
 </div>
 <div class="card">
@@ -709,11 +715,11 @@ RegDB datasets demonstrate the effectiveness of the proposed method, surpassing
 state-of-the-art approaches by a large margin of 8.76% mAP on average.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>高效双边跨模态簇匹配的无监督可见-红外行人重识别</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需标注的情况下，匹配不同模态下同一身份的行人图像。现有工作主要集中在通过对齐未标注样本的实例级特征来缓解模态差异。然而，跨模态簇之间的关系尚未得到充分探索。为此，我们提出了一种新颖的双边簇匹配学习框架，通过匹配跨模态簇来减少模态差异。具体地，我们通过在二分图中优化最大匹配问题设计了一种多对多双边跨模态簇匹配（MBCCM）算法。然后，匹配的成对簇在模型训练过程中利用共享的可见光和红外伪标签。在这样的监督信号下，我们提出了一种模态特定和模态无关的对比学习框架，以在簇级联合对齐特征。同时，我们提出了跨模态一致性约束（CC）以显式地减少模态差异。在公开的SYSU-MM01和RegDB数据集上的广泛实验表明，所提出的方法具有很高的有效性，平均mAP比现有最佳方法高出8.76%。</div>
+<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）旨在无需标注的情况下，匹配不同模态下同一身份的行人图像。现有工作主要集中在通过对齐未标注样本的实例级特征来缓解模态差异。然而，跨模态簇之间的关系尚未得到充分探索。为此，我们提出了一种新的双边簇匹配学习框架，通过匹配跨模态簇来减少模态差异。具体地，我们通过在二分图中优化最大匹配问题设计了一种多对多双边跨模态簇匹配（MBCCM）算法。然后，匹配的成对簇在模型训练过程中利用共享的可见光和红外伪标签。在这样的监督信号下，我们提出了一种模态特定和模态无关的对比学习框架，以在簇级联合对齐特征。同时，我们提出了跨模态一致性约束（CC）以显式地减少大模态差异。在公开的SYSU-MM01和RegDB数据集上的广泛实验表明，所提出的方法具有很高的有效性，在平均mAP上比现有最佳方法高出8.76%。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of unsupervised visible-infrared person re-identification (USL-VI-ReID) by proposing a novel bilateral cluster matching-based learning framework. It introduces a Many-to-many Bilateral Cross-Modality Cluster Matching (MBCCM) algorithm to match cross-modality clusters and a Modality-Specific and Modality-Agnostic (MSMA) contrastive learning framework to align features at a cluster-level. The method also includes a cross-modality Consistency Constraint (CC) to reduce modality discrepancy. Experiments on SYSU-MM01 and RegDB datasets show significant improvement, with an average mAP increase of 8.76% over state-of-the-art methods.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过集群匹配来改善无监督的可见光-红外行人重识别，解决模态差异问题。提出的MBCCM方法在二分图中匹配跨模态集群，以在集群级别对齐特征。MSMA对比学习框架和跨模态一致性约束进一步增强了特征对齐。实验表明，该方法在SYSU-MM01和RegDB数据集上的平均mAP提高了8.76%，优于现有方法。</div>
+<div class="mono">The paper addresses unsupervised visible-infrared person re-identification by proposing a bilateral cluster matching framework. It introduces a Many-to-many Bilateral Cross-Modality Cluster Matching algorithm to match clusters across modalities and a Modality-Specific and Modality-Agnostic contrastive learning framework to align features. The method also includes a cross-modality consistency constraint to reduce modality discrepancy. Experiments show the proposed method outperforms existing approaches with an average mAP improvement of 8.76%.</div>
+<div class="mono" style="margin-top:8px">论文提出了一种新的双边簇匹配框架来解决无监督可见红外行人重识别（USL-VI-ReID）的问题。该框架通过匹配跨模态簇并使用Many-to-many Bilateral Cross-Modality Cluster Matching算法在簇级对齐特征来减少模态差距。此外，还引入了模态特定和模态无关对比学习框架以及跨模态一致性约束。在SYSU-MM01和RegDB数据集上的实验结果表明，该方法显著提高了性能，平均mAP提高了8.76%，超过现有最佳方法。</div>
 </details>
 </div>
 <div class="card">
@@ -745,13 +751,9 @@ of our attack against various VI-ReID models. Extensive experiments on
 SYSU-MM01 and RegDB datasets, including real-world deployments, demonstrate the
 effectiveness of Edge- Attack in significantly degrading the performance of
 state-of-the-art VI-ReID methods.</div></details>
-<details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>生成对抗补丁在可见红外行人再识别物理攻击中的应用</div>
-<div class="mono" style="margin-top:8px">可见红外行人再识别（VI-ReID）旨在匹配由红外相机和可见光相机捕获的行人图像。然而，由于其以人为中心的性质，VI-ReID 面临与其他传统跨模态图像匹配任务类似的巨大挑战。现有的方法在提取跨模态的共同特征方面存在不足，同时在隐含特征空间中弥合模态之间的差距时会丢失有价值的信息，这可能影响安全性。为应对这一漏洞，本文首次提出了针对VI-ReID模型的物理对抗攻击。我们的方法称为Edge-Attack，通过专注于最能区分不同模态中个体的边缘信息，特别测试了模型利用深层隐含特征的能力。Edge-Attack采用了一种新颖的两步方法。首先，通过自监督方式训练多级边缘特征提取器，以捕获每个个体的判别性边缘表示。其次，使用基于视觉变换器生成对抗网络（ViTGAN）的生成模型，根据提取的边缘特征生成条件对抗补丁。通过将这些补丁应用于行人的衣物，我们创建了现实且物理上可实现的对抗样本。这种黑盒、自监督的方法确保了我们的攻击对各种VI-ReID模型的普适性。在SYSU-MM01和RegDB数据集上的广泛实验，包括实际部署，证明了Edge-Attack在显著降低最先进的VI-ReID方法性能方面的有效性。</div>
-</details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the vulnerability of Visible-infrared pedestrian Re-identification (VI-ReID) models by introducing Edge-Attack, a physical adversarial attack. The method uses a two-step approach: first, a multi-level edge feature extractor is trained to capture discriminative edge representations, and second, a ViTGAN-based generative model creates adversarial patches conditioned on these features. Applied to pedestrian clothing, these patches generate realistic adversarial samples that significantly degrade the performance of state-of-the-art VI-ReID methods.</div>
-<div class="mono" style="margin-top:8px">本文通过引入Edge-攻击，一种物理对抗攻击方法，来解决可见-红外行人再识别（VI-ReID）模型的漏洞问题。该方法侧重于边缘信息，采用两步过程生成对抗补丁：首先训练一个多级边缘特征提取器，然后使用ViTGAN生成基于提取特征的补丁。实验结果表明，Edge-攻击可以显著降低最先进的VI-ReID方法的性能。</div>
+<div class="mono">This paper addresses the vulnerability of Visible-infrared pedestrian Re-identification (VI-ReID) models by introducing Edge-Attack, a physical adversarial attack. The method focuses on edge information to generate adversarial patches using a two-step process: training a multi-level edge feature extractor and employing a Vision Transformer Generative Adversarial Network (ViTGAN) to create adversarial patches. Experiments on SYSU-MM01 and RegDB datasets show that Edge-Attack significantly degrades the performance of state-of-the-art VI-ReID methods.</div>
+<div class="mono" style="margin-top:8px">本文通过引入Edge-攻击，一种物理对抗攻击，来解决可见-红外行人再识别（VI-ReID）模型的漏洞。该方法采用两步法：首先训练多级边缘特征提取器以捕获区分性边缘表示，然后使用基于Vision Transformer生成对抗网络（ViTGAN）生成基于提取边缘特征的对抗补丁。将这些补丁应用于行人服装，可以生成现实的对抗样本，显著降低最先进的VI-ReID方法的性能。</div>
 </details>
 </div>
 <div class="card">
@@ -781,12 +783,12 @@ experiments not only on the well-known SYSU-MM01 and RegDB datasets but also on
 the latest large-scale cross-modality LLCM dataset. The results demonstrate
 WRIM-Net&#x27;s superiority over state-of-the-art methods.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>WRIM-Net：可见-红外人员重识别广泛信息挖掘网络</div>
-<div class="mono" style="margin-top:8px">对于可见-红外人员重识别（VI-ReID）任务，主要挑战在于显著的跨模态差异。现有方法难以进行模态不变的信息挖掘。它们通常仅专注于挖掘单一维度的信息，如空间或通道，而忽视了特定模态多维度信息的提取。为全面挖掘广泛范围内的模态不变信息，我们引入了广泛信息挖掘网络（WRIM-Net），主要由多维度交互信息挖掘（MIIM）模块和基于辅助信息的对比学习（AICL）方法组成。借助提出的全局区域交互（GRI），MIIM通过内在维度交互全面挖掘非局部的空间和通道信息。此外，由于低计算复杂度设计，MIIM可以放置在浅层，使网络更好地挖掘特定模态多维度信息。AICL通过引入新颖的跨模态关键实例对比损失（CMKIC），有效引导网络提取模态不变信息。我们在SYSU-MM01和RegDB等知名数据集以及最新的大规模跨模态LLCM数据集上进行了广泛的实验。结果表明WRIM-Net优于现有方法。</div>
+<div class="mono"><b>标题：</b>WRIM-Net：可见-红外人体重识别广泛信息挖掘网络</div>
+<div class="mono" style="margin-top:8px">对于可见-红外人体重识别（VI-ReID）任务，主要挑战在于显著的跨模态差异。现有方法难以进行模态不变的信息挖掘。它们通常仅专注于挖掘单一维度的信息，如空间或通道，而忽视了特定模态多维度信息的提取。为全面挖掘广泛范围内的模态不变信息，我们引入了广泛信息挖掘网络（WRIM-Net），主要由多维度交互信息挖掘（MIIM）模块和基于辅助信息的对比学习（AICL）方法组成。借助提出的全局区域交互（GRI），MIIM通过内在维度交互全面挖掘非局部的空间和通道信息。此外，由于低计算复杂度设计，单独的MIIM可以放置在浅层，使网络更好地挖掘特定模态多维度信息。AICL通过引入新颖的跨模态关键实例对比损失（CMKIC），有效引导网络提取模态不变信息。我们在著名的SYSU-MM01和RegDB数据集上以及最新的大规模跨模态LLCM数据集上进行了广泛的实验。结果表明WRIM-Net优于现有方法。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research addresses the challenge of cross-modality discrepancy in visible-infrared person re-identification by proposing WRIM-Net, which includes a Multi-dimension Interactive Information Mining module and an Auxiliary-Information-based Contrastive Learning approach. The method leverages Global Region Interaction to mine non-local spatial and channel information and uses a novel Cross-Modality Key-Instance Contrastive loss to guide the extraction of modality-invariant information. Experimental results on SYSU-MM01, RegDB, and LLCM datasets show WRIM-Net outperforms existing state-of-the-art methods.</div>
-<div class="mono" style="margin-top:8px">研究旨在通过提出WRIM-Net，解决可见红外人像再识别中的跨模态差异问题，WRIM-Net包括多维度交互信息挖掘模块和基于辅助信息的对比学习方法。实验结果表明，WRIM-Net在SYSU-MM01、RegDB等知名数据集以及大规模跨模态LLCM数据集上均优于现有方法，能够有效挖掘广泛维度范围内的模态不变信息。</div>
+<div class="mono">The research aims to address the challenge of cross-modality discrepancy in visible-infrared person re-identification by introducing WRIM-Net, which includes a Multi-dimension Interactive Information Mining module and an Auxiliary-Information-based Contrastive Learning approach. The key findings show that WRIM-Net outperforms existing methods on well-known datasets like SYSU-MM01 and RegDB, as well as on the large-scale LLCM dataset, by effectively mining modality-invariant information across a wide range of dimensions.</div>
+<div class="mono" style="margin-top:8px">研究旨在通过引入WRIM-Net解决可见-红外人再识别中的跨模态差异问题，WRIM-Net包含多维度交互信息挖掘模块和辅助信息基于对比学习方法。该方法利用全局区域交互全面挖掘空间和通道信息，并使用新型跨模态关键实例对比损失引导提取模态不变信息。实验结果表明，WRIM-Net在SYSU-MM01、RegDB和LLCM数据集上优于现有最先进的方法。</div>
 </details>
 </div>
 <div class="card">
@@ -819,11 +821,11 @@ established cross-modality correspondences and the effectiveness of our MMM.
 The source codes will be released.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>多记忆匹配在无监督可见-红外行人重识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）是一项有前景但极具挑战性的检索任务。USL-VI-ReID 的关键挑战在于有效生成伪标签并跨模态建立伪标签对应关系，而不依赖任何先验注释。最近，聚类伪标签方法在 USL-VI-ReID 中获得了更多关注。然而，之前的方法未能充分利用个体差异，因为它们仅利用单一记忆来表示身份以建立跨模态对应关系，导致跨模态对应关系模糊。为解决这一问题，我们提出了一种 USL-VI-ReID 的多记忆匹配（MMM）框架。我们首先设计了一个跨模态聚类（CMC）模块，通过聚类两个模态样本来生成伪标签。为了关联跨模态聚类伪标签，我们设计了一个多记忆学习和匹配（MMLM）模块，确保优化明确关注个体视角的差异并建立可靠的跨模态对应关系。最后，我们设计了一个软聚类级对齐（SCA）模块，通过软多对多对齐策略缩小模态差距并减轻噪声伪标签的影响。在公开的 SYSU-MM01 和 RegDB 数据集上的广泛实验表明，建立的跨模态对应关系的可靠性以及我们 MMM 的有效性。源代码将被发布。</div>
+<div class="mono" style="margin-top:8px">无监督可见-红外行人重识别（USL-VI-ReID）是一项有前景但极具挑战性的检索任务。USL-VI-ReID 的关键挑战在于有效生成伪标签，并在不依赖任何先验注释的情况下建立跨模态伪标签对应关系。最近，聚类伪标签方法在 USL-VI-ReID 中引起了更多关注。然而，之前的方法未能充分利用个体差异，因为它们仅利用单一记忆来表示身份以建立跨模态对应关系，导致跨模态对应关系模糊。为解决这一问题，我们提出了一种 USL-VI-ReID 的多记忆匹配（MMM）框架。我们首先设计了一个跨模态聚类（CMC）模块，通过聚类两种模态样本来生成伪标签。为了关联跨模态聚类伪标签，我们设计了一个多记忆学习和匹配（MMLM）模块，确保优化明确关注个体视角的差异并建立可靠的跨模态对应关系。最后，我们设计了一个软聚类级对齐（SCA）模块，在通过软多对多对齐策略减轻噪声伪标签影响的同时缩小模态差距。在公开的 SYSU-MM01 和 RegDB 数据集上的广泛实验表明，建立的跨模态对应关系的可靠性和我们 MMM 的有效性。源代码将被发布。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The research aims to address the challenges in unsupervised visible-infrared person re-identification by proposing a Multi-Memory Matching (MMM) framework. This framework includes a Cross-Modality Clustering (CMC) module for generating pseudo-labels and a Multi-Memory Learning and Matching (MMLM) module for establishing reliable cross-modality correspondences. The Soft Cluster-level Alignment (SCA) module further refines the correspondences by mitigating noise. Experiments on SYSU-MM01 and RegDB datasets show the effectiveness of the proposed method.</div>
-<div class="mono" style="margin-top:8px">论文提出了Multi-Memory Matching (MMM)框架来解决无监督可见红外行人重识别的挑战。它引入了Cross-Modality Clustering (CMC)模块生成伪标签，并设计了Multi-Memory Learning and Matching (MMLM)模块来建立可靠的跨模态对应关系。此外，还设计了Soft Cluster-level Alignment (SCA)模块以减少模态差距并减轻噪声的影响。在SYSU-MM01和RegDB数据集上的实验表明了该方法的有效性。</div>
+<div class="mono">The paper addresses the challenge of unsupervised visible-infrared person re-identification by proposing a Multi-Memory Matching (MMM) framework. This framework includes a Cross-Modality Clustering (CMC) module for generating pseudo-labels and a Multi-Memory Learning and Matching (MMLM) module for establishing reliable cross-modality correspondences. The Soft Cluster-level Alignment (SCA) module further refines these correspondences. Experiments on SYSU-MM01 and RegDB datasets show the effectiveness of the proposed method in generating reliable cross-modality correspondences.</div>
+<div class="mono" style="margin-top:8px">论文提出了一种多记忆匹配（MMM）框架来解决无监督可见红外行人重识别的挑战。引入了跨模态聚类（CMC）模块生成伪标签，并设计了多记忆学习和匹配（MMLM）模块以建立可靠的跨模态对应关系。此外，还设计了软聚类级对齐（SCA）模块以减少模态差距并减轻噪声的影响。在SYSU-MM01和RegDB数据集上的实验表明，所提出的方法能够生成可靠的跨模态对应关系。</div>
 </details>
 </div>
 <div class="card">
@@ -856,11 +858,11 @@ method achieves 86.28% rank-1 accuracy and 87.41% mAP, respectively. Our code
 will be available soon.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
 <div class="mono"><b>标题：</b>可见-红外人体重识别的动态身份引导注意力网络</div>
-<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）旨在将不同模态下的同一身份的人匹配起来。由于不同模态下个体外观的巨大差异，VI-ReID 是一个具有挑战性的任务。现有方法通常试图在图像或特征级别上弥合跨模态差异，但缺乏探索具有区分性的嵌入。有效缩小这些跨模态差异依赖于获得由身份引导且跨模态一致的表示，同时过滤掉与身份无关的表示。为了解决这些挑战，我们引入了一种动态身份引导注意力网络（DIAN），以挖掘身份引导且模态一致的嵌入，促进不同模态之间的有效连接。具体而言，在 DIAN 中，为了追求语义更丰富的表示，我们首先使用正交投影将两个相连的粗层和细层的特征融合。此外，我们首先使用动态卷积核挖掘身份引导且模态一致的表示。更值得注意的是，引入了一种跨嵌入平衡损失，通过上述嵌入有效弥合跨模态差异。在 SYSU-MM01 和 RegDB 数据集上的实验结果表明，DIAN 达到了最先进的性能。具体而言，对于 SYSU-MM01 的室内搜索，我们的方法分别实现了 86.28% 的 rank-1 准确率和 87.41% 的 mAP。我们的代码将很快开源。</div>
+<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）旨在将不同模态下的同一身份的人匹配起来。由于不同模态下个体外观的巨大差异，VI-ReID 是一个具有挑战性的任务。现有方法通常试图在图像或特征级别上弥合跨模态差异，但缺乏探索具有区分性的嵌入。有效缩小这些跨模态差异依赖于获得由身份引导且跨模态一致的表示，同时过滤掉与身份无关的表示。为了解决这些挑战，我们引入了动态身份引导注意力网络（DIAN），以挖掘身份引导且模态一致的嵌入，从而促进不同模态之间的有效连接。具体而言，在 DIAN 中，为了追求语义更丰富的表示，我们首先使用正交投影将两个相连的粗层和细层的特征融合。此外，我们首先使用动态卷积核挖掘身份引导且模态一致的表示。更值得注意的是，我们引入了一种跨嵌入平衡损失，通过上述嵌入有效弥合跨模态差异。在 SYSU-MM01 和 RegDB 数据集上的实验结果表明，DIAN 达到了最先进的性能。具体而言，对于 SYSU-MM01 的室内搜索，我们的方法分别实现了 86.28% 的 rank-1 准确率和 87.41% 的 mAP。我们的代码将很快开源。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper introduces DIAN, a dynamic identity-guided attention network for visible-infrared person re-identification. It addresses the challenge of large appearance differences between visible and infrared modalities by using orthogonal projection and dynamic convolution kernels to mine identity-guided and modality-consistent embeddings. The cross embedding balancing loss further helps bridge cross-modal discrepancies. DIAN achieves state-of-the-art performance, with 86.28% rank-1 accuracy and 87.41% mAP on the SYSU-MM01 dataset for indoor search.</div>
-<div class="mono" style="margin-top:8px">论文提出了DIAN，一种动态身份引导的注意力网络，用于可见光-红外人再识别。通过使用正交投影和动态卷积核来挖掘身份引导和模态一致的表示，以应对可见光和红外模态之间巨大的外观差异。此外，引入了交叉嵌入平衡损失，进一步帮助弥合模态间的差异。DIAN在SYSU-MM01数据集室内搜索任务中达到了86.28%的rank-1准确率和87.41%的mAP，实现了最先进的性能。</div>
+<div class="mono">The paper introduces DIAN, a dynamic identity-guided attention network for visible-infrared person re-identification. DIAN uses orthogonal projection and dynamic convolution kernels to mine identity-guided and modality-consistent embeddings, and a cross embedding balancing loss to effectively bridge cross-modal discrepancies. The method achieves state-of-the-art performance, with 86.28% rank-1 accuracy and 87.41% mAP on the SYSU-MM01 dataset for indoor search.</div>
+<div class="mono" style="margin-top:8px">论文提出了一种动态身份引导注意力网络DIAN，旨在通过挖掘身份引导和模态一致的嵌入来弥合可见光和红外模态之间的差距。DIAN 使用正交投影和动态卷积核融合特征并平衡跨模态差异。该方法在SYSU-MM01数据集室内搜索任务中达到最先进的性能，具体为86.28%的rank-1准确率和87.41%的mAP。</div>
 </details>
 </div>
 <div class="card">
@@ -890,12 +892,12 @@ experimental results on benchmarks demonstrate the effectiveness of our method,
 e.g., 60.6% and 90.3% of Rank-1 accuracy on SYSU-MM01 and RegDB without any
 annotations.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>互信息引导的最优传输在无监督可见红外行人重识别中的应用</div>
-<div class="mono" style="margin-top:8px">无监督可见红外行人重识别（USVI-ReID）是一项具有挑战性的检索任务，旨在在不使用任何标签信息的情况下检索跨模态的行人图像。在这个任务中，巨大的跨模态差异使得生成可靠的跨模态标签变得困难，而缺乏注释也增加了学习模态不变特征的难度。在本文中，我们首先基于模型的跨模态输入和输出之间的互信息推导出一个无监督VI-ReID的优化目标。通过等价推导，我们获得了三个学习原则，即“锐度”（熵最小化）、“公平性”（均匀标签分布）和“适应性”（可靠的跨模态匹配）。在这些原则的指导下，我们设计了一种交替进行模型训练和跨模态匹配的循环训练策略。在匹配阶段，我们提出了一种均匀先验引导的最优传输分配（“适应性”，“公平性”）来选择匹配的可见和红外原型。在训练阶段，我们利用这种匹配信息引入基于原型的对比学习，以最小化类内和跨模态的熵（“锐度”）。在基准上的广泛实验结果表明了我们方法的有效性，例如在SYSU-MM01和RegDB上分别达到了60.6%和90.3%的Rank-1精度，且没有任何注释。</div>
+<div class="mono"><b>标题：</b>互信息引导的最优传输在无监督可见红外行人再识别中的应用</div>
+<div class="mono" style="margin-top:8px">无监督可见红外行人再识别（USVI-ReID）是一项具有挑战性的检索任务，旨在在不使用任何标签信息的情况下检索跨模态的行人图像。在这个任务中，巨大的跨模态差异使得生成可靠的跨模态标签变得困难，而缺乏注释也增加了学习模态不变特征的难度。在本文中，我们首先基于模型的跨模态输入和输出之间的互信息推导出一个无监督VI-ReID的优化目标。通过等价推导，我们获得了三个学习原则，即“锐度”（熵最小化）、“公平性”（均匀标签分布）和“适应性”（可靠的跨模态匹配）。在这些原则的指导下，我们设计了一种交替进行模型训练和跨模态匹配的循环训练策略。在匹配阶段，我们提出了一种均匀先验引导的最优传输分配（“适应性”，“公平性”）来选择匹配的可见和红外原型。在训练阶段，我们利用这种匹配信息引入基于原型的对比学习，以最小化类内和跨模态的熵（“锐度”）。在基准上的广泛实验结果表明了我们方法的有效性，例如，在SYSU-MM01和RegDB上分别达到了60.6%和90.3%的Rank-1精度，且没有任何注释。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of unsupervised visible-infrared person re-identification by formulating an optimization objective based on mutual information. It introduces three learning principles: Sharpness, Fairness, and Fitness, and proposes a loop iterative training strategy. The method uses a uniform prior guided optimal transport assignment to select matched prototypes and introduces prototype-based contrastive learning to minimize entropy. The results show significant improvements, achieving 60.6% and 90.3% Rank-1 accuracy on SYSU-MM01 and RegDB respectively without any annotations.</div>
-<div class="mono" style="margin-top:8px">本文通过基于互信息的方法解决了无监督的可见光-红外行人重识别挑战，提出了三个学习原则：“Sharpness”（熵最小化）、“Fairness”（均匀标签分布）和“Fitness”（可靠的跨模态匹配）。方法采用循环迭代训练策略，并提出了一种均匀先验引导的最优传输分配来增强跨模态匹配。实验结果表明，该方法在SYSU-MM01和RegDB基准上取得了显著效果，分别达到了60.6%和90.3%的Rank-1准确率，且无需任何标注。</div>
+<div class="mono">Unsupervised visible infrared person re-identification (USVI-ReID) is a challenging retrieval task that aims to retrieve cross-modality pedestrian images without using any label information.</div>
+<div class="mono" style="margin-top:8px">本文通过基于互信息的方法解决了无监督的可见光-红外行人重识别挑战，提出了三个学习原则：“Sharpness”（熵最小化）、“Fairness”（均匀标签分布）和“Fitness”（可靠的跨模态匹配）。方法交替进行模型训练和跨模态匹配，使用均匀先验引导的最优运输分配来选择匹配的原型，并利用匹配信息进行基于原型的对比学习以最小化熵。实验结果表明，在SYSU-MM01和RegDB基准上，该方法在无任何标注的情况下显著提高了Rank-1准确率。</div>
 </details>
 </div>
 <div class="card">
@@ -931,8 +933,12 @@ experiments on SYSU-MM01 and RegDB datasets, the effectiveness of both our
 designed modules is evaluated. Additionally, our proposed MIP performs better
 than most state-of-the-art methods.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>利用模态和实例感知视觉提示学习增强可见光-红外人体重识别</div>
-<div class="mono" style="margin-top:8px">可见光-红外人体重识别（VI ReID）旨在跨非重叠摄像头视角匹配同一行人的可见光和红外图像。这两种输入模态包含不变信息，如形状，以及模态特定细节，如颜色。理想的模型应该在训练过程中利用两种模态中的有价值信息，以增强表示能力。然而，由模态特定信息引起的差距给VI ReID模型同时处理不同模态输入带来了重大挑战。为解决这一问题，我们在工作中引入了模态感知和实例感知视觉提示（MIP）网络，旨在有效利用不变和特定信息进行识别。具体而言，我们的MIP模型基于变压器架构。在这个模型中，我们设计了一系列模态特定提示，使我们的模型能够适应并利用不同模态输入中固有的特定信息，从而减少模态差距造成的干扰并实现更好的识别。此外，我们还利用每个行人的特征构建了一组实例特定提示。这些定制提示负责引导我们的模型动态适应每个行人类别，从而捕捉身份级的区分线索进行识别。通过在SYSU-MM01和RegDB数据集上的广泛实验，评估了我们设计模块的有效性。此外，我们提出的MIP方法在大多数最先进的方法中表现更好。</div>
+<div class="mono"><b>标题：</b>利用模态和实例感知视觉提示学习增强可见光-红外人再识别</div>
+<div class="mono" style="margin-top:8px">可见光-红外人再识别（VI ReID）旨在匹配非重叠摄像头视图中相同行人的可见光和红外图像。这两种输入模态包含不变信息，如形状，以及模态特定细节，如颜色。理想的模型应该在训练过程中利用两种模态的有价值信息，以增强表示能力。然而，由模态特定信息引起的差距给VI ReID模型同时处理不同模态输入带来了重大挑战。为解决这一问题，我们在工作中引入了模态感知和实例感知视觉提示（MIP）网络，旨在有效利用不变和特定信息进行识别。具体而言，我们的MIP模型基于变压器架构。在这个模型中，我们设计了一系列模态特定提示，使我们的模型能够适应并利用不同模态输入中固有的特定信息，从而减少模态差距造成的干扰并实现更好的识别。此外，我们还利用每个行人的特征构建了一组实例特定提示。这些定制提示负责引导我们的模型动态适应每个行人类别，从而捕捉识别所需的身份级区分线索。通过在SYSU-MM01和RegDB数据集上的广泛实验，评估了我们设计模块的有效性。此外，我们提出的MIP方法在大多数最先进的方法中表现更好。</div>
+</details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-identification (VI ReID) by introducing the Modality-aware and Instance-aware Visual Prompts (MIP) network. This network uses a transformer architecture to effectively utilize both invariant and modality-specific information. The MIP model includes modality-specific prompts to handle distinct modality inputs and instance-specific prompts to capture identity-level discriminative clues. Experiments on SYSU-MM01 and RegDB datasets show that MIP outperforms most state-of-the-art methods in VI ReID tasks.</div>
+<div class="mono" style="margin-top:8px">论文通过引入Modality-aware和Instance-aware Visual Prompts (MIP)网络解决了可见光-红外人像再识别（VI ReID）的挑战。该网络采用变压器架构，有效利用不变性和模态特定信息。MIP模型包含模态特定提示以处理不同模态输入的差异，并包含实例特定提示以捕捉身份级区分线索。在SYSU-MM01和RegDB数据集上的实验表明，MIP在VI ReID任务中优于大多数最先进的方法。</div>
 </details>
 </div>
 <div class="card">
@@ -959,12 +965,12 @@ different modality patches, which could further alleviate the modality
 imbalance problem. On two VI-ReID datasets, we report new state-of-the-art
 performance with the proposed method.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外行人再识别通过块混合跨模态学习</div>
-<div class="mono" style="margin-top:8px">可见-红外行人再识别（VI-ReID）旨在从不同模态中检索同一行人的图像，其中挑战在于显著的模态差异。为了缓解模态差距，最近的方法通过生成中间图像、使用生成对抗网络（GAN）、灰度化或混合策略。然而，这些方法可能会引入额外的数据分布，且两种模态之间的语义对应关系没有很好地学习。在本文中，我们提出了一种块混合跨模态框架（PMCM），其中来自两种模态的同一行人的两张图像被拆分成块并拼接成一个新的图像以供模型学习。引入了一种部分对齐损失来正则化表示学习，并提出了一种块混合模态学习损失以在模态之间进行对齐。这样，模型学会通过不同风格的块来识别行人，从而可以推断出模态语义对应关系。此外，通过灵活的图像生成策略，块混合图像可以自由调整不同模态块的比例，从而进一步缓解模态不平衡问题。在两个VI-ReID数据集中，我们使用所提出的方法报告了新的最佳性能。</div>
+<div class="mono"><b>标题：</b>可见-红外人体重识别通过块混合跨模态学习</div>
+<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）旨在从不同模态中检索同一行人的图像，其中挑战在于显著的模态差异。为缓解模态差距，最近的方法通过生成中间图像、使用 GAN、灰度化或 mixup 策略。然而，这些方法可能会引入额外的数据分布，且两种模态之间的语义对应关系没有很好地学习。在本文中，我们提出了一种块混合跨模态框架（PMCM），其中来自两种模态的同一个人的两张图像被分割成块并拼接成一个新的图像以供模型学习。引入了一种部分对齐损失来正则化表示学习，并提出了一种块混合模态学习损失以在模态之间进行对齐。这样，模型学会通过不同风格的块来识别一个人，从而可以推断出模态语义对应关系。此外，通过灵活的图像生成策略，块混合图像可以自由调整不同模态块的比例，从而进一步缓解模态不平衡问题。在两个 VI-ReID 数据集上，我们使用所提出的方法报告了新的最佳性能。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by proposing a Patch-Mixed Cross-Modality framework (PMCM). This method splits images from the two modalities into patches and stitches them to learn the semantic correspondence between them. Key findings include improved performance on two VI-ReID datasets and new state-of-the-art results. A part-alignment loss and a patch-mixed modality learning loss are introduced to regularize and align the representations, respectively.</div>
-<div class="mono" style="margin-top:8px">本文提出了一种Patch-Mixed Cross-Modality框架（PMCM），通过将两种模态的图像分割成块并拼接成新的图像来解决可见红外行人再识别的挑战，从而学习模态之间的语义对应关系。主要发现包括在两个VI-ReID数据集上取得了新的最佳性能。</div>
+<div class="mono">This paper addresses the challenge of visible-infrared person re-identification by proposing a Patch-Mixed Cross-Modality framework (PMCM). The method splits images into patches from both visible and infrared modalities and stitches them to learn cross-modality representations. It introduces a part-alignment loss to regularize representation learning and a patch-mixed modality learning loss to align the two modalities. Experimental results on two datasets show that PMCM achieves new state-of-the-art performance in VI-ReID.</div>
+<div class="mono" style="margin-top:8px">论文提出了一种Patch-Mixed Cross-Modality框架（PMCM），通过将来自两种模态的图像分割成块并拼接，来解决可见光-红外人像再识别的挑战。关键发现包括在两个数据集上取得了新的最佳性能，并引入了部分对齐损失和块混合模态学习损失来规范和对齐模态。</div>
 </details>
 </div>
 <div class="card">
@@ -995,12 +1001,12 @@ with translation consistency. We provide both theoretical justification and
 empirical evidence that our proposed PHO method outperform existing VI-reID
 approaches.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外行人再识别的参数分层优化</div>
-<div class="mono" style="margin-top:8px">可见-红外行人再识别（VI-reID）旨在匹配由分离的可见光或红外摄像机捕获的跨模态行人图像。现有方法通过设计不同类型的网络架构来缓解跨模态差异。与现有方法不同，本文提出了一种新的参数优化范式——参数分层优化（PHO）方法，用于VI-ReID任务。它允许部分参数无需任何训练即可直接优化，从而缩小参数搜索空间，使整个网络更容易训练。具体来说，我们首先将参数分为不同类型，然后引入一种自适应对齐策略（SAS），通过变换自动对齐可见光和红外图像。考虑到不同维度的特征具有不同的重要性，我们开发了一种自动加权对齐学习（AAL）模块，可以根据其重要性自动加权特征。重要的是，在SAS和AAL的对齐过程中，所有参数都立即根据优化原则进行优化，而不是训练整个网络，从而获得更好的参数训练方式。此外，我们建立了跨模态一致学习（CCL）损失，以通过平移一致性提取具有区分性的行人表示。我们提供了理论依据和实验证据，证明我们提出的PHO方法优于现有VI-reID方法。</div>
+<div class="mono"><b>标题：</b>可见-红外行人重识别的参数分层优化</div>
+<div class="mono" style="margin-top:8px">可见-红外行人重识别（VI-reID）旨在匹配由分离的可见光或红外摄像机捕获的跨模态行人图像。现有方法通过设计不同类型的网络架构来缓解跨模态差异。与现有方法不同，本文提出了一种新颖的参数优化范式——参数分层优化（PHO）方法，用于VI-ReID任务。它允许部分参数无需任何训练即可直接优化，从而缩小参数搜索空间，使整个网络更容易训练。具体来说，我们首先将参数分为不同类型，然后引入一种自适应对齐策略（SAS），通过变换自动对齐可见光和红外图像。考虑到不同维度的特征具有不同的重要性，我们开发了一种自动加权对齐学习（AAL）模块，可以根据其重要性自动加权特征。重要的是，在SAS和AAL的对齐过程中，所有参数都立即根据优化原则进行优化，而不是训练整个网络，从而获得更好的参数训练方式。此外，我们建立了跨模态一致学习（CCL）损失，以通过平移一致性提取具有区分性的行人表示。我们提供了理论依据和实验证据，证明我们提出的PHO方法优于现有的VI-reID方法。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by proposing a novel parameter hierarchical optimization (PHO) method. This method divides parameters into different types and introduces a self-adaptive alignment strategy (SAS) and an auto-weighted alignment learning (AAL) module to align and weight features respectively. Importantly, all parameters are optimized immediately without training the entire network, which simplifies the training process and improves performance. Experimental results show that the PHO method outperforms existing approaches in VI-reID tasks.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种新型参数层级优化（PHO）方法，用于解决可见光-红外人像再识别问题。该方法在不进行训练的情况下优化部分参数，减少了参数搜索空间，简化了网络训练过程。该方法包括自适应对齐策略（SAS）和自动加权对齐学习（AAL）模块，两者都能直接优化参数。此外，还引入了跨模态一致学习（CCL）损失，以增强特征的区分性。实验结果表明，PHO方法在可见光-红外人像再识别任务中优于现有方法。</div>
+<div class="mono">The paper addresses the challenge of visible-infrared person re-identification (VI-reID) by proposing a novel parameter hierarchical optimization (PHO) method. This method divides parameters into different types and introduces a self-adaptive alignment strategy (SAS) and an auto-weighted alignment learning (AAL) module to align visible and infrared images. The PHO method optimizes parameters directly without training, which simplifies the network training process. The authors also introduce a cross-modality consistent learning (CCL) loss to enhance discriminative person representation. Experimental results show that the PHO method outperforms existing VI-reID approaches.</div>
+<div class="mono" style="margin-top:8px">论文旨在通过提出一种新型参数层次优化（PHO）方法来解决可见光-红外人像再识别的挑战。该方法允许部分参数无需训练即可直接优化，从而缩小搜索空间并简化训练过程。关键组件包括自适应对齐策略（SAS）和自动加权对齐学习（AAL）模块，该模块根据特征的重要性自动对齐和加权。PHO方法还引入了跨模态一致学习（CCL）损失，以增强区分性的人像表示。实验表明，PHO方法在可见光-红外人像再识别任务中优于现有方法。</div>
 </details>
 </div>
 <div class="card">
@@ -1031,12 +1037,12 @@ features. Extensive experiments on multiple public datasets demonstrate the
 superiority of IDKL network over the state-of-the-art methods. Code is
 available at https://github.com/1KK077/IDKL.</div></details>
 <details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>可见-红外行人再识别中的隐式判别知识学习</div>
-<div class="mono" style="margin-top:8px">可见-红外行人再识别（VI-ReID）是一项具有挑战性的跨模态行人检索任务，由于不同摄像头间存在显著的类内变化和跨模态差异。现有工作主要集中在将不同模态的图像嵌入到统一空间中以挖掘模态共享特征。它们仅寻求这些共享特征中的区别性信息，而忽略了隐含在模态特定特征中的身份感知有用信息。为解决这一问题，我们提出了一种新颖的隐式判别知识学习（IDKL）网络，以揭示并利用模态特定特征中隐含的判别信息。首先，我们使用一种新颖的双流网络提取模态特定和模态共享特征。然后，模态特定特征经过净化以减少其模态风格差异，同时保留身份感知的判别知识。随后，这种隐性知识被提炼到模态共享特征中以增强其区别性。最后，提出了一种对齐损失以最小化增强模态共享特征的模态差异。在多个公开数据集上的广泛实验表明，IDKL网络优于现有方法。代码可在https://github.com/1KK077/IDKL获取。</div>
+<div class="mono"><b>标题：</b>可见-红外行人再识别中的隐式判别性知识学习</div>
+<div class="mono" style="margin-top:8px">可见-红外行人再识别（VI-ReID）是一项具有挑战性的跨模态行人检索任务，由于不同摄像头间显著的类内变化和跨模态差异。现有工作主要集中在将不同模态的图像嵌入到一个统一的空间中以挖掘模态共享特征，仅寻求这些共享特征中的区别性信息，而忽略了隐含在模态特定特征中的身份感知有用信息。为解决这一问题，我们提出了一种新颖的隐式判别性知识学习（IDKL）网络，以揭示并利用模态特定特征中隐含的判别性信息。首先，我们使用一种新颖的双流网络提取模态特定和模态共享特征。然后，模态特定特征经过净化以减少其模态风格差异，同时保留身份感知的判别性知识。随后，这种隐性知识被提炼到模态共享特征中以增强其区别性。最后，提出了一种对齐损失以最小化增强模态共享特征的模态差异。在多个公开数据集上的广泛实验表明，IDKL网络优于现有方法。代码可在https://github.com/1KK077/IDKL获取。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-identification (VI-ReID) by proposing a novel Implicit Discriminative Knowledge Learning (IDKL) network. This network extracts both modality-specific and modality-shared features using a dual-stream architecture, purifies the modality-specific features to preserve identity-aware discriminative knowledge, and distills this knowledge into the modality-shared features. An alignment loss is introduced to minimize modality discrepancies. Experiments show that IDKL outperforms existing methods on multiple public datasets.</div>
-<div class="mono" style="margin-top:8px">论文提出了一种新颖的隐式鉴别知识学习（IDKL）网络来解决可见光-红外人像再识别（VI-ReID）的挑战。该网络使用双流网络提取模态特定和模态共享特征，并对模态特定特征进行净化以保留鉴别性的身份信息。然后将这种信息提炼到模态共享特征中以增强其独特性。引入了一种对齐损失来最小化模态间的差异。实验结果表明，IDKL网络在多个公开数据集上优于现有方法。</div>
+<div class="mono">The paper addresses the challenge of Visible-Infrared Person Re-identification (VI-ReID) by proposing a novel Implicit Discriminative Knowledge Learning (IDKL) network. This network extracts modality-specific and modality-shared features using a dual-stream network, purifies the modality-specific features to preserve discriminative identity information, and distills this information into the modality-shared features. An alignment loss is also introduced to minimize modality discrepancies. Experiments show that IDKL outperforms existing methods on multiple public datasets.</div>
+<div class="mono" style="margin-top:8px">论文提出了一种新颖的隐式鉴别知识学习（IDKL）网络，以解决可见光-红外人像再识别的挑战。该网络使用双流方法提取模态特定和模态共享特征，净化模态特定特征以保留鉴别性的身份信息，并将这种信息注入到模态共享特征中。引入了一种对齐损失来进一步减少模态间的差异。实验结果表明，IDKL在网络多个公开数据集上的表现优于现有方法。</div>
 </details>
 </div>
 <div class="card">
@@ -1066,13 +1072,9 @@ experiments on SYSU-MM01, RegDB and LLCM datasets with our manually annotated
 descriptions. Both YYDS and CMKR achieve remarkable improvements over SOTA
 methods on all three datasets. Codes are available at
 https://github.com/dyhBUPT/YYDS.</div></details>
-<details class="detail"><summary>中文标题/摘要</summary>
-<div class="mono"><b>标题：</b>YYDS：可见-红外人体重识别与粗略描述</div>
-<div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）由于跨模态差异显著而具有挑战性。现有工作主要集中在学习模态不变特征，抑制模态特定特征。然而，仅依靠红外样本检索可见图像是一个极端问题，因为缺乏颜色信息。为此，我们提出了Refer-VI-ReID设置，旨在通过结合红外图像和粗略语言描述（例如，“一个穿着红色上衣和黑色裤子的男人”）来匹配目标可见图像，以补充缺失的颜色信息。为了解决这一任务，我们设计了一种Y-Y形分解结构，称为YYDS，以分解和聚合目标的纹理和颜色特征。具体而言，首次提出了文本-IoU正则化策略以促进分解训练，并提出了一种联合关系模块以推断聚合。此外，我们研究了跨模态版本的k-互逆重排序算法，称为CMKR，在其中探索了三种邻近搜索策略和一种局部查询扩展方法以缓解近邻的模态偏差问题。我们在SYSU-MM01、RegDB和LLCM数据集上使用我们手动标注的描述进行了实验。YYDS和CMKR在所有三个数据集上均显著优于当前最佳方法。代码可在https://github.com/dyhBUPT/YYDS获取。</div>
-</details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by proposing the Refer-VI-ReID setting, which leverages coarse language descriptions to complement the lack of color information in infrared images. The authors introduce a Y-Y-shape decomposition structure, YYDS, to decompose and aggregate texture and color features. They also propose a text-IoU regularization strategy and a joint relation module for training, and develop a cross-modal k-reciprocal re-ranking algorithm, CMKR, to improve near-neighbor search. Experiments on three datasets show significant improvements over state-of-the-art methods.</div>
-<div class="mono" style="margin-top:8px">论文通过引入Refer-VI-ReID设置，利用粗粒度的语言描述来补充红外图像中缺失的颜色信息，解决了可见光-红外人像再识别的挑战。作者提出了一种Y-Y形状分解结构YYDS，用于分解和聚合目标的纹理和颜色特征，并引入了文本-IoU正则化策略和联合关系模块进行训练。此外，还开发了一种跨模态k-最近邻重排序算法CMKR，以缓解近邻搜索中的模态偏差问题。在三个数据集上的实验表明，该方法显著优于现有最佳方法。</div>
+<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by introducing Refer-VI-ReID, which leverages coarse language descriptions to complement the lack of color information in infrared images. The YYDS model decomposes and aggregates texture and color features, while the CMKR algorithm improves near-neighbor search strategies to reduce modality bias. Experiments on SYSU-MM01, RegDB, and LLCM datasets show significant improvements over state-of-the-art methods.</div>
+<div class="mono" style="margin-top:8px">该论文通过引入Refer-VI-ReID，利用粗粒度的语言描述来补充红外图像中缺失的颜色信息，解决可见光-红外人像再识别的挑战。YYDS模型分解和聚合纹理和颜色特征，而CMKR算法改进了近邻搜索策略以减少模态偏差。在SYSU-MM01、RegDB和LLCM数据集上的实验表明，该方法显著优于现有最佳方法。</div>
 </details>
 </div>
 <div class="card">
@@ -1103,8 +1105,8 @@ performance of our FDMNet against state-of-the-art methods.</div></details>
 <div class="mono" style="margin-top:8px">可见-红外人体重识别（VI-ReID）由于可见光和红外图像之间存在显著的跨模态差异而具有挑战性。虽然现有方法集中在设计复杂的网络架构或使用度量学习约束来学习模态不变特征，但它们往往忽略了导致模态差异问题的具体图像成分。在本文中，我们首先揭示可见光和红外图像的幅度成分差异是主要因素，进一步提出了一种新颖的频域模态不变特征学习框架（FDMNet），从频域角度减少模态差异。我们的框架引入了两个新颖模块，即实例自适应幅度滤波器（IAF）模块和短语保留归一化（PPNorm）模块，以增强模态不变的幅度成分并抑制图像和特征层面的模态特定成分。在SYSU-MM01和RegDB两个标准基准上的广泛实验结果表明，我们的FDMNet在与最先进的方法相比时表现出更优的性能。</div>
 </details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">This paper addresses the challenge of visible-infrared person re-identification by focusing on the amplitude differences between visible and infrared images. It proposes a Frequency Domain modality-invariant feature learning framework (FDMNet) that includes the Instance-Adaptive Amplitude Filter (IAF) and Phrase-Preserving Normalization (PPNorm) modules to enhance modality-invariant features and suppress modality-specific components. Experiments on SYSU-MM01 and RegDB benchmarks show that FDMNet outperforms existing state-of-the-art methods.</div>
-<div class="mono" style="margin-top:8px">该论文通过关注可见光和红外图像之间的振幅差异来解决可见光-红外人像再识别的挑战。提出了基于频域的模态不变特征学习框架FDMNet，该框架包含IAF和PPNorm模块，用于增强不变的振幅成分并抑制特定成分。在SYSU-MM01和RegDB标准基准上的实验结果表明，FDMNet优于现有方法。</div>
+<div class="mono">This paper addresses the challenge of visible-infrared person re-identification by focusing on the amplitude differences between visible and infrared images. It proposes a Frequency Domain modality-invariant feature learning framework (FDMNet) that includes an Instance-Adaptive Amplitude Filter (IAF) and Phrase-Preserving Normalization (PPNorm) module to enhance modality-invariant features and suppress modality-specific components. Experiments on SYSU-MM01 and RegDB benchmarks show that FDMNet outperforms existing methods in reducing modality discrepancy.</div>
+<div class="mono" style="margin-top:8px">论文通过关注可见光和红外图像之间的振幅差异，解决了可见光-红外人再识别的挑战。提出了一种频域不变特征学习框架FDMNet，包含实例自适应振幅滤波器(IAF)模块和短语保持归一化(PPNorm)模块，以增强不变的振幅成分并抑制特定成分。在SYSU-MM01和RegDB标准基准上的实验结果表明，FDMNet在该任务中优于现有方法。</div>
 </details>
 </div>
 <div class="card">
@@ -1131,13 +1133,18 @@ attention and convolution networks to fully explore the discriminative
 modality-complete features with minimal computational overhead. Extensive
 experiments conducted on the benchmark SYSU-MM01 and RegDB datasets
 demonstrated the effectiveness of our proposed TMPA model.</div></details>
+<details class="detail"><summary>中文标题/摘要</summary>
+<div class="mono"><b>标题：</b>将模态感知行人注意学习应用于可见光-红外行人再识别</div>
+<div class="mono" style="margin-top:8px">可见光-红外行人再识别（VI-ReID）旨在跨可见光和红外模态搜索同一行人。现有模型主要集中在补偿模态特定信息以减少模态差异。然而，这些方法往往导致更高的计算开销，并可能在生成相应图像或特征时引入干扰信息。为解决这一问题，关键在于利用行人注意特征并学习模态完整且一致的表示。本文提出了一种新颖的模态感知行人注意学习（TMPA）模型，专注于行人区域以高效地补偿缺失的模态特定特征。具体地，我们提出了一种基于区域的数据增强模块PedMix，通过从不同模态混合相应的区域来增强行人区域的一致性。设计了一种轻量级的混合补偿模块，即模态特征转移（MFT），结合跨注意力和卷积网络，以最小的计算开销全面探索判别性的模态完整特征。在基准数据集SYSU-MM01和RegDB上的广泛实验表明了我们提出的TMPA模型的有效性。</div>
+</details>
 <details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">The paper aims to improve visible-infrared person re-identification by addressing the issue of modality variation. It introduces a TMPA model that focuses on pedestrian regions to compensate for missing modality-specific features. The model includes a PedMix module for enhancing coherence between different modalities and an MFT module for integrating cross-attention and convolution networks to explore discriminative features. Experiments on SYSU-MM01 and RegDB datasets show the effectiveness of the proposed method.</div>
-<div class="mono" style="margin-top:8px">论文旨在通过解决模态差异问题来提高可见光-红外行人再识别的性能。提出了一种TMPA模型，专注于行人区域来补偿缺失的模态特定特征。该模型包含一个PedMix模块以增强区域一致性，以及一个MFT模块以结合跨注意力和卷积网络来探索具有最小计算开销的判别性特征。在SYSU-MM01和RegDB数据集上的实验表明了所提方法的有效性。</div>
+<div class="mono">The paper addresses the challenge of visible-infrared person re-identification by proposing a novel TMPA model that focuses on pedestrian regions to compensate for missing modality-specific features. It introduces a PedMix module for enhancing pedestrian region coherence and a lightweight MFT module for integrating cross attention and convolution networks. Experiments on SYSU-MM01 and RegDB datasets show the effectiveness of the proposed model in reducing modality variation and computational overhead.</div>
+<div class="mono" style="margin-top:8px">本文提出了一种名为TMPA的新模型，专注于行人区域来补偿缺失的模态特定特征。该模型包含一个PedMix模块以增强行人区域的一致性，以及一个MFT模块以整合跨注意力和卷积网络来探索具有最小计算开销的判别性模态完整特征。在SYSU-MM01和RegDB数据集上的实验表明，所提出的TMPA模型在减少模态差异和计算开销方面具有有效性。</div>
 </details>
 </div></div>
     <details style="margin-top:16px" class="detail"><summary>History</summary>
-      <div class="history-list"><a href="archive/20250905_0335.html">20250905_0335</a>
+      <div class="history-list"><a href="archive/20250905_1222.html">20250905_1222</a>
+<a href="archive/20250905_0335.html">20250905_0335</a>
 <a href="archive/20250904_1123.html">20250904_1123</a>
 <a href="archive/20250904_0323.html">20250904_0323</a>
 <a href="archive/20250903_0355.html">20250903_0355</a>
