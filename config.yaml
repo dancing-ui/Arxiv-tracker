@@ -78,7 +78,7 @@ freshness:
   fallback_when_empty: false # 当今天无新增时，是否回退展示最近的Top若干（建议false）
 
 scrape:
-  html: true               # 先用 HTML 页抓链接
+  html: false               # 先用 HTML 页抓链接
   pdf_if_missing: false     # 若没抓到 code，再去扫 PDF 头部兜底
   pdf_first_page: false    # （可保留为 false；若你想“不管有没有都扫 PDF”，设 true）
   timeout: 10
