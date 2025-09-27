@@ -38,8 +38,8 @@ jobs:
       
       - name: Install system dependencies for Cairo
         run: |
-          apt-get update
-          apt-get install -y libcairo2-dev libpango1.0-dev libgdk-pixbuf2.0-dev libffi-dev
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libpango1.0-dev libgdk-pixbuf2.0-dev libffi-dev
       
       - name: Install deps
         run: |
