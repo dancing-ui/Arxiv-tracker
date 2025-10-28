@@ -4,8 +4,6 @@ keywords:
   - "Unsupervised visible-infrared"
   - "Unsupervised visible-infrared person re-identification"
   - "Unsupervised visible infrared person re-identification"
-  - "ConvNeXtV2"
-  - "ConvNeXt V2"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
 max_results: 30
