@@ -1,9 +1,9 @@
 categories: ["cs.CV", "cs.LG", "cs.AI"]
 keywords:
-  - "Unsupervised VI-ReID"
-  - "Unsupervised visible-infrared"
-  - "Unsupervised visible-infrared person re-identification"
-  - "Unsupervised visible infrared person re-identification"
+  - "LLM for ReID"
+  - "LLM for visible-infrared person re-identification"
+  - "cross-modal ReID with language model"
+  - "vision-language matching person re-identification"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
 max_results: 30
