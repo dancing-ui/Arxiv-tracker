@@ -1,8 +1,9 @@
 categories: ["cs.CV", "cs.LG", "cs.AI"]
 keywords:
-  - "LLM for ReID"
-  - "LLM for VI-ReID"
-  - "cross-modal ReID with language model"
+  - "Visible-Infrared Person Re-Identification"
+  - "Text-based Person Retrieval"
+  - "Large Language Model"
+  - "Multimodal Retrieval"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
 max_results: 30
