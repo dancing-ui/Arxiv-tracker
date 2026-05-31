@@ -1,9 +1,8 @@
 categories: ["cs.CV", "cs.LG", "cs.AI"]
 keywords:
-  - "Visible-Infrared Person Re-Identification"
-  - "Text-based Person Retrieval"
-  - "Large Language Model"
-  - "Multimodal Retrieval"
+  - "Unsupervised visible-infrared"
+  - "Unsupervised visible-infrared person re-identification"
+  - "Unsupervised visible infrared person re-identification"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
 max_results: 30
